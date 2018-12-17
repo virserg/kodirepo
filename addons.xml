@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.kino-live.org"
-       name="kino-live.org"
-       version="1.7.8m"
-       provider-name="x86demon">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.beautifulsoup"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Фильмы, сериалы с ресурса kino-live.org</summary>
-        <description>Фильмы, сериалы с ресурса kino-live.org</description>
-        <platform>all</platform>
-    </extension>
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod22" provider-name="HAL9000">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
+    <import addon="script.module.torrent.ts" optional="true" />
+    <import addon="script.module.libtorrent" optional="true" />
+    <import addon="script.service.torrserver" optional="true" />
+    <import addon="script.module.torrserver" optional="true" />
+    <import addon="plugin.video.elementum" optional="true" />
+    <import addon="plugin.video.torrenter" optional="true" />
+    <import addon="plugin.video.tam" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">RuTracker</summary>
+    <description lang="en">You can search RuTracker and download torrents.</description>
+    <summary lang="ru">Навигатор по RuTracker</summary>
+    <description lang="ru">Навигатор по сайту RuTracker с возможностью скачивания торрентов. Просмотр через Elementum, TorrServer, Torrenter, TAM, Libtorrent, TorrentStream, DelugeStream. Скачивание торрентов с помощью Transmission и uTorrent.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 </addons>
