@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod26" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod27" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests"/>
@@ -17,12 +17,56 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлены "Новинки за сегодня" и "за 3 последних дня" для каждого раздела</news>
+    <news>Добавлен "Переход на страницу" в контекстное меню для результатов поиска</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
     <description lang="ru">Навигатор по сайту RuTracker с возможностью скачивания торрентов. Просмотр через Elementum, TorrServer, Torrenter, TAM, Libtorrent, TorrentStream, DelugeStream. Скачивание торрентов с помощью Transmission и uTorrent.</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.tengine" name="TEngine" version="1.5.9mod" provider-name="1orgar">
+  <requires>
+    <import addon="xbmc.python" version="2.7.13"/>
+    <import addon="script.module.libtorrent"/>
+    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.pyrrent2http"/>
+    <import addon="script.module.torrent2http"/>
+    <import addon="script.module.cdebug"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>TEngine torrent streaming support</summary>
+    <description>Simple interface to most popular KODI torrent streaming engines</description>
+    <license>GPL</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="repository.xbmc-avigdork" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader</summary>
+    <summary lang="he">Playlist Loader</summary>
+    <description lang="en">Playlist Loader</description>
+    <description lang="he">Playlist Loader</description>
+    <platform>all</platform>
+	<news>
+1.2.0
+- (fix) support strings.xml (old Kodi versions).
+1.1.9
+- Added an option to show groups in channels lists.
+	</news>
   </extension>
 </addon>
 
