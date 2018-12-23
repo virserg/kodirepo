@@ -100,7 +100,6 @@
 	<extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <language></language>
         <summary lang="en">Downloads torrents and share it over HTTP</summary>
         <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
         <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
