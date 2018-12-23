@@ -88,24 +88,27 @@
     </extension>
 </addon>
 
-<addon id="script.module.torrent2http" name="torrent2http" version="0.2.9" provider-name="anteo,DiMartino,-=Vd=-">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.requests" optional="false"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-	<extension point="xbmc.python.script" library="main.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Downloads torrents and share it over HTTP</summary>
-        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
-        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
-        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
-        <email>anteo@academ.org</email>
-    </extension>
+<addon id="script.torrentstreams.install" name="! Install All torrent streams !" version="0.0.1" provider-name="NoNe">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.delugestream" version="0.1.1"/>
+    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.libtorrent"/>
+    <import addon="script.service.torrserver"/>
+    <import addon="plugin.video.torrenter"/>
+    <import addon="plugin.video.tam"/>
+  </requires>
+  <extension point="xbmc.python.script" provides="executable" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news></news>
+    <summary lang="en">Install All torrent streams in one click.</summary>
+    <description lang="en">Install All torrent streams in one click.</description>
+    <summary lang="ru">Установка Всех торрент движков (кроме Elementum) в один клик.</summary>
+    <description lang="ru">Установка Всех торрент движков (кроме Elementum) в один клик. После установки можете сразу удалить это дополнение.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.kino-live.org"
