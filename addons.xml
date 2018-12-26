@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod29" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod30" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests"/>
@@ -17,7 +17,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлен поиск сразу для первых трёх разделов</news>
+    <news>Мелкие правки</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -44,6 +44,35 @@
     <description>Simple interface to most popular KODI torrent streaming engines</description>
     <license>GPL</license>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.0" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.rutracker"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.python.script" library="plugin.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="kodi.context.item" library="default.py">
+    <item>
+      <label>$ADDON[context.rutracker.search 32000]</label>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">RuTracker Search Content</summary>
+    <description lang="en">RuTracker Search Content</description>
+    <summary lang="ru">Поиск по сайту RuTracker из дополнений</summary>
+    <description lang="ru">Поиск контента на RuTracker'e из дополнений Kinopoisk и других. Добавляет в контекстное меню "Найти на RuTracker'e". Ищет только по разделам Фильмы, Сериалы и Мультипликация.</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
   </extension>
 </addon>
 
