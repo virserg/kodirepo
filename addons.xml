@@ -47,7 +47,7 @@
   </extension>
 </addon>
 
-<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.0" provider-name="virserg">
+<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.1" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.rutracker"/>
@@ -69,7 +69,7 @@
     <summary lang="en">RuTracker Search Content</summary>
     <description lang="en">RuTracker Search Content</description>
     <summary lang="ru">Поиск по сайту RuTracker из дополнений</summary>
-    <description lang="ru">Поиск контента на RuTracker'e из дополнений Kinopoisk и других. Добавляет в контекстное меню "Найти на RuTracker'e". Ищет только по разделам Фильмы, Сериалы и Мультипликация.</description>
+    <description lang="ru">Поиск контента на RuTracker'e из дополнений KinoPoisk и других. Добавляет в контекстное меню "Найти на RuTracker'e". Ищет только по разделам Фильмы, Сериалы и Мультипликация.</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
     <source></source>
