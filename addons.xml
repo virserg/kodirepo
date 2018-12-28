@@ -47,7 +47,7 @@
   </extension>
 </addon>
 
-<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.1" provider-name="virserg">
+<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.2" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.rutracker"/>
@@ -66,6 +66,7 @@
   </extension>
   <extension point="kodi.addon.metadata">
     <platform>all</platform>
+    <news>Мелкие правки</news>
     <summary lang="en">RuTracker Search Content</summary>
     <description lang="en">RuTracker Search Content</description>
     <summary lang="ru">Поиск по сайту RuTracker из дополнений</summary>
