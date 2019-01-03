@@ -77,7 +77,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0" provider-name="Avigdor">
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0ru" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="repository.xbmc-avigdork" />
