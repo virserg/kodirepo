@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod37" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod38" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests"/>
@@ -17,7 +17,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Продолжение наполнения "О дополнении..."</news>
+    <news>Исправлена ошибка на Kodi 16.0 SPMC (для dzxtckfd)</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
