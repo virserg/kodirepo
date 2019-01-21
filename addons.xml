@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod44" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod45" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests"/>
@@ -17,7 +17,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлены еще иконки</news>
+    <news>Добавлена опция отключения стандартной картинки.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -47,7 +47,7 @@
   </extension>
 </addon>
 
-<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.3" provider-name="virserg">
+<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.4" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.rutracker"/>
@@ -66,7 +66,7 @@
   </extension>
   <extension point="kodi.addon.metadata">
     <platform>all</platform>
-    <news>Мелкие правки</news>
+    <news>Добавлена иконка дополнения</news>
     <summary lang="en">RuTracker Search Content</summary>
     <description lang="en">RuTracker Search Content</description>
     <summary lang="ru">Поиск по сайту RuTracker из дополнений</summary>
