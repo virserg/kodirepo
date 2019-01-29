@@ -178,6 +178,35 @@
     </extension>
 </addon>
 
+<addon id="context.dandy.kinopoisk.sc" name="Kinopoisk Search Content" version="1.8.3f" provider-name="dandy">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmc.helpers" version="2.1.0"/>
+    <import addon="script.module.videohosts" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.python.script" library="plugin.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="kodi.context.item" library="default.py">
+    <item>
+      <label>$ADDON[context.dandy.kinopoisk.sc 32000]</label>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Kinopoisk Search Content</summary>
+    <description lang="en">Kinopoisk Search Content</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <news>1.8.3f [fix] unicode error (on OSMC)</news>
+    <forum></forum>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="repository.virserg" name="Virserg Repository" version="1.0.0" provider-name="Virserg">
     <extension point="xbmc.addon.repository" name="Virserg Repository">
         <info compressed="false">https://raw.githubusercontent.com/virserg/kodirepo/master/addons.xml</info>
