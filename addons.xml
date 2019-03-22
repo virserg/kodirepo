@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod55" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod56" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests"/>
@@ -17,7 +17,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлены иконки. Мелкие правки.</news>
+    <news>Мелкие правки.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -46,6 +46,30 @@
     <license>GPL</license>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.3f" provider-name="-=Vd=-">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+		    <import addon="script.module.requests" optional="false"/>
+        <import addon="script.module.vsdbg" optional="true"/>
+    </requires>
+
+    <extension point="xbmc.python.module" library="lib"/>
+
+    <extension point="xbmc.python.pluginsource" library="lib/torrserve_stream/settings.py">
+      <provides>executable</provides>
+    </extension>
+
+  <extension point="xbmc.addon.metadata">
+	<news>[fix] Unicode decode encode errors in log (OSMC)</news>
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+    </extension>
 </addon>
 
 <addon id="context.rutracker.search" name="RuTracker Search" version="1.0.4" provider-name="virserg">
