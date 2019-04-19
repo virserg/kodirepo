@@ -187,7 +187,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m8"
+       version="1.7.8m9"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
