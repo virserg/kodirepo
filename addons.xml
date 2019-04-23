@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod63" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod64" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests"/>
@@ -17,7 +17,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлен вид списка раздач по умолчанию.</news>
+    <news>Исправление названий в настройках дополнения (OSMC Kodi 18.2-RC1).</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -72,7 +72,7 @@
     </extension>
 </addon>
 
-<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.4" provider-name="virserg">
+<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.rutracker"/>
@@ -91,7 +91,7 @@
   </extension>
   <extension point="kodi.addon.metadata">
     <platform>all</platform>
-    <news>Добавлена иконка дополнения</news>
+    <news>Правка настроек.</news>
     <summary lang="en">RuTracker Search Content</summary>
     <description lang="en">RuTracker Search Content</description>
     <summary lang="ru">Поиск по сайту RuTracker из дополнений</summary>
@@ -105,7 +105,6 @@
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0ru" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="repository.xbmc-avigdork" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -145,7 +144,7 @@
 
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
-       version="0.1.2_mod5"
+       version="0.1.2_mod6"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
