@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod69" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod71" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.requests"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
     <import addon="script.module.torrent.ts" optional="true"/>
     <import addon="script.module.libtorrent" optional="true"/>
@@ -17,7 +16,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие правки.</news>
+    <news>Мелкие правки Удалён лишний код.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -138,6 +137,24 @@
         <summary lang="en">Launch RetroPie from Kodi.</summary>
         <description lang="en">Launch RetroPie from Kodi.</description>
         <website>https://github.com/mcobit/retrosmc/</website>
+        <email>me@me.me</email>
+    </extension>
+</addon>
+
+<addon id="plugin.program.bme280" name="BME280" version="0.0.1" provider-name="virserg">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <platform>linux</platform>
+        <disclaimer>For Kodi linux (tested on OSMC final). Only works on Raspberry Pi and BME280 sensor.</disclaimer>
+        <summary lang="en">Launch from Kodi.</summary>
+        <description lang="en">Launch from Kodi.</description>
+        <website>https://github.com/</website>
         <email>me@me.me</email>
     </extension>
 </addon>
