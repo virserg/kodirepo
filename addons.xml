@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod73" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod74" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -203,7 +203,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m12"
+       version="1.7.8m13"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -213,7 +213,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-	<news>improved list of series</news>
+	<news></news>
         <summary>Фильмы, сериалы с ресурса kino-live.org</summary>
         <description>Фильмы, сериалы с ресурса kino-live.org</description>
         <platform>all</platform>
