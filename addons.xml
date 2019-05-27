@@ -50,17 +50,17 @@
 <addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.3f" provider-name="-=Vd=-">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
-		    <import addon="script.module.requests" optional="false"/>
+	<import addon="script.module.requests" optional="false"/>
         <import addon="script.module.vsdbg" optional="true"/>
     </requires>
-
-    <extension point="xbmc.python.module" library="lib"/>
 
     <extension point="xbmc.python.script" library="lib/torrserve_stream/settings.py">
       <provides>executable</provides>
     </extension>
 
-  <extension point="xbmc.addon.metadata">
+    <extension point="xbmc.python.module" library="lib"/>
+
+    <extension point="xbmc.addon.metadata">
 	<news>[fix] Unicode decode encode errors in log (OSMC)</news>
         <platform>all</platform>
         <language>en</language>
