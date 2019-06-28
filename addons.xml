@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod81" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod82" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -16,7 +16,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправлен баг "%" при использовании LibTorrent.</news>
+    <news>Исправлена ошибка при открытии торрентов с windows-1251 кодировкой.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -202,6 +202,25 @@
       <screenshot>resources/screenshot-02.png</screenshot>
       <screenshot>resources/screenshot-03.png</screenshot>
     </assets>
+  </extension>
+</addon>
+
+<addon
+  id="visualization.shadertoy"
+  version="1.1.10"
+  name="Shadertoy"
+  provider-name="Team Kodi">
+  <requires>
+<import addon="kodi.binary.global.main" version="1.0.14"/>
+<import addon="kodi.binary.instance.visualization" version="2.0.1"/></requires>
+  <extension
+    point="xbmc.player.musicviz"
+    library_linux="visualization.shadertoy.so.1.1.10"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Visualisations from Shadertoy</summary>
+    <description lang="en">Visualisations from Shadertoy</description>
+    <platform>linux</platform>
+    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
   </extension>
 </addon>
 
