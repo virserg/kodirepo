@@ -324,6 +324,19 @@
     </extension>
 </addon>
 
+<addon id="screensaver.shadertoy" version="2.0.0" name="ShaderToy" provider-name="popcornmix">
+  <requires>
+<import addon="kodi.binary.global.main" version="1.0.14"/>
+<import addon="kodi.binary.instance.screensaver" version="2.0.0"/></requires>
+  <extension point="xbmc.ui.screensaver" library_linux="screensaver.shadertoy.so.2.0.0"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>ShaderToy screensaver</summary>
+    <description>ShaderToy screensaver</description>
+    <platform>linux</platform>
+    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.torrentstreams.install" name="! Install All torrent streams !" version="0.0.1" provider-name="NoNe">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
