@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod82" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod83" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -16,7 +16,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправлена ошибка при открытии торрентов с windows-1251 кодировкой.</news>
+    <news>Мелкие правки.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -69,6 +69,24 @@
         <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP.</description>
         <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
     </extension>
+</addon>
+
+<addon id="plugin.audio.knigavuhe"
+       name="Книга в ухе"
+       version="0.2.0a"
+       provider-name="TDW">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Книга в ухе</summary>
+    <description>Книга в ухе</description>
+  </extension>
 </addon>
 
 <addon id="context.rutracker.search" name="RuTracker Search" version="1.0.6" provider-name="virserg">
