@@ -266,7 +266,7 @@
 
 <addon id="plugin.video.animevost"
        name="AnimeVost.org"
-       version="0.2.3a"
+       version="0.2.3b"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
