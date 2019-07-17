@@ -73,7 +73,7 @@
 
 <addon id="plugin.audio.knigavuhe"
        name="Книга в ухе"
-       version="0.2.0b"
+       version="0.2.0c"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
