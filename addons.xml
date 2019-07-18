@@ -73,7 +73,7 @@
 
 <addon id="plugin.audio.knigavuhe"
        name="Книга в ухе"
-       version="0.2.0c"
+       version="0.2.0d"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -266,7 +266,7 @@
 
 <addon id="plugin.video.animevost"
        name="AnimeVost.org"
-       version="0.2.3c"
+       version="0.2.3d"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -398,7 +398,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m13"
+       version="1.7.8m14"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
