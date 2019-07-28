@@ -14,7 +14,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod86" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod87" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -30,7 +30,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлен движок Torrent2http (тест). Добавлен выбор вида для файлов раздачи.</news>
+    <news>Переделан встроенный Torrserver (тест). Torrent2http добавлена статистика скачивания (пауза при просмотре) и возможность указания в настройках директории для буфера.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -426,7 +426,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m17"
+       version="1.7.8m18"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -436,7 +436,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-	<news>Исправление ошибок.</news>
+	<news>Исправление мелкое.</news>
         <summary>Фильмы, сериалы с ресурса kino-live.org</summary>
         <description>Фильмы, сериалы с ресурса kino-live.org</description>
         <platform>all</platform>
