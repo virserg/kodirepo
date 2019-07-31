@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+	<addon id="plugin.video.filmix.net.dev"
+       name="Filmix.Net"
+       version="0.5.0a"
+       provider-name="Evgenii Devisok aka evgen_dev">
+	<requires>
+		<import addon="xbmc.python" version="2.5.0"/>
+		<import addon="script.module.xbmcup" version="0.1.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
+    <extension point="xbmc.addon.metadata">
+		<summary>Filmix.Net</summary>
+		<description>
+			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
+		<email>xbmc@devisok.org</email>
+	</extension>
+</addon>
+
 <addon id="repository.popcornmix" name="Popcornmix Add-ons" version="1.0.0" provider-name="popcornmix">
     <extension point="xbmc.addon.repository" name="Popcornmix Add-ons">
 		<info compressed="true">https://github.com/popcornmix/repository.popcornmix.storage/raw/master/addons.xml</info>
