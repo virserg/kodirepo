@@ -2,7 +2,7 @@
 <addons>
 	<addon id="plugin.video.filmix.net.dev"
        name="Filmix.Net"
-       version="0.5.0d"
+       version="0.5.0e"
        provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
 		<import addon="xbmc.python" version="2.5.0"/>
@@ -38,7 +38,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod88" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod89" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -54,11 +54,11 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Переделан встроенный Torrserver (тест + исправления). Torrent2http добавлена статистика скачивания (пауза при просмотре) и возможность указания в настройках директории для буфера.</news>
+    <news>Встроенный Torrserver мелкие правки. Пополнение "О дополнении...".</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
-    <description lang="ru">Навигатор по сайту RuTracker с возможностью скачивания торрентов.[CR]Просмотр через Elementum, TorrServer, Torrenter, TAM, Libtorrent, TorrentStream, DelugeStream.[CR]Скачивание торрентов с помощью Deluge, qBittorrent, rTorrent, Transmission и uTorrent.</description>
+    <description lang="ru">Навигатор по сайту RuTracker с возможностью скачивания торрентов.[CR]Просмотр через Elementum, TorrServer, Torrenter, Torrent2http, TAM, Libtorrent, TorrentStream, DelugeStream.[CR]Скачивание торрентов с помощью Deluge, qBittorrent, rTorrent, Transmission и uTorrent.</description>
     <platform>all</platform>
   </extension>
 </addon>
