@@ -2,7 +2,7 @@
 <addons>
 	<addon id="plugin.video.filmix.net.dev"
        name="Filmix.Net"
-       version="0.5.0c"
+       version="0.5.0d"
        provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
 		<import addon="xbmc.python" version="2.5.0"/>
