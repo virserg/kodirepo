@@ -25,6 +25,30 @@
 	</extension>
 </addon>
 
+<addon id='torrenter.searcher.RuTrackerOrg' version='1.0.9a'
+     name='Torrenter Searcher: RuTrackerOrg' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
 <addon id="repository.popcornmix" name="Popcornmix Add-ons" version="1.0.0" provider-name="popcornmix">
     <extension point="xbmc.addon.repository" name="Popcornmix Add-ons">
 		<info compressed="true">https://github.com/popcornmix/repository.popcornmix.storage/raw/master/addons.xml</info>
@@ -39,7 +63,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod94" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod95" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -55,7 +79,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие правки. Исправлен баг отображения процентов в статистике при паузе на некоторых раздачах (torrserver).</news>
+    <news>Исправление ошибок. Добавлена история поиска.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -145,6 +169,30 @@
         <description>На этом сервере собраны советские и пост-советские мультфильмы, аудио-сказки, фильмы и детские фильмы на которых выросли многие поколения моих соотечественников.</description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id='torrenter.searcher.RuTrackerMusic' version='1.0.5a'
+     name='Torrenter Searcher: RuTrackerMusic' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
 </addon>
 
 <addon id="context.rutracker.search" name="RuTracker Search" version="1.0.6" provider-name="virserg">
@@ -338,7 +386,7 @@
 
 <addon id="plugin.video.animevost"
        name="AnimeVost.org"
-       version="0.2.3d"
+       version="0.2.3e"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -348,6 +396,7 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <news>В настройки добавлена возможность получить рабочий адрес сайта.</news>
     <summary>AnimeVost.org</summary>
     <description>AnimeVost.org</description>
     <platform>all</platform>
