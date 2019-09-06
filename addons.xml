@@ -49,6 +49,44 @@
   <extension point='xbmc.python.module'/>
 </addon>
 
+<addon id="script.yatse.kodi" name="Yatse Kodi helper script" version="1.6.5a" provider-name="Yatse">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver.yatse"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Yatse helper script for Kodi</summary>
+        <summary lang="ru">Скрипт Yatse для Kodi</summary>
+        <summary lang="fr">Script Yatse helper pour Kodi</summary>
+        <summary lang="de">Yatse-Skript für Kodi</summary>
+        <description lang="en">Yatse helper script for Kodi</description>
+        <description lang="ru">Скрипт для помощи работы Yatse в Kodi</description>
+        <description lang="fr">Script Yatse helper pour Kodi</description>
+        <description lang="de">Yatse-Skript für Kodi</description>
+        <platform>all</platform>
+        <news>1.6.5a: Add TAM
+1.6.5: Update YoutubeDL
+1.6.4: Update YoutubeDL
+1.6.3: Update YoutubeDL
+1.6.2: Update YoutubeDL
+1.6.1: Fix queuing youtube video when using Dash.
+1.6.0: Embed youtubeDL for faster update than official addon + display notification instead of busy dialog for better Kodi 18 support.
+1.5.1: Use Youtube plugin when sharing if you activate MPEG-DASH to support 1080p+ quality. Add support for some more streams type. Remove no more needed Kodi 18 hack.
+1.4.6: Show script settings when trying to start from GUI.
+1.4.5: Ignore some regexp errors.
+1.4.4: Ignore errors on playlist containing invalid data.
+1.4.3: Fix issues on Kodi 16.
+1.4.2: Picture playlist support seems broken on Kodi 17.
+1.4.1: Improve picture support.
+1.4.0: Add support for pushing meta data when streaming from Yatse. (Except for videos containing ? on Kodi 18 due to a Kodi bug).
+        </news>
+    </extension>
+</addon>
+
 <addon id="repository.popcornmix" name="Popcornmix Add-ons" version="1.0.0" provider-name="popcornmix">
     <extension point="xbmc.addon.repository" name="Popcornmix Add-ons">
 		<info compressed="true">https://github.com/popcornmix/repository.popcornmix.storage/raw/master/addons.xml</info>
@@ -63,7 +101,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod95" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod96" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -79,7 +117,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление ошибок. Добавлена история поиска.</news>
+    <news>В истории поиска добавлено наименование разделов.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -519,7 +557,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m18"
+       version="1.7.8m19"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -529,7 +567,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-	<news>Исправление мелкое.</news>
+	<news>Мелкие правки.</news>
         <summary>Фильмы, сериалы с ресурса kino-live.org</summary>
         <description>Фильмы, сериалы с ресурса kino-live.org</description>
         <platform>all</platform>
