@@ -49,7 +49,7 @@
   <extension point='xbmc.python.module'/>
 </addon>
 
-<addon id="script.yatse.kodi" name="Yatse Kodi helper script" version="1.6.5a" provider-name="Yatse">
+<addon id="script.yatse.kodi" name="Yatse Kodi helper script" version="1.7.0a" provider-name="Yatse">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver.yatse"/>
@@ -68,7 +68,8 @@
         <description lang="fr">Script Yatse helper pour Kodi</description>
         <description lang="de">Yatse-Skript für Kodi</description>
         <platform>all</platform>
-        <news>1.6.5a: Add TAM
+        <news>1.7.0: Update YoutubeDL with Youtube fix & add TAM
+1.6.6: Update YoutubeDL
 1.6.5: Update YoutubeDL
 1.6.4: Update YoutubeDL
 1.6.3: Update YoutubeDL
@@ -101,7 +102,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod97" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod98" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -117,7 +118,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Переделана стартовая страница дополнения.</news>
+    <news>Мелкие правки.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -275,6 +276,23 @@
 		<disclaimer>This add-on is not supported or endorsed by Google/YouTube.</disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.1~alpha" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Первый выпуск. Воспроизведение почти не работает... Может кто поможет?)))</news>
+    <summary lang="en">YummyAnime</summary>
+    <description lang="en">site Yummyanime.club</description>
+    <summary lang="ru">Навигатор по YummyAnime.club</summary>
+    <description lang="ru">Навигатор по сайту yummyanime.club</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon
