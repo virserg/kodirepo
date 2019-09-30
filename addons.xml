@@ -278,15 +278,16 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.1~alpha" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.1~beta" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.videohosts"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Первый выпуск. Воспроизведение почти не работает... Может кто поможет?)))</news>
+    <news>Воспроизведение работает, но не везде... Может кто поможет?)))</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
