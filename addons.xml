@@ -102,7 +102,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod100" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod101" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -118,7 +118,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие правки. Оптимизация. Добавлен раздел "Избранное на трекере" (пока без возможности его пополнения и очистки в дополнении).</news>
+    <news>Реализовано добавление и удаление контента для раздела "Избранное на трекере".</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -278,7 +278,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.2" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.videohosts"/>
@@ -288,7 +288,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление ошибок. Проигрывание с docs.google.com и youtube.com. Воспроизведение работает, но не везде... Может кто поможет прикрутить?)))</news>
+    <news>Добавлен отбор по году выпуска. Воспроизведение работает, но не везде... Помогите прикрутить?)))</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
