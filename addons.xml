@@ -2,7 +2,7 @@
 <addons>
 	<addon id="plugin.video.filmix.net.dev"
        name="Filmix.Net"
-       version="0.5.0h"
+       version="0.5.0i"
        provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
 		<import addon="xbmc.python" version="2.5.0"/>
@@ -13,7 +13,7 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
     <extension point="xbmc.addon.metadata">
-		<news>Восстановлена работа с United Search версии 0.2.5</news>
+		<news></news>
 		<summary>Filmix.Net</summary>
 		<description>
 			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
@@ -278,7 +278,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.3" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.4" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.videohosts"/>
@@ -288,7 +288,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлен отбор по году выпуска. Воспроизведение работает, но не везде... Помогите прикрутить?)))</news>
+    <news>Добавлено воспроизведение с online.animedia.tv</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
