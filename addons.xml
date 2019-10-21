@@ -102,7 +102,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod101" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod102" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -118,7 +118,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Реализовано добавление и удаление контента для раздела "Избранное на трекере".</news>
+    <news>Мелкие правки. Своя иконка для раздела "Избранное на трекере".</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -278,9 +278,10 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.4" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
     <import addon="script.module.videohosts"/>
     <import addon="script.module.youtube.dl"/>
   </requires>
@@ -288,9 +289,9 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлено воспроизведение с online.animedia.tv</news>
+    <news>Исправления. История поиска. Плеер Zombie.</news>
     <summary lang="en">YummyAnime</summary>
-    <description lang="en">site Yummyanime.club</description>
+    <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
     <description lang="ru">Навигатор по сайту yummyanime.club</description>
     <platform>all</platform>
@@ -444,7 +445,7 @@
 
 <addon id="plugin.video.animevost"
        name="AnimeVost.org"
-       version="0.2.3f"
+       version="0.2.3g"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -454,7 +455,7 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>В настройки добавлена возможность получить рабочий адрес сайта.</news>
+    <news></news>
     <summary>AnimeVost.org</summary>
     <description>AnimeVost.org</description>
     <platform>all</platform>
