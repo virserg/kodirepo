@@ -149,7 +149,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.2" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -158,7 +158,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправлены ошибки. Раздел "Фильмы про".</news>
+    <news>Восстановлено проигрывание видео.</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео в качестве</summary>
@@ -802,34 +802,6 @@
       <screenshot>resources/fanart.png</screenshot>
       <screenshot>resources/screenshot-02.jpg</screenshot>
     </assets>
-  </extension>
-</addon>
-
-<addon id="context.dandy.kinopoisk.sc" name="Kinopoisk Search Content" version="1.8.5f" provider-name="dandy">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.xbmc.helpers" version="2.1.0"/>
-    <import addon="script.module.videohosts" version="1.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="plugin.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.python.script" library="plugin.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="kodi.context.item" library="default.py">
-    <item>
-      <label>$ADDON[context.dandy.kinopoisk.sc 32000]</label>
-      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
-    </item>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Kinopoisk Search Content</summary>
-    <description lang="en">Kinopoisk Search Content</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum></forum>
-    <source></source>
   </extension>
 </addon>
 
