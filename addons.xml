@@ -102,7 +102,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod104" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod105" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -118,7 +118,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие правки. Добавлена работа с внешними субтитрами только для встроенного Torrserverа (включается в настройках).</news>
+    <news>Мелкие переделки.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -313,6 +313,27 @@
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
     <description lang="ru">Навигатор по сайту yummyanime.club</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.key.layout.osmc"
+       name="Hardware Keyboard Layout"
+       version="0.0.1"
+       provider-name="AlexELEC, virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard Layout EN/RU</summary>
+    <description lang="en">Keyboard Layout EN/RU. Only Kodi 18.</description>
+    <summary lang="ru">Переключение раскладки (Анг/Рус) на клавиатуре</summary>
+    <description lang="ru">Переключение раскладки клавиатуры Анг/Рус по двум клавишам (Ctrl+пробел). Только для Kodi 18.[CR]После установки запустите это дополнение, а затем перезагрузите Kodi.</description>
+    <language></language>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
 
@@ -631,7 +652,7 @@
     </extension>
 </addon>
 
-<addon id="context.dandy.mediainfo" name="Media Info" version="1.4.0f" provider-name="dandy">
+<addon id="context.dandy.mediainfo" name="Media Info" version="1.4.0g" provider-name="dandy">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="2.0.10"/>
