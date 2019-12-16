@@ -296,7 +296,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.1" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.2" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -307,7 +307,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Доработана работа с cf ddos защитой (ошибка 503) [требуется requests].</news>
+    <news>Исправление из-за изменений на сайте.</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
@@ -502,7 +502,7 @@
 
 <addon id="plugin.video.animevost"
        name="AnimeVost.org"
-       version="0.2.3g"
+       version="0.2.3h"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
