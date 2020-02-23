@@ -149,7 +149,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.7" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.8" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -158,7 +158,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Поправлены сериалы.</news>
+    <news>Исправление ошибки url... (python 2.7.17)</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео в качестве</summary>
