@@ -296,7 +296,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.5" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.6" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -307,7 +307,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>обновлёна работа с cf ddos.</news>
+    <news>Исправление ошибки с кириллицей...</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
@@ -337,7 +337,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.0.8" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.0.9" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -346,7 +346,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>добавка в настройках.</news>
+    <news>Исправление ошибки с кириллицей...</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
