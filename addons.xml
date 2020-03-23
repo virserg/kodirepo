@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.0.18" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="2.24.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">TorrServe: Torrent video streaming</summary>
+        <summary lang="ru">TorrServe: потоковое воспроизведение видеоторрентов</summary>
+        <description lang="en">TorrServe is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
+        <description lang="ru">TorrServe - Смотрите фильмы, сериалы, видео, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно</description>
+        <language>en, ru</language>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 	<addon id="plugin.video.filmix.net.dev"
        name="Filmix.Net"
        version="0.5.0k"
@@ -102,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod112" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod113" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -118,7 +140,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие исправления (кириллица).</news>
+    <news>Мелкие исправления. Добавлено в информацию число сезонов и серий.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -296,7 +318,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.6" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.7" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -307,7 +329,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление ошибки с кириллицей...</news>
+    <news>Восстановлено воспроизведение с sibnet.</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
@@ -517,6 +539,30 @@
     <description>AnimeVost.org</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.69" provider-name="YouROK, Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">TorrServer</summary>
+		<summary lang="ru">TorrServer</summary>
+        <description lang="en">TorrServer is a torrent streaming engine.</description>
+		<description lang="ru">TorrServer - сервис для стриминга торрентов.</description>
+        <language>en,ru</language>
+        <platform>linux windows</platform>
+        <forum></forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+            <screenshot>home.png</screenshot>
+            <screenshot>search.png</screenshot>
+            <screenshot>torrents.png</screenshot>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.2" provider-name="mcobit">
