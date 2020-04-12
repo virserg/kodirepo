@@ -124,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod114" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod115" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -140,7 +140,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие исправления. Добавлено "искать в разделе ..." в истории поиска.</news>
+    <news>Мелкие исправления.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -171,7 +171,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.14" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.15" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -180,11 +180,11 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Восстановлено воспроизведение видео.</news>
+    <news>Мелкие правки.</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
-    <summary lang="ru">Кино в HD - онлайн видео в качестве</summary>
-    <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы в хорошем качестве онлайн.</description>
+    <summary lang="ru">Кино в HD - онлайн видео.</summary>
+    <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы онлайн.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -681,7 +681,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m19"
+       version="1.7.8m20"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
