@@ -171,7 +171,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.15" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.16" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -180,7 +180,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие правки.</news>
+    <news>Мелкие правки. Просмотр трейлера.</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео.</summary>
@@ -215,7 +215,7 @@
 
 <addon id="plugin.audio.knigavuhe"
        name="Книга в ухе"
-       version="0.2.0d"
+       version="0.2.0e"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -316,6 +316,24 @@
 		<disclaimer>This add-on is not supported or endorsed by Google/YouTube.</disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.1" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Исправление ошибки с кириллицей...</news>
+    <summary lang="en">Kinokrad,co</summary>
+    <description lang="en">Kinokrad.co -</description>
+    <summary lang="ru">Кинокрад.Ко - онлайн видео</summary>
+    <description lang="ru">Кинокрад.Ко - фильмы, сериалы, мультфильмы онлайн.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.11" provider-name="virserg">
