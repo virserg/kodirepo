@@ -189,7 +189,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.1" provider-name="virserg">
+<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.2" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -599,6 +599,24 @@
             <screenshot>torrents.png</screenshot>
         </assets>
     </extension>
+</addon>
+
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.1" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>...</news>
+    <summary lang="en">Knizhkin.Net</summary>
+    <description lang="en">Knizhkin.Net -</description>
+    <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
+    <description lang="ru">Книжкин.Net - аудиокниги.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.2" provider-name="mcobit">
