@@ -189,7 +189,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.2" provider-name="virserg">
+<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -336,7 +336,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.2" provider-name="virserg">
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -345,8 +345,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлен просмотр скриншотов.</news>
-    <summary lang="en">Kinokrad,co</summary>
+    <news>Исправления.</news>
+    <summary lang="en">Kinokrad.co</summary>
     <description lang="en">Kinokrad.co -</description>
     <summary lang="ru">Кинокрад.Ко - онлайн видео</summary>
     <description lang="ru">Кинокрад.Ко - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
@@ -601,7 +601,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.1" provider-name="virserg">
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.2" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -610,7 +610,7 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>...</news>
+    <news>Фильтр. Топ книг.</news>
     <summary lang="en">Knizhkin.Net</summary>
     <description lang="en">Knizhkin.Net -</description>
     <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
