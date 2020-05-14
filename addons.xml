@@ -124,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod115" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod116" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -395,7 +395,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.0.9" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.1.0" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -404,11 +404,29 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление ошибки с кириллицей...</news>
+    <news>Улучшен результат поиска по персонам.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
     <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.1" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>...</news>
+    <summary lang="en">DomaTVNet</summary>
+    <description lang="en">DomaTVNet -</description>
+    <summary lang="ru">ДомаТВНет - телевиденье.</summary>
+    <description lang="ru">ДомаТВНет - телевиденье онлайн.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -601,7 +619,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.3" provider-name="virserg">
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.4" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -610,7 +628,7 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Информация о книге.</news>
+    <news>Еще книги этого автора.</news>
     <summary lang="en">Knizhkin.Net</summary>
     <description lang="en">Knizhkin.Net -</description>
     <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
