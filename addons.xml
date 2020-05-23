@@ -171,7 +171,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.16" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.17" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -180,7 +180,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие правки. Просмотр трейлера.</news>
+    <news>Исправление ошибки.</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео.</summary>
@@ -354,7 +354,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.2.12" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.0" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -365,7 +365,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Изменения в верстке сайта.</news>
+    <news>Изменения...</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
