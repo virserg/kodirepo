@@ -124,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod119" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod120" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -140,7 +140,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие исправления.</news>
+    <news>Мелкие исправления. Настройка "Искать скриншоты в описании раздачи" и "Брать данные из кэша при турбо режиме". В турбо режиме теперь доступен просмотр описания, афишы и скриншотов.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -171,7 +171,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.0.17" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.1.0" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -180,7 +180,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление ошибки.</news>
+    <news>...</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео.</summary>
@@ -189,7 +189,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.3" provider-name="virserg">
+<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.4" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -336,7 +336,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.3" provider-name="virserg">
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.4" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -354,7 +354,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.0" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.1" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -395,7 +395,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.1.2" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.1.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -404,11 +404,29 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлено: полное описание в списках видео, просмотр комментариев (только 50 последних).</news>
+    <news>Добавлено: рейтинг в списке при вкл. полном описании.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
     <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.baza-knig" name="База книг" version="0.0.1" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>...</news>
+    <summary lang="en">Baza Knig</summary>
+    <description lang="en">Baza Knig  -</description>
+    <summary lang="ru">База книг  -  аудиокниги.</summary>
+    <description lang="ru">База книг  -  аудиокниги онлайн.</description>
     <platform>all</platform>
   </extension>
 </addon>
