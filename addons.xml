@@ -124,7 +124,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod121" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod122" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -140,7 +140,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие исправления. Настройка "Передавать magnet ссылку в TAM" и "Качество скриншотов с lostpic.net".</news>
+    <news>Мелкие исправления. Возможность добавления контента в закладки из ExtendedInfo.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -171,7 +171,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.1.0" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.1.1" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -180,7 +180,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>...</news>
+    <news>фикс сериалов.</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео.</summary>
@@ -189,7 +189,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.4" provider-name="virserg">
+<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -336,7 +336,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.4" provider-name="virserg">
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -345,7 +345,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправления.</news>
+    <news>Исправление воспроизведения.</news>
     <summary lang="en">Kinokrad.co</summary>
     <description lang="en">Kinokrad.co -</description>
     <summary lang="ru">Кинокрад.Ко - онлайн видео</summary>
@@ -411,6 +411,45 @@
     <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.2" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="resource.images.studios.white" version="0.0.5"/>
+		<import addon="script.module.kodi65" version="1.0.0"/>
+		<import addon="script.module.routing" version="0.1.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en_GB">ExtendedInfo Script</summary>
+		<summary lang="ru_RU">ExtendedInfo Script</summary>
+		<summary lang="uk_UA">ExtendedInfo Script</summary>
+		<description lang="en_GB">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+		<description lang="ru_RU">Этот скрипт предлагает различные возможности для отображения онлайн-контента внутри обложки, а также полный браузер MovieDB, включая информационные диалоги для различных типов медиа. Используемыми сервисами являются themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com и многое другое. Требует реализации обложки для многих функций.</description>
+		<description lang="uk_UA">Цей сценарій пропонує різні можливості для відображення онлайн-вмісту всередині обкладинки, а також повний браузер MovieDB, включаючи діалоги інформації для різних типів медіа. Використані сервіси - themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com та багато іншого. Потрібна реалізація обкладинки для безлічі функцій.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
+		<email>nkvoronov@gmail.com</email>
+		<source>https://github.com/nkvoronov/script.extendedinfo.git</source>
+		<news>Add to RuTracker[CR]Fix remove favorites[CR]Fix support for Kodi L* nightlies[CR]Browser window improvements[CR]Fixes for TADB/LastFM</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="plugin.audio.baza-knig" name="База книг" version="0.0.2" provider-name="virserg">
