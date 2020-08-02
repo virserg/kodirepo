@@ -24,18 +24,18 @@
 
 	<addon id="plugin.video.filmix.net.dev"
        name="Filmix.Net"
-       version="0.5.0k"
+       version="0.6.1a"
        provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
-		<import addon="xbmc.python" version="2.5.0"/>
-		<import addon="script.module.xbmcup" version="0.1.1"/>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.xbmcup" version="0.2.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
     <extension point="xbmc.addon.metadata">
-		<news></news>
+		<news>пока работает;)</news>
 		<summary>Filmix.Net</summary>
 		<description>
 			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
@@ -43,7 +43,11 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
-		<email>xbmc@devisok.org</email>
+		<email>rvlad1987@mail.ru, xbmc@devisok.org</email>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
 	</extension>
 </addon>
 
@@ -124,7 +128,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod126" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod127" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -140,7 +144,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие исправления. Окно хода загрузки данных (откл. в настройках)</news>
+    <news>Мелкие исправления. Теперь работает запуск из "Избранного" в Kodi.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -171,7 +175,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.2" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -180,7 +184,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Поправлен поиск.</news>
+    <news>Поправлены сериалы.</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео.</summary>
