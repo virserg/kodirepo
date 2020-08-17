@@ -493,7 +493,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.1" provider-name="virserg">
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.2" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -502,7 +502,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>...</news>
+    <news>Снова работает...</news>
     <summary lang="en">DomaTVNet</summary>
     <description lang="en">DomaTVNet -</description>
     <summary lang="ru">ДомаТВНет - телевиденье.</summary>
@@ -717,6 +717,24 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.1" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news></news>
+    <summary lang="en">Rutor audiobooks</summary>
+    <description lang="en">Rutor audiobooks -</description>
+    <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
+    <description lang="ru">Rutor Аудиокниги - аудиокниги и музыка онлайн.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.2" provider-name="mcobit">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -833,7 +851,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m21"
+       version="1.7.8m22"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
