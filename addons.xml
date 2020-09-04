@@ -238,7 +238,7 @@
 
 <addon id="plugin.audio.knigavuhe"
        name="Книга в ухе"
-       version="0.2.0e"
+       version="0.2.0f"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -379,6 +379,22 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.quasar" name="Quasarenter" version="0.0.1" provider-name="-=Vd=-">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+  </extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Fake quasar addon</summary>
+		<summary lang="ru">Фейковый квазар</summary>
+		<description lang="en">This addon redirect any calls to quasar plugin to torrenter or TAM.</description>
+		<description lang="ru">Это дополнение переадресует вызовы из других источников для плагина квазар на торрентер или TAM. Это нужно если вы не хотите пользоваться квазаром, а магнитные ссылки из YATSE проигрывать торрентером (TAM).</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.6" provider-name="Philipp Temminghoff (phil65)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
@@ -476,7 +492,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.audio.baza-knig" name="База книг" version="0.0.2" provider-name="virserg">
+<addon id="plugin.audio.baza-knig" name="База книг" version="0.0.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -485,7 +501,8 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправлено прослушивание книг.</news>
+    <broken>Поломалось получение контента с сайта...</broken>
+    <news>Конец.</news>
     <summary lang="en">Baza Knig</summary>
     <description lang="en">Baza Knig  -</description>
     <summary lang="ru">База книг  -  аудиокниги.</summary>
