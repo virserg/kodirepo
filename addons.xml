@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.1" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.2" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>v0.1.1: Добавлен просмотр внешних субтитров из раздачи. v0.1.0: Убран не рабочий поиск. Добавлены поддержка сервера 1.1.77 и просмотр статистики при паузе.</news>
+        <news>v0.1.2: Исправление ошибок. Просмотр описаний из базы TorrServer. v0.1.1: Добавлен просмотр внешних субтитров из раздачи. v0.1.0: Убран не рабочий поиск. Добавлены поддержка сервера 1.1.77 и просмотр статистики при паузе.</news>
         <summary lang="en">TorrServe: Torrent video streaming</summary>
         <summary lang="ru">TorrServe: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServe is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -25,7 +25,7 @@
 
 	<addon id="plugin.video.filmix.net.dev"
        name="Filmix.Net"
-       version="0.6.1a"
+       version="0.6.1b"
        provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -36,7 +36,7 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
     <extension point="xbmc.addon.metadata">
-		<news>пока работает;)</news>
+		<news>еще работает;)</news>
 		<summary>Filmix.Net</summary>
 		<description>
 			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
@@ -492,7 +492,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.audio.baza-knig" name="База книг" version="0.0.3" provider-name="virserg">
+<addon id="plugin.audio.baza-knig" name="База книг" version="0.0.4" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -501,8 +501,7 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <broken>Поломалось получение контента с сайта...</broken>
-    <news>Конец.</news>
+    <news>Добавлено сохранение раздачи в базу Torrserver.</news>
     <summary lang="en">Baza Knig</summary>
     <description lang="en">Baza Knig  -</description>
     <summary lang="ru">База книг  -  аудиокниги.</summary>
@@ -676,7 +675,7 @@
 
 <addon id="plugin.video.animevost"
        name="AnimeVost.org"
-       version="0.2.3h"
+       version="0.2.3i"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -735,7 +734,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.1" provider-name="virserg">
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.2" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -744,7 +743,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news></news>
+    <news>Добавлено сохранение раздачи в базу Torrserver.</news>
     <summary lang="en">Rutor audiobooks</summary>
     <description lang="en">Rutor audiobooks -</description>
     <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
