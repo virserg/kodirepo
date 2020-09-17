@@ -129,7 +129,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod128" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod129" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -145,7 +145,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие исправления. Добавлена настройка "Сохранять раздачи в базе торрсервера".</news>
+    <news>Добавлена возможность раздачу "Сохранить в базу TorrServer".</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -212,21 +212,21 @@
   </extension>
 </addon>
 
-<addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.3f" provider-name="-=Vd=-">
+<addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.6" provider-name="-=Vd=-">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
-	<import addon="script.module.requests" optional="false"/>
+		    <import addon="script.module.requests" optional="false"/>
         <import addon="script.module.vsdbg" optional="true"/>
     </requires>
 
-    <extension point="xbmc.python.script" library="lib/torrserve_stream/settings.py">
+    <extension point="xbmc.python.module" library="lib"/>
+
+    <extension point="xbmc.python.pluginsource" library="lib/torrserve_stream/settings.py">
       <provides>executable</provides>
     </extension>
 
-    <extension point="xbmc.python.module" library="lib"/>
-
-    <extension point="xbmc.addon.metadata">
-	<news>[fix] Unicode decode encode errors in log (OSMC)</news>
+  <extension point="xbmc.addon.metadata">
+        <news>fixed nonstop preload on torrserver 1.1.77</news>
         <platform>all</platform>
         <language>en</language>
         <summary lang="en">Downloads torrents and share it over HTTP</summary>
@@ -716,7 +716,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.7" provider-name="virserg">
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.8" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -725,7 +725,7 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Прокси.</news>
+    <news>Изменения на сайте.</news>
     <summary lang="en">Knizhkin.Net</summary>
     <description lang="en">Knizhkin.Net -</description>
     <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
