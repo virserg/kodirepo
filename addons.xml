@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.2" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.3" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>v0.1.2: Исправление ошибок. Просмотр описаний из базы TorrServer. v0.1.1: Добавлен просмотр внешних субтитров из раздачи. v0.1.0: Убран не рабочий поиск. Добавлены поддержка сервера 1.1.77 и просмотр статистики при паузе.</news>
+        <news>v0.1.3: Исправления. v0.1.2: Исправление ошибок. Просмотр описаний из базы TorrServer. v0.1.1: Добавлен просмотр внешних субтитров из раздачи. v0.1.0: Убран нерабочий поиск. Добавлены поддержка сервера 1.1.77 и просмотр статистики при паузе.</news>
         <summary lang="en">TorrServe: Torrent video streaming</summary>
         <summary lang="ru">TorrServe: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServe is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -212,7 +212,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.6" provider-name="-=Vd=-">
+<addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.6a" provider-name="-=Vd=-">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
 		    <import addon="script.module.requests" optional="false"/>
@@ -226,7 +226,7 @@
     </extension>
 
   <extension point="xbmc.addon.metadata">
-        <news>fixed nonstop preload on torrserver 1.1.77</news>
+        <news>ver 0.2.6a: add real file index for magnet link (need torrserver 1.1.77_6 with RealIdFileStats). ver 0.2.6: fixed nonstop preload on torrserver 1.1.77</news>
         <platform>all</platform>
         <language>en</language>
         <summary lang="en">Downloads torrents and share it over HTTP</summary>
@@ -492,7 +492,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.audio.baza-knig" name="База книг" version="0.0.4" provider-name="virserg">
+<addon id="plugin.audio.baza-knig" name="База книг" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -501,7 +501,8 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлено сохранение раздачи в базу Torrserver.</news>
+    <news>...</news>
+    <broken>Сайт перестал отдавать контент без javascript'a. Может кто знает как это починить?</broken>
     <summary lang="en">Baza Knig</summary>
     <description lang="en">Baza Knig  -</description>
     <summary lang="ru">База книг  -  аудиокниги.</summary>
@@ -692,6 +693,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.LostFilm3"
+       name="LostFilm-3.0"
+       version="3.9.6a"
+       provider-name="TDW">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.torrent2http"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>LostFilm</summary>
+    <description>LostFilm.tv - лучшие сериалы</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.service.torrserver" name="TorrServer" version="1.1.69" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
@@ -734,7 +755,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.2" provider-name="virserg">
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -743,7 +764,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлено сохранение раздачи в базу Torrserver.</news>
+    <news>Добавлен "Жанр Аудиокниг".</news>
     <summary lang="en">Rutor audiobooks</summary>
     <description lang="en">Rutor audiobooks -</description>
     <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
