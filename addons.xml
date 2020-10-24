@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.7" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.8" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлена возможность открыть раздачу в TAM</news>
+        <news>Выбор языка описаний популярных фильмов и сериалов</news>
         <summary lang="en">TorrServe: Torrent video streaming</summary>
         <summary lang="ru">TorrServe: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServe is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
