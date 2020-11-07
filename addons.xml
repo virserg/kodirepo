@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.12" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.13" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправление.</news>
+        <news>Расширен поиск (N N M Club).</news>
         <summary lang="en">TorrServe: Torrent video streaming</summary>
         <summary lang="ru">TorrServe: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServe is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -435,7 +435,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.1.4" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.1.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -444,7 +444,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлен просмотр хода загрузки при вкл. полном описании. Поправлено получение адреса.</news>
+    <news>Добавлен просмотр сериалов с выбором озвучки.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
@@ -523,8 +523,8 @@
     <news>Снова работает...</news>
     <summary lang="en">DomaTVNet</summary>
     <description lang="en">DomaTVNet -</description>
-    <summary lang="ru">ДомаТВНет - телевиденье.</summary>
-    <description lang="ru">ДомаТВНет - телевиденье онлайн.</description>
+    <summary lang="ru">ДомаТВНет - телевидение.</summary>
+    <description lang="ru">ДомаТВНет - телевидение онлайн.</description>
     <platform>all</platform>
   </extension>
 </addon>
