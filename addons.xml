@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.13" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.14" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Расширен поиск (N N M Club).</news>
+        <news>+Возможность настроить вид поисковых списков.</news>
         <summary lang="en">TorrServe: Torrent video streaming</summary>
         <summary lang="ru">TorrServe: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServe is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -359,7 +359,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.4" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -370,7 +370,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>fixed: sovetromantica</news>
+    <news>Не работает поиск без JavaScript и token из google captcha. Может кто знает как починить?</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
@@ -846,27 +846,30 @@
   </extension>
 </addon>
 
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="19.901.1" provider-name="Rick Phillips (ruuk)">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.addon.signals" version="0.0.1"/>
-    </requires>
-    <extension point="xbmc.python.script" library="control.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
-        <description lang="en">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
-        <summary lang="el">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο</summary>
-        <description lang="el">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο από εκατοντάδες ιστότοπους. Η έκδοση βασίζεται στην έκδοση ημερομηνίας του youtube-dl: EE.MHH.EK όπου ΕΚ η υπό-έκδοση συγκεκριμένα για το πρόσθετο. Επιπλέον δίνει δυνατότητα μεταφόρτωσης στο παρασκήνιο με ουρά και διαχειριστή αυτής.</description>
-        <summary lang="es">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video</summary>
-        <description lang="es">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video de cientos de sitios. La versión está basada en la versión de fecha youtube-dl: YY.MDD.V donde V es la subversión específica del complemento. También permite descargas con la opción de descarga en segundo plano con una cola y un administrador de colas.</description>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
-        <source>http://github.com/ruuk/script.module.youtube.dl</source>
-    </extension>
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="20.1112.0" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0" />
+		<import addon="script.module.addon.signals" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="control.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Module providing access to youtube-dl video stream extraction</summary>
+		<summary lang="ru_RU">Модуль дает доступ к видеопотоку youtube-dl</summary>
+		<summary lang="uk_UA">Модуль дає доступ до відеопотоку youtube-dl</summary>
+		<description lang="en_GB">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+		<description lang="ru_RU">Модуль дает доступ к извлечению видеопотока youtube-dl для сотен сайтов. Версия основана на версии даты youtube-dl: YY.MDD.V, где V - специфическая дополнительная версия дополнения. Также обеспечивает загрузку с возможностью фоновой загрузки с помощью диспетчера очереди.</description>
+		<description lang="uk_UA">Модуль дає доступ до вилучення відео потоку youtube-dl для сотень сайтів. Версія заснована на версії дати youtube-dl: YY.MDD.V, де V - специфічна додаткова версія доповнення. Також забезпечує завантаження з можливістю фонової завантаження за допомогою диспетчера черги.</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
+		<source>https://github.com/nkvoronov/script.module.youtube.dl.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="screensaver.shadertoy" version="2.0.0" name="ShaderToy" provider-name="popcornmix">
