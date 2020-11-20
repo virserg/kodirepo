@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.14" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.15" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,11 +10,11 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>+Возможность настроить вид поисковых списков.</news>
-        <summary lang="en">TorrServe: Torrent video streaming</summary>
-        <summary lang="ru">TorrServe: потоковое воспроизведение видеоторрентов</summary>
-        <description lang="en">TorrServe is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
-        <description lang="ru">TorrServe - Смотрите фильмы, сериалы, видео, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно</description>
+        <news>Выделение муз. раздач.</news>
+        <summary lang="en">TorrServer Client: Torrent video streaming</summary>
+        <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
+        <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
+        <description lang="ru">TorrServer Client - Смотрите фильмы, сериалы, видео, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно</description>
         <language>en, ru</language>
         <platform>all</platform>
         <assets>
@@ -359,7 +359,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.5" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.6" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -370,7 +370,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Не работает поиск без JavaScript и token из google captcha. Может кто знает как починить?</news>
+    <news>Переделан поиск (как на сайте, поиск больше не работает, нужен JavaScript и token из google captcha. Может кто знает как его опять прикрутить?).</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
