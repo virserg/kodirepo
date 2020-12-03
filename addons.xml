@@ -419,7 +419,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.6" provider-name="Philipp Temminghoff (phil65)">
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.7" provider-name="Philipp Temminghoff (phil65)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.youtube.dl" version="14.519.1"/>
@@ -477,7 +477,7 @@
   </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.8" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.9" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="resource.images.studios.white" version="0.0.5"/>
@@ -504,7 +504,7 @@
 		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
 		<email></email>
 		<source></source>
-		<news>Add filters: language, without genre. Fixed: search pages, studio filter, people filter.[CR]В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов.[CR]Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо[CR]Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+)[CR]Find using United Search[CR]Add to RuTracker[CR]Fix remove favorites</news>
+		<news>Many improvements(next page...). Add filters: region, without keyword, network.[CR]Add filters: language, without genre. Fixed: search pages, studio filter, people filter.[CR]В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов.[CR]Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо[CR]Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+)[CR]Find using United Search[CR]Add to RuTracker[CR]Fix remove favorites</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
