@@ -738,14 +738,14 @@
   </extension>
 </addon>
 
-<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_12" provider-name="YouROK, Nemiroff">
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_13" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-	<news>Добавлена скорость загрузки на странице кэша. Исправлен баг(нет ретрекеров в magnet из списка при проигрывании). Переделан выбор дополнительных ретрекеров.</news>
+	<news>Исправлены 2 ошибки(recovery panic: runtime error: invalid memory address or nil pointer dereference), возникающие из-за отмены предзагрузки или редко при получении списка в момент удаления раздачи, запущенной без сохранения в базу.</news>
         <summary lang="en">TorrServer</summary>
 		<summary lang="ru">TorrServer</summary>
         <description lang="en">TorrServer is a torrent streaming engine.</description>
