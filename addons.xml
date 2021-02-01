@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.19" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.20" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлены новые настройки сервера.</news>
+        <news>Добавлены: популярное за день или неделю, новые настройки сервера.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -738,14 +738,14 @@
   </extension>
 </addon>
 
-<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_13" provider-name="YouROK, Nemiroff">
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_14" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-	<news>Исправлены 2 ошибки(recovery panic: runtime error: invalid memory address or nil pointer dereference), возникающие из-за отмены предзагрузки или редко при получении списка в момент удаления раздачи, запущенной без сохранения в базу.</news>
+	<news>Исправлены: вылет сервера в момент удаления из базы работающей раздачи, плейлист(forkplayer). Добавлены: настройки, проверки hash и настроек.</news>
         <summary lang="en">TorrServer</summary>
 		<summary lang="ru">TorrServer</summary>
         <description lang="en">TorrServer is a torrent streaming engine.</description>
@@ -796,7 +796,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.4" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -805,7 +805,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление иероглифов (windows).</news>
+    <news>Исправление перехода по страницам.</news>
     <summary lang="en">MegaPeer</summary>
     <description lang="en">MegaPeer -</description>
     <summary lang="ru">MegaPeer -</summary>
