@@ -738,14 +738,14 @@
   </extension>
 </addon>
 
-<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_15" provider-name="YouROK, Nemiroff">
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_16" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-	<news>Добавлены: настройки, дополнительные функции в веб-инерфейсе, возможность ручной смены отметок о просмотре. Внимание: при обновлении первый запуск может занять несколько минут из-за миграции отметок о просмотрах в базе сервера.</news>
+	<news>Обновлен api отметок о просмотре и сведений. Улучшена работа некоторых раздач, если задан кэш меньше 192Mb.</news>
         <summary lang="en">TorrServer</summary>
 		<summary lang="ru">TorrServer</summary>
         <description lang="en">TorrServer is a torrent streaming engine.</description>
@@ -951,7 +951,7 @@
     </extension>
 </addon>
 
-<addon id="context.dandy.mediainfo" name="Media Info" version="1.4.1a" provider-name="dandy">
+<addon id="context.dandy.mediainfo" name="Media Info" version="1.4.1b" provider-name="dandy">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simplejson" version="2.0.10"/>
