@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.22" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.23" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлены настройки.</news>
+        <news>Теперь еще можно работать на MatriX.83 сервере.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -129,7 +129,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod131" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod132" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -778,7 +778,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.4" provider-name="virserg">
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -787,7 +787,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлен TAM.</news>
+    <news></news>
     <summary lang="en">Rutor audiobooks</summary>
     <description lang="en">Rutor audiobooks -</description>
     <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
@@ -796,7 +796,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.5" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.6" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -805,7 +805,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление перехода по страницам.</news>
+    <news></news>
     <summary lang="en">MegaPeer</summary>
     <description lang="en">MegaPeer -</description>
     <summary lang="ru">MegaPeer -</summary>
