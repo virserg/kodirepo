@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<addon id="repository.virserg" name="Virserg Repository" version="1.0.1" provider-name="Virserg">
+    <extension point="xbmc.addon.repository" name="Virserg Repository">
+        <dir minversion="13.0.0" maxversion="18.9.700">
+        <info compressed="false">https://raw.githubusercontent.com/virserg/kodirepo/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/virserg/kodirepo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/virserg/kodirepo/master/zips</datadir>
+        </dir>
+        <dir minversion="18.9.701">
+        <info compressed="false">https://raw.githubusercontent.com/virserg/kodirepo/master/matrix/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/virserg/kodirepo/master/matrix/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/virserg/kodirepo/master/matrix/zips</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Install Addons</summary>
+        <description lang="en">Download and install addons</description>
+        <summary lang="ru">Репозиторий</summary>
+        <description lang="ru">Скачивание и установка плагинов</description>
+        <platform>all</platform>
+        <assets>
+        <icon></icon>
+        </assets>
+    </extension>
+</addon>
+
+</addons>
