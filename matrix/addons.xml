@@ -23,6 +23,24 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.coldfilm.ru"
+       name="ColdFilm.ru"
+       version="0.1.2_mod9"
+       provider-name="TDW">
+  <requires>
+    <import addon="script.module.torrent.ts" optioal="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>СoldFilm.ru</summary>
+    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.virserg" name="Virserg Repository" version="1.0.1" provider-name="Virserg">
     <extension point="xbmc.addon.repository" name="Virserg Repository">
         <dir minversion="13.0.0" maxversion="18.9.700">
