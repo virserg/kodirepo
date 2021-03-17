@@ -23,7 +23,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.8~beta4" provider-name="virserg">
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.9" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -31,11 +31,11 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Тестовая версия (Kodi 19 Matrix).</news>
+    <news>Поддержка Kodi 19.</news>
     <summary lang="en">Knizhkin.Net</summary>
     <description lang="en">Knizhkin.Net -</description>
     <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
-    <description lang="ru">Книжкин.Net - аудиокниги онлайн.</description>
+    <description lang="ru">Книжкин.Net - аудиокниги онлайн.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]alexander0155[/B]</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
