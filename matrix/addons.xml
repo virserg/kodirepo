@@ -45,7 +45,7 @@
 
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
-       version="0.1.2_mod9"
+       version="0.1.2_mod10"
        provider-name="TDW">
   <requires>
     <import addon="script.module.torrent.ts" optioal="true"/>
@@ -56,8 +56,11 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>СoldFilm.ru</summary>
-    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM</description>
+    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM, TorrServer Client</description>
     <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 

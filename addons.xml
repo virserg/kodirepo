@@ -738,14 +738,14 @@
   </extension>
 </addon>
 
-<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_18" provider-name="YouROK, Nemiroff">
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_19" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-	<news>Исправлено подвисание воспроизведения некоторых раздач на последних секундах в конце.</news>
+	<news>Улучшено исправление подвисания воспроизведения некоторых раздач на последних секундах в конце. Поправлена работа раздач в расширении файлов которых есть заглавные буквы.</news>
         <summary lang="en">TorrServer</summary>
 		<summary lang="ru">TorrServer</summary>
         <description lang="en">TorrServer is a torrent streaming engine.</description>
@@ -854,11 +854,10 @@
 
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
-       version="0.1.2_mod8"
+       version="0.1.2_mod10"
        provider-name="TDW">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.torrent.ts" optioal="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -866,8 +865,11 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>СoldFilm.ru</summary>
-    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM</description>
+    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM, TorrServer Client</description>
     <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
