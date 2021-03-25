@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.24" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.27" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Поддержка Kodi 19. Мелкие правки.</news>
+        <news>Поддержка серий в Klay.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
