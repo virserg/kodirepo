@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.27" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.28" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Поддержка серий в Klay.</news>
+        <news>Расширен топ (корейский).</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -872,7 +872,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="20.1112.0" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.401.0" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0" />
 		<import addon="script.module.addon.signals" version="0.0.1"/>
