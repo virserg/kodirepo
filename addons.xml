@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.28" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.29" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Расширен топ (корейский).</news>
+        <news>Настройка топов.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -382,7 +382,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.6" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.7" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -393,7 +393,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Переделан поиск (как на сайте, поиск больше не работает, нужен JavaScript и token из google captcha. Может кто знает как его опять прикрутить?).</news>
+    <news>fixed 403 error.</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
@@ -936,7 +936,7 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m22"
+       version="1.7.8m23"
        provider-name="x86demon">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -946,8 +946,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-	<news>Мелкие правки.</news>
-	<broken>Непонятно как получить рабочие ссылки на контент с сайта. Может кто подскажет или починит?</broken>
+	<news>Поправлены сериалы (Спасибо [B]akgdrg[/B]).</news>
         <summary>Фильмы, сериалы с ресурса kino-live.org</summary>
         <description>Фильмы, сериалы с ресурса kino-live.org</description>
         <platform>all</platform>
