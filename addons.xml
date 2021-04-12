@@ -936,8 +936,8 @@
 
 <addon id="plugin.video.kino-live.org"
        name="kino-live.org"
-       version="1.7.8m23"
-       provider-name="x86demon">
+       version="1.7.8m24"
+       provider-name="x86demon, akgdrg">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.beautifulsoup"/>
@@ -946,7 +946,7 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-	<news>Поправлены сериалы (Спасибо [B]akgdrg[/B]).</news>
+	<news>Поправлены сериалы (Спасибо [B]akgdrg[/B]) и фильмы.</news>
         <summary>Фильмы, сериалы с ресурса kino-live.org</summary>
         <description>Фильмы, сериалы с ресурса kino-live.org</description>
         <platform>all</platform>
