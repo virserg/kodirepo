@@ -22,7 +22,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3~beta1" provider-name="virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -30,12 +30,15 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Тестовая версия (Kodi 19 Matrix).</news>
+    <news>Поправлены сериалы.</news>
     <summary lang="en">Kino v HD</summary>
     <description lang="en">Kino v HD -</description>
     <summary lang="ru">Кино в HD - онлайн видео.</summary>
     <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы онлайн.</description>
     <platform>all</platform>
+    <assets>
+       <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 

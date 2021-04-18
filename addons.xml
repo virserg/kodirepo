@@ -153,6 +153,28 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11a" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0" />
+        <import addon="script.module.kodi-six" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">KinoTrend</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
+        <disclaimer lang="ru">Данные из НЦР</disclaimer>
+        <platform>all</platform>
+        <website>http://kinotrend.pp.ua/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>Добавлены Кинолегенды</news>
+    </extension>
+</addon>
+
 <addon id="script.module.tengine" name="TEngine" version="1.5.9mod2" provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.13"/>
@@ -737,14 +759,14 @@
   </extension>
 </addon>
 
-<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_20" provider-name="YouROK, Nemiroff">
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_21" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-	<news>Исправлена ошибка вызывающая крах сервера редко. Поправлен баг (бан хороших пиров).</news>
+	<news>Исправлены редкие ошибки вызывавшие крах сервера (улучшена стабильность работы).</news>
         <summary lang="en">TorrServer</summary>
 		<summary lang="ru">TorrServer</summary>
         <description lang="en">TorrServer is a torrent streaming engine.</description>
