@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.32" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.33" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлен баг с закрытием окна предзагрузки до её окончания и добавлено сохранение сведений (1.1.77_22 сервер).</news>
+        <news>Исправлена ошибка в 0.1.32 на Kodi 18.9</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -24,7 +24,7 @@
 
 	<addon id="plugin.video.filmix.net.dev"
        name="Filmix.Net"
-       version="0.6.1b"
+       version="0.6.1c"
        provider-name="Evgenii Devisok aka evgen_dev">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -35,7 +35,7 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
     <extension point="xbmc.addon.metadata">
-		<news>еще работает;)</news>
+		<news>опять работает;)</news>
 		<summary>Filmix.Net</summary>
 		<description>
 			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
@@ -231,6 +231,27 @@
     <description lang="ru">Кинокрад - фильмы, сериалы, мультфильмы онлайн.</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha.4" provider-name="Nemiroff">
+    <requires>
+        <import addon="script.module.simplemedia"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">vPlay</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">vPlay - deep alpha version.[CR] Спасибо [B]vl.maksime[/B] за simplemedia</description>
+        <disclaimer lang="ru">Плагин является не оффициальным</disclaimer>
+        <platform>all</platform>
+        <website>https://vplay.one/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news> Альфа версия №4. Поправлен запуск. Больше ничего нового. Еще добавлен выбор p2p движка в настройках.</news>
+    </extension>
 </addon>
 
 <addon id="script.qrdonate" name="QR Donate" version="0.0.1" provider-name="virserg">
@@ -870,6 +891,27 @@
         <website>https://github.com/</website>
         <email>me@me.me</email>
     </extension>
+</addon>
+
+<addon id="plugin.video.tam"
+    name="TAM"
+    version="1.5.1a"
+    provider-name="TDW1980">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.torrent.ts"  optional="true"/>
+    <import addon="script.module.torrent2http"  optional="true"/>
+    <import addon="script.module.torrserver" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="server.py" start="[login|startup]"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TAM - менеджер торрент движков. Позволяет просматривать локальные торрент файлы. Или может выступать посредником между движками и плагинами контента.</summary>
+    <description lang="en">TAM - менеджер торрент движков. Позволяет просматривать локальные торрент файлы. Или может выступать посредником между движками и плагинами контента.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.coldfilm.ru"
