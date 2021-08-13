@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.41" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.42" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлены: мелкие баги, поиск по жанрам(Kodi 18), скорость работы интерфейса.</news>
+        <news>Исправлены: мелкие баги, прогресс получения инфо (MatriX.xx). Добавлены: авторизация, возможность сортировки списков, настройки.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -128,7 +128,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod133" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod134" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -153,10 +153,11 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11a" provider-name="Nemiroff">
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11b" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.kodi-six" />
+        <import addon="script.module.six" version="1.11.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -171,7 +172,7 @@
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news>Добавлены Кинолегенды</news>
+        <news>4К раздачи заменены на Кинотренд</news>
     </extension>
 </addon>
 
