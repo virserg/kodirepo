@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.45" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.46" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлены мелкие баги.</news>
+        <news>Исправлены мелкие баги. Поиск по альтернативному названию.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -234,27 +234,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha.5" provider-name="Nemiroff">
-    <requires>
-        <import addon="script.module.simplemedia"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="ru">vPlay</summary>
-        <license>GNU General Public License, v2</license>
-        <description lang="ru">vPlay - deep alpha version.[CR] Спасибо [B]vl.maksime[/B] за simplemedia</description>
-        <disclaimer lang="ru">Плагин является не оффициальным</disclaimer>
-        <platform>all</platform>
-        <website>https://vplay.one/</website>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-        <news> Альфа версия №5. Спрятаны недоступные online.</news>
-    </extension>
-</addon>
-
 <addon id="script.qrdonate" name="QR Donate" version="0.0.1" provider-name="virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -408,7 +387,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.5" provider-name="virserg">
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.6" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -417,7 +396,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправление воспроизведения.</news>
+    <news>play fixed</news>
     <summary lang="en">Kinokrad.co</summary>
     <description lang="en">Kinokrad.co -</description>
     <summary lang="ru">Кинокрад.Ко - онлайн видео</summary>
@@ -426,7 +405,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.3.9" provider-name="virserg">
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.4.0" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -437,7 +416,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>cf fixed.</news>
+    <news>kodik fixed.</news>
     <summary lang="en">YummyAnime</summary>
     <description lang="en">Navigator for site Yummyanime.club</description>
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
@@ -936,7 +915,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.401.0" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.606.0" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0" />
 		<import addon="script.module.addon.signals" version="0.0.1"/>
