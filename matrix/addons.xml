@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.49" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.50" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,11 +9,11 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлены мелкие баги. Новые настройки (1.1.77_29). "Сохранить все в списке".</news>
+        <news>Исправлены мелкие баги. Добавлен просмотр картинок из раздачи (1.1.xx).</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
-        <description lang="ru">TorrServer Client - Смотрите фильмы, сериалы, видео, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]kumok[/B], [B]rx81[/B]</description>
+        <description lang="ru">TorrServer Client - смотрите фильмы, сериалы, видео, картинки, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]kumok[/B], [B]rx81[/B]</description>
         <language>en, ru</language>
         <platform>all</platform>
         <assets>
