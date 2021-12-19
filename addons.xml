@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.52" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.53" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Поправлены настройки.</news>
+        <news>Мелкие правки.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -128,7 +128,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod134" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod135" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -153,7 +153,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11b" provider-name="Nemiroff">
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11c" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.kodi-six" />
@@ -441,7 +441,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.8" provider-name="Philipp Temminghoff (phil65), virserg">
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.9" provider-name="Philipp Temminghoff (phil65), virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.youtube.dl" version="14.519.1"/>
@@ -481,7 +481,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.1.7" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.1.8" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -501,7 +501,7 @@
   </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.10" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.11" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="resource.images.studios.white" version="0.0.5"/>
@@ -528,7 +528,7 @@
 		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
 		<email></email>
 		<source></source>
-		<news>Add: trending day/week (moviees, tvshows, persons). Some bugfixes.[CR]Many improvements(next page...). Add filters: region, without keyword, network.[CR]Add filters: language, without genre. Fixed: search pages, studio filter, people filter.[CR]В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов.[CR]Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо[CR]Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+)[CR]Find using United Search[CR]Add to RuTracker[CR]Fix remove favorites</news>
+		<news>Add: play trailer via plugin.video.youtube | Add: trending day/week (moviees, tvshows, persons). Some bugfixes. | Many improvements(next page...). Add filters: region, without keyword, network. | Add filters: language, without genre. Fixed: search pages, studio filter, people filter. | В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов. | Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо | Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+) | Find using United Search | Add to RuTracker | Fix remove favorites</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -541,7 +541,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.audio.baza-knig" name="База книг" version="0.1.0" provider-name="virserg">
+<addon id="plugin.audio.baza-knig" name="База книг" version="0.1.1" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -550,7 +550,7 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>...</news>
+    <news>Остались только раздачи. Часть функционала не работает из-за изменений на сайте. Может кто-то поможет починить это?</news>
     <summary lang="en">Baza Knig</summary>
     <description lang="en">Baza Knig  -</description>
     <summary lang="ru">База книг  -  аудиокниги.</summary>
@@ -917,7 +917,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.606.0" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.1217.0" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0" />
 		<import addon="script.module.addon.signals" version="0.0.1"/>
@@ -953,6 +953,21 @@
     <description>ShaderToy screensaver</description>
     <platform>linux</platform>
     <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.module.websocket" name="websocket library" version="0.57.0" provider-name="pkscout">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="script.module.six" version="1.13.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>websocket library repacked for Kodi</summary>
+    <source>https://github.com/websocket-client/websocket-client</source>
+    <website>https://github.com/pkscout/script.module.websocket</website>
+    <platform>all</platform>
+    <license>LGPL</license>
   </extension>
 </addon>
 
