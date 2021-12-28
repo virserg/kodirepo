@@ -761,14 +761,14 @@
   </extension>
 </addon>
 
-<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_30" provider-name="YouROK, Nemiroff">
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_31" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-	<news>Исправлена высокая нагрузка на сервере при открытии большого (450+) списка в веб-интерфейсе.</news>
+	<news>Добавлены: *.tif, параметр запуска -w и замена части трекеров (replace.txt). Мелкое исправление в веб-интерфейсе и одного recovery panic.</news>
         <summary lang="en">TorrServer</summary>
 		<summary lang="ru">TorrServer</summary>
         <description lang="en">TorrServer is a torrent streaming engine.</description>
