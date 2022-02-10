@@ -62,7 +62,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.0.9" provider-name="virserg">
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.1.0" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -70,7 +70,7 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Поддержка Kodi 19.</news>
+    <news>Отключена проверка сертификатов.</news>
     <summary lang="en">Knizhkin.Net</summary>
     <description lang="en">Knizhkin.Net -</description>
     <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
