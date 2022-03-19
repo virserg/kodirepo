@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.64" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.65" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлены: torlook, ошибка на Kodi 19. Добавлены: coldfilm, удаление мёртвых раздач в контекстном меню. Теперь не требуется обязательный перевод на английский(English/strings.po).</news>
+        <news>Мелкие правки. Поддержка Yatse Kodi helper script 2.5.3a</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -75,10 +75,9 @@
   <extension point='xbmc.python.module'/>
 </addon>
 
-<addon id="script.yatse.kodi" name="Yatse Kodi helper script" version="1.7.0a" provider-name="Yatse">
+<addon id="script.yatse.kodi" name="Yatse Kodi helper script" version="2.5.3a" provider-name="Yatse">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.urlresolver.yatse"/>
         <import addon="plugin.video.youtube"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py">
@@ -94,7 +93,24 @@
         <description lang="fr">Script Yatse helper pour Kodi</description>
         <description lang="de">Yatse-Skript für Kodi</description>
         <platform>all</platform>
-        <news>1.7.0: Update YoutubeDL with Youtube fix & add TAM
+        <news>2.5.3a: Fix play youtube
+2.5.3: Quick revert as YTDLP require Python 3.6 so Kodi 19 (This is version 2.4.5)
+2.4.X: Update YoutubeDL
+2.4.0: Fix for Kodi 19 magnet sharing
+2.3.X: Update YoutubeDL
+2.3.0: Update YoutubeDL + New option to ignore wrong SSL certificates on Kodi 18+ (Thanks bsdf)
+2.2.0: Update YoutubeDL + Fix for Kodi 19 removed function
+2.1.1: Update YoutubeDL
+2.1.0: New setting to prioritize Kodi youtube addon for Youtube urls + update YoutubeDL
+2.0.3: Update YoutubeDL
+2.0.2: Update YoutubeDL + update repository to provide Kodi 19 compatible addon
+1.9.2: Update YoutubeDL
+1.9.1: Update YoutubeDL
+1.9.0: Remove support for UrlResolver
+1.8.3: Update YoutubeDL
+1.8.2: Update YoutubeDL
+1.8.1: Add support for Python 3 (Kodi 19 Windows Python 3 is broken and does not support ctypes, no workaround!)
+1.7.0: Update YoutubeDL with Youtube fix
 1.6.6: Update YoutubeDL
 1.6.5: Update YoutubeDL
 1.6.4: Update YoutubeDL
@@ -151,6 +167,37 @@
     <description lang="ru">Навигатор по сайту RuTracker с возможностью скачивания торрентов.[CR]Просмотр через Elementum, TorrServer, Torrenter, Torrent2http, TAM, Libtorrent, TorrentStream, DelugeStream.[CR]Скачивание торрентов с помощью Deluge, qBittorrent, rTorrent, Transmission и uTorrent.</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.trovo" name="trovo.live" version="1.0.0a" provider-name="winsomehax">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Viewing streams from trovo.live</summary>
+        <summary lang="ru">Просмотр потоков из trovo.live</summary>
+        <description lang="en">Viewing streams from trovo.live</description>
+        <description lang="ru">Просмотр прямых трансляций из trovo.live</description>
+        <language>English, Russian</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <forum>https://github.com/winsomehax/</forum>
+        <website>https://github.com/winsomehax/</website>
+        <email>winsomehax@gmail.com</email>
+        <source>https://github.com/winsomehax/</source>
+        <news>https://github.com/winsomehax/</news>
+        <disclaimer lang="en">It's yours. If you break it, you can keep the pieces!</disclaimer>
+        <disclaimer lang="ru">Это ваше. Если вы сломаете его, то вы можете сохранить осколки!</disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11c" provider-name="Nemiroff">

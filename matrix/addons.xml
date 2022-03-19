@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.64" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.65" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлены: torlook, ошибка на Kodi 19. Добавлены: coldfilm, удаление мёртвых раздач в контекстном меню. Теперь не требуется обязательный перевод на английский(English/strings.po).</news>
+        <news>Мелкие правки. Поддержка Yatse Kodi helper script 2.5.3a</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -18,6 +18,37 @@
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.trovo" name="trovo.live" version="1.0.0a" provider-name="winsomehax">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Viewing streams from trovo.live</summary>
+        <summary lang="ru">Просмотр потоков из trovo.live</summary>
+        <description lang="en">Viewing streams from trovo.live</description>
+        <description lang="ru">Просмотр прямых трансляций из trovo.live</description>
+        <language>English, Russian</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <forum>https://github.com/winsomehax/</forum>
+        <website>https://github.com/winsomehax/</website>
+        <email>winsomehax@gmail.com</email>
+        <source>https://github.com/winsomehax/</source>
+        <news>https://github.com/winsomehax/</news>
+        <disclaimer lang="en">It's yours. If you break it, you can keep the pieces!</disclaimer>
+        <disclaimer lang="ru">Это ваше. Если вы сломаете его, то вы можете сохранить осколки!</disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
