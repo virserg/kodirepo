@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.65" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.66" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Мелкие правки. Поддержка Yatse Kodi helper script 2.5.3a</news>
+        <news>Поддержка ExtendedInfo Script 5.6.12</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -472,7 +472,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.quasar" name="Quasarenter" version="0.0.1" provider-name="-=Vd=-">
+<addon id="plugin.video.quasar" name="Quasarenter" version="0.0.2" provider-name="-=Vd=-">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -488,7 +488,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.9" provider-name="Philipp Temminghoff (phil65), virserg">
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.3.0" provider-name="Philipp Temminghoff (phil65), virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.youtube.dl" version="14.519.1"/>
@@ -548,7 +548,7 @@
   </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.11" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.12" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="resource.images.studios.white" version="0.0.5"/>
@@ -575,7 +575,7 @@
 		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
 		<email></email>
 		<source></source>
-		<news>Add: play trailer via plugin.video.youtube | Add: trending day/week (moviees, tvshows, persons). Some bugfixes. | Many improvements(next page...). Add filters: region, without keyword, network. | Add filters: language, without genre. Fixed: search pages, studio filter, people filter. | В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов. | Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо | Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+) | Find using United Search | Add to RuTracker | Fix remove favorites</news>
+		<news>Add: search in context menu | Add: play trailer via plugin.video.youtube | Add: trending day/week (moviees, tvshows, persons). Some bugfixes. | Many improvements(next page...). Add filters: region, without keyword, network. | Add filters: language, without genre. Fixed: search pages, studio filter, people filter. | В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов. | Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо | Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+) | Find using United Search | Add to RuTracker | Fix remove favorites</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
