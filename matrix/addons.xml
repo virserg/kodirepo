@@ -73,7 +73,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.1.9" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.0" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -81,11 +81,11 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Поправлены: рейтинг, комментарии, трейлер, фильтры</news>
+    <news>Поправлены: рейтинг, комментарии, трейлер, фильтры, поиск в 19 Kodi.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
-    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
+    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
