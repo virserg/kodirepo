@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.66" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.67" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Поддержка ExtendedInfo Script 5.6.12</news>
+        <news>Поддержка ExtendedInfo Script 5.6.14</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -528,7 +528,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.0" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.1" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -536,7 +536,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Поправлены: рейтинг, комментарии, трейлер, фильтры, поиск в 19 Kodi.</news>
+    <news>Мелкие правки</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
@@ -548,11 +548,11 @@
   </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.13" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.14" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="resource.images.studios.white" version="0.0.5"/>
-		<import addon="script.module.kodi65" version="1.0.0"/>
+		<import addon="script.module.kodi65" version="1.3.0"/>
 		<import addon="script.module.routing" version="0.1.0"/>
 		<import addon="script.qrdonate" version="0.0.1"/>
 	</requires>
@@ -567,9 +567,11 @@
 		<summary lang="en_GB">ExtendedInfo Script</summary>
 		<summary lang="ru_RU">ExtendedInfo Script</summary>
 		<summary lang="uk_UA">ExtendedInfo Script</summary>
+		<summary lang="es">ExtendedInfo Script</summary>
 		<description lang="en_GB">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
 		<description lang="ru_RU">Этот скрипт предлагает различные возможности для отображения онлайн-контента внутри обложки, а также полный браузер MovieDB, включая информационные диалоги для различных типов медиа. Используемыми сервисами являются themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com и многое другое. Требует реализации обложки для многих функций.</description>
 		<description lang="uk_UA">Цей сценарій пропонує різні можливості для відображення онлайн-вмісту всередині обкладинки, а також повний браузер MovieDB, включаючи діалоги інформації для різних типів медіа. Використані сервіси - themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com та багато іншого. Потрібна реалізація обкладинки для безлічі функцій.</description>
+		<description lang="es">Este script ofrece varias posibilidades para poder mostrar información online dentro de una piel, así como un completo navegador de TheMovieDB, incluidos los cuadros de diálogo de información para diversos tipos de medios. Los servicios usados son themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com y mucho más. Necesita la implementación en el skin para muchas de sus funciones.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
@@ -771,7 +773,7 @@
 
 <addon id="plugin.video.animevost"
        name="AnimeVost.org"
-       version="0.2.3i"
+       version="0.2.3j"
        provider-name="TDW">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
