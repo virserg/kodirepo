@@ -144,7 +144,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod135" provider-name="HAL9000">
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod136" provider-name="HAL9000">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
@@ -160,7 +160,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Мелкие правки.</news>
+    <news>Ремонт поиска.</news>
     <summary lang="en">RuTracker</summary>
     <description lang="en">You can search RuTracker and download torrents.</description>
     <summary lang="ru">Навигатор по RuTracker</summary>
@@ -200,7 +200,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11c" provider-name="Nemiroff">
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11d" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.kodi-six" />
