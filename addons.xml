@@ -197,6 +197,9 @@
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
+    <broken>Addon is no longer maintained by the author / Дополнение больше не поддерживается автором</broken>
+    <lifecyclestate type="broken" lang="en_GB">Addon is no longer maintained by the author</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Дополнение больше не поддерживается автором</lifecyclestate>
     </extension>
 </addon>
 
@@ -247,7 +250,6 @@
 
 <addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
   <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
@@ -260,6 +262,12 @@
     <summary lang="ru">Кино в HD - онлайн видео.</summary>
     <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы онлайн.</description>
     <platform>all</platform>
+    <assets>
+       <icon>icon.png</icon>
+    </assets>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
   </extension>
 </addon>
 
@@ -278,6 +286,9 @@
     <summary lang="ru">Кинокрад - онлайн видео</summary>
     <description lang="ru">Кинокрад - фильмы, сериалы, мультфильмы онлайн.</description>
     <platform>all</platform>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
   </extension>
 </addon>
 
@@ -469,6 +480,9 @@
     <summary lang="ru">Навигатор по YummyAnime.club</summary>
     <description lang="ru">Навигатор по сайту yummyanime.club</description>
     <platform>all</platform>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
   </extension>
 </addon>
 
@@ -545,6 +559,9 @@
     <assets>
         <icon>icon.png</icon>
     </assets>
+    <broken>Unknown video api on website / Неизвестное видео API на сайте</broken>
+    <lifecyclestate type="broken" lang="en_GB">Unknown video api on website</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Неизвестное видео API на сайте</lifecyclestate>
   </extension>
 </addon>
 
@@ -1082,6 +1099,9 @@
         <summary>Фильмы, сериалы с ресурса kino-live.org</summary>
         <description>Фильмы, сериалы с ресурса kino-live.org</description>
         <platform>all</platform>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
     </extension>
 </addon>
 

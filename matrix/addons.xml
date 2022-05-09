@@ -50,6 +50,9 @@
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
+    <broken>Addon is no longer maintained by the author / Дополнение больше не поддерживается автором</broken>
+    <lifecyclestate type="broken" lang="en_GB">Addon is no longer maintained by the author</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Дополнение больше не поддерживается автором</lifecyclestate>
     </extension>
 </addon>
 
@@ -70,6 +73,9 @@
     <assets>
        <icon>icon.png</icon>
     </assets>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
   </extension>
 </addon>
 
@@ -90,6 +96,9 @@
     <assets>
         <icon>icon.png</icon>
     </assets>
+    <broken>Unknown video api on website / Неизвестное видео API на сайте</broken>
+    <lifecyclestate type="broken" lang="en_GB">Unknown video api on website</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Неизвестное видео API на сайте</lifecyclestate>
   </extension>
 </addon>
 
