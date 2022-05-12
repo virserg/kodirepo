@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.71" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.72" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -79,7 +79,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.2" provider-name="virserg">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.3" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -87,11 +87,11 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Работает со скрипом...</news>
+    <news>Теперь работает быстрее...</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
-    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
+    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]Eviloid[/B] за модуль декодирования. [CR][B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
