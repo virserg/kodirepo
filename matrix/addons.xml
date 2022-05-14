@@ -79,7 +79,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.3" provider-name="virserg, Eviloid">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.4" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -87,7 +87,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Теперь работает быстрее...</news>
+    <news>Еще работает...</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
@@ -99,7 +99,7 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.2" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.3" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
