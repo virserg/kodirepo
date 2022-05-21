@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.72" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.73" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Мелкие исправления</news>
+        <news>Мелкие исправления. Настройки: показать список торрентов ниже основного меню, длина истории поиска. Поддержка "Поиск в дополнении" 0.0.4</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -99,7 +99,7 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.3" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.4" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
