@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.74" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.75" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +9,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправления. Настройки: показать список торрентов ниже основного меню, длина истории поиска. Поддержка "Поиск в дополнении" 0.0.4</news>
+        <news>Добавлены настройки.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -763,14 +763,14 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.4" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
   <extension point="kodi.context.item" library="default.py">
     <item>
       <label>32000</label>
-      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Pvr.HasTVChannels</visible>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Container.Content(videos)|Container.Content()|Pvr.HasTVChannels</visible>
     </item>
   </extension>
   <extension point="kodi.addon.metadata">
