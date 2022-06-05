@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.76" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Поправлены сериалы.</news>
+    <summary lang="en">Kino v HD</summary>
+    <description lang="en">Kino v HD -</description>
+    <summary lang="ru">Кино в HD - онлайн видео.</summary>
+    <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы онлайн.</description>
+    <platform>all</platform>
+    <assets>
+       <icon>icon.png</icon>
+    </assets>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.4" provider-name="virserg, Eviloid">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Еще работает...</news>
+    <summary lang="en">Kinovod</summary>
+    <description lang="en">Kinovod -</description>
+    <summary lang="ru">Киновод - онлайн видео</summary>
+    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]Eviloid[/B] за модуль декодирования. [CR][B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.coldfilm.ru"
+       name="ColdFilm.ru"
+       version="0.1.2_mod10"
+       provider-name="TDW">
+  <requires>
+    <import addon="script.module.torrent.ts" optioal="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>СoldFilm.ru</summary>
+    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM, TorrServer Client</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.1.0" provider-name="virserg">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Отключена проверка сертификатов.</news>
+    <summary lang="en">Knizhkin.Net</summary>
+    <description lang="en">Knizhkin.Net -</description>
+    <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
+    <description lang="ru">Книжкин.Net - аудиокниги онлайн.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]alexander0155[/B]</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.6" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.addon" version="16.0.0" />
+  </requires>
+  <extension point="kodi.context.item" library="default.py">
+    <item>
+      <label>32000</label>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Container.Content(videos)|Container.Content()|Pvr.HasTVChannels</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Search by current Item</summary>
+    <summary lang="ru">Поиск по текущему элементу</summary>
+    <description lang="en">Search by current Item in select addon</description>
+    <description lang="ru">Поиск по текущему элементу в выбранном дополнении</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+    <assets><icon>icon.png</icon></assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.77" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
     </requires>
@@ -9,7 +116,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлены настройки. Исправления.</news>
+        <news>Добавлены: категории и настройки. Исправлены баги.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
@@ -54,113 +161,6 @@
     <lifecyclestate type="broken" lang="en_GB">Addon is no longer maintained by the author</lifecyclestate>
     <lifecyclestate type="broken" lang="ru_RU">Дополнение больше не поддерживается автором</lifecyclestate>
     </extension>
-</addon>
-
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
-  <requires>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Поправлены сериалы.</news>
-    <summary lang="en">Kino v HD</summary>
-    <description lang="en">Kino v HD -</description>
-    <summary lang="ru">Кино в HD - онлайн видео.</summary>
-    <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы онлайн.</description>
-    <platform>all</platform>
-    <assets>
-       <icon>icon.png</icon>
-    </assets>
-    <broken>Website down / Сайт не работает</broken>
-    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
-    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
-  </extension>
-</addon>
-
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.4" provider-name="virserg, Eviloid">
-  <requires>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Еще работает...</news>
-    <summary lang="en">Kinovod</summary>
-    <description lang="en">Kinovod -</description>
-    <summary lang="ru">Киновод - онлайн видео</summary>
-    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]Eviloid[/B] за модуль декодирования. [CR][B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.5" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.addon" version="16.0.0" />
-  </requires>
-  <extension point="kodi.context.item" library="default.py">
-    <item>
-      <label>32000</label>
-      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Container.Content(videos)|Container.Content()|Pvr.HasTVChannels</visible>
-    </item>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Search by current Item</summary>
-    <summary lang="ru">Поиск по текущему элементу</summary>
-    <description lang="en">Search by current Item in select addon</description>
-    <description lang="ru">Поиск по текущему элементу в выбранном дополнении</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum></forum>
-    <source></source>
-    <assets><icon>icon.png</icon></assets>
-  </extension>
-</addon>
-
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.1.0" provider-name="virserg">
-  <requires>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Отключена проверка сертификатов.</news>
-    <summary lang="en">Knizhkin.Net</summary>
-    <description lang="en">Knizhkin.Net -</description>
-    <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
-    <description lang="ru">Книжкин.Net - аудиокниги онлайн.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]alexander0155[/B]</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video.coldfilm.ru"
-       name="ColdFilm.ru"
-       version="0.1.2_mod10"
-       provider-name="TDW">
-  <requires>
-    <import addon="script.module.torrent.ts" optioal="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>СoldFilm.ru</summary>
-    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM, TorrServer Client</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
 </addon>
 
 <addon id="repository.virserg" name="Virserg Repository" version="1.0.1" provider-name="Virserg">

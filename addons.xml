@@ -1,277 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.76" provider-name="Nemiroff, virserg">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.addon.metadata">
-        <news>Добавлены настройки. Исправления.</news>
-        <summary lang="en">TorrServer Client: Torrent video streaming</summary>
-        <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
-        <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
-        <description lang="ru">TorrServer Client - смотрите фильмы, сериалы, видео, картинки, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]kumok[/B], [B]rx81[/B]</description>
-        <language>en, ru</language>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-
-	<addon id="plugin.video.filmix.net.dev"
-       name="Filmix.Net"
-       version="0.6.1c"
-       provider-name="Evgenii Devisok aka evgen_dev">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.xbmcup" version="0.2.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
-    <extension point="xbmc.addon.metadata">
-		<news>опять работает;)</news>
-		<summary>Filmix.Net</summary>
-		<description>
-			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
-		</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
-		<email>rvlad1987@mail.ru, xbmc@devisok.org</email>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-	</extension>
-</addon>
-
-<addon id='torrenter.searcher.RuTrackerOrg' version='1.0.9a'
-     name='Torrenter Searcher: RuTrackerOrg' provider-name='DiMartino'>
-  <requires>
-    <import addon='xbmc.python' version='2.1.0'/>
-  </requires>
-  <extension point="xbmc.python.script" library="__init__.py">
-    <provides>executable</provides>
-  </extension>
-      <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
-        </summary>
-        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
-        </description>
-        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
-        <summary lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
-        </summary>
-        <description lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
-        </description>
-        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
-    </extension>
-  <extension point='xbmc.python.module'/>
-</addon>
-
-<addon id="script.yatse.kodi" name="Yatse Kodi helper script" version="2.5.3a" provider-name="Yatse">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="plugin.video.youtube"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Yatse helper script for Kodi</summary>
-        <summary lang="ru">Скрипт Yatse для Kodi</summary>
-        <summary lang="fr">Script Yatse helper pour Kodi</summary>
-        <summary lang="de">Yatse-Skript für Kodi</summary>
-        <description lang="en">Yatse helper script for Kodi</description>
-        <description lang="ru">Скрипт для помощи работы Yatse в Kodi</description>
-        <description lang="fr">Script Yatse helper pour Kodi</description>
-        <description lang="de">Yatse-Skript für Kodi</description>
-        <platform>all</platform>
-        <news>2.5.3a: Fix play youtube
-2.5.3: Quick revert as YTDLP require Python 3.6 so Kodi 19 (This is version 2.4.5)
-2.4.X: Update YoutubeDL
-2.4.0: Fix for Kodi 19 magnet sharing
-2.3.X: Update YoutubeDL
-2.3.0: Update YoutubeDL + New option to ignore wrong SSL certificates on Kodi 18+ (Thanks bsdf)
-2.2.0: Update YoutubeDL + Fix for Kodi 19 removed function
-2.1.1: Update YoutubeDL
-2.1.0: New setting to prioritize Kodi youtube addon for Youtube urls + update YoutubeDL
-2.0.3: Update YoutubeDL
-2.0.2: Update YoutubeDL + update repository to provide Kodi 19 compatible addon
-1.9.2: Update YoutubeDL
-1.9.1: Update YoutubeDL
-1.9.0: Remove support for UrlResolver
-1.8.3: Update YoutubeDL
-1.8.2: Update YoutubeDL
-1.8.1: Add support for Python 3 (Kodi 19 Windows Python 3 is broken and does not support ctypes, no workaround!)
-1.7.0: Update YoutubeDL with Youtube fix
-1.6.6: Update YoutubeDL
-1.6.5: Update YoutubeDL
-1.6.4: Update YoutubeDL
-1.6.3: Update YoutubeDL
-1.6.2: Update YoutubeDL
-1.6.1: Fix queuing youtube video when using Dash.
-1.6.0: Embed youtubeDL for faster update than official addon + display notification instead of busy dialog for better Kodi 18 support.
-1.5.1: Use Youtube plugin when sharing if you activate MPEG-DASH to support 1080p+ quality. Add support for some more streams type. Remove no more needed Kodi 18 hack.
-1.4.6: Show script settings when trying to start from GUI.
-1.4.5: Ignore some regexp errors.
-1.4.4: Ignore errors on playlist containing invalid data.
-1.4.3: Fix issues on Kodi 16.
-1.4.2: Picture playlist support seems broken on Kodi 17.
-1.4.1: Improve picture support.
-1.4.0: Add support for pushing meta data when streaming from Yatse. (Except for videos containing ? on Kodi 18 due to a Kodi bug).
-        </news>
-    </extension>
-</addon>
-
-<addon id="repository.popcornmix" name="Popcornmix Add-ons" version="1.0.0" provider-name="popcornmix">
-    <extension point="xbmc.addon.repository" name="Popcornmix Add-ons">
-		<info compressed="true">https://github.com/popcornmix/repository.popcornmix.storage/raw/master/addons.xml</info>
-		<checksum>https://github.com/popcornmix/repository.popcornmix.storage/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/popcornmix/repository.popcornmix.storage/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Popcornmix Add-ons</summary>
-		<summary lang="en">Popcornmix Add-ons</summary>
-		<description>Repository of add-ons by Popcornmix. Add-ons in alpha and beta status are here to test exclusively and for testers to provide them with updates.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod137" provider-name="HAL9000">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
-    <import addon="script.module.torrent.ts" optional="true"/>
-    <import addon="script.module.libtorrent" optional="true"/>
-    <import addon="script.service.torrserver" optional="true"/>
-    <import addon="script.module.torrserver" optional="true"/>
-    <import addon="plugin.video.elementum" optional="true"/>
-    <import addon="plugin.video.torrenter" optional="true"/>
-    <import addon="plugin.video.tam" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Исправлено проигрывание через встроенный модуль TorrServer раздач версии 2.</news>
-    <summary lang="en">RuTracker</summary>
-    <description lang="en">You can search RuTracker and download torrents.</description>
-    <summary lang="ru">Навигатор по RuTracker</summary>
-    <description lang="ru">Навигатор по сайту RuTracker с возможностью скачивания торрентов.[CR]Просмотр через Elementum, TorrServer, Torrenter, Torrent2http, TAM, Libtorrent, TorrentStream, DelugeStream.[CR]Скачивание торрентов с помощью Deluge, qBittorrent, rTorrent, Transmission и uTorrent.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.trovo" name="trovo.live" version="1.0.0a" provider-name="winsomehax">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Viewing streams from trovo.live</summary>
-        <summary lang="ru">Просмотр потоков из trovo.live</summary>
-        <description lang="en">Viewing streams from trovo.live</description>
-        <description lang="ru">Просмотр прямых трансляций из trovo.live</description>
-        <language>English, Russian</language>
-        <platform>all</platform>
-        <license>GPL-3.0</license>
-        <forum>https://github.com/winsomehax/</forum>
-        <website>https://github.com/winsomehax/</website>
-        <email>winsomehax@gmail.com</email>
-        <source>https://github.com/winsomehax/</source>
-        <news>https://github.com/winsomehax/</news>
-        <disclaimer lang="en">It's yours. If you break it, you can keep the pieces!</disclaimer>
-        <disclaimer lang="ru">Это ваше. Если вы сломаете его, то вы можете сохранить осколки!</disclaimer>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-    <broken>Addon is no longer maintained by the author / Дополнение больше не поддерживается автором</broken>
-    <lifecyclestate type="broken" lang="en_GB">Addon is no longer maintained by the author</lifecyclestate>
-    <lifecyclestate type="broken" lang="ru_RU">Дополнение больше не поддерживается автором</lifecyclestate>
-    </extension>
-</addon>
-
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11d" provider-name="Nemiroff">
-    <requires>
-        <import addon="xbmc.python" version="2.20.0" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.six" version="1.11.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="ru">KinoTrend</summary>
-        <license>GNU General Public License, v2</license>
-        <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
-        <disclaimer lang="ru">Данные из НЦР</disclaimer>
-        <platform>all</platform>
-        <website>http://kinotrend.pp.ua/</website>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-        <news>4К раздачи заменены на Кинотренд</news>
-    </extension>
-</addon>
-
-<addon id="script.module.tengine" name="TEngine" version="1.5.9mod2" provider-name="1orgar">
-  <requires>
-    <import addon="xbmc.python" version="2.7.13"/>
-    <import addon="script.module.libtorrent"/>
-    <import addon="script.module.torrent.ts"/>
-    <import addon="script.module.pyrrent2http"/>
-    <import addon="script.module.torrent2http"/>
-    <import addon="script.module.cdebug"/>
-    <import addon="script.module.torrserver" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>TEngine torrent streaming support</summary>
-    <description>Simple interface to most popular KODI torrent streaming engines</description>
-    <license>GPL</license>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
-  <requires>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Поправлены сериалы.</news>
-    <summary lang="en">Kino v HD</summary>
-    <description lang="en">Kino v HD -</description>
-    <summary lang="ru">Кино в HD - онлайн видео.</summary>
-    <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы онлайн.</description>
-    <platform>all</platform>
-    <assets>
-       <icon>icon.png</icon>
-    </assets>
-    <broken>Website down / Сайт не работает</broken>
-    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
-    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
-  </extension>
-</addon>
-
-<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.5" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.6" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -280,64 +9,13 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>...</news>
-    <summary lang="en">Kinokrad</summary>
-    <description lang="en">Kinokrad -</description>
-    <summary lang="ru">Кинокрад - онлайн видео</summary>
-    <description lang="ru">Кинокрад - фильмы, сериалы, мультфильмы онлайн.</description>
+    <news></news>
+    <summary lang="en">MegaPeer</summary>
+    <description lang="en">MegaPeer -</description>
+    <summary lang="ru">MegaPeer -</summary>
+    <description lang="ru">MegaPeer</description>
     <platform>all</platform>
-    <broken>Website down / Сайт не работает</broken>
-    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
-    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
   </extension>
-</addon>
-
-<addon id="script.qrdonate" name="QR Donate" version="0.0.1" provider-name="virserg">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Donate</summary>
-		<description lang="en">Donate</description>
-		<summary lang="ru">Подаяние...</summary>
-		<description lang="ru">Милостыня...;)</description>
-		<platform>all</platform>
-		<license>GPL-2.0-only</license>
-		<forum></forum>
-		<source></source>
-		<assets>
-			<icon></icon>
-		</assets>
-		<news>...</news>
-	</extension>
-</addon>
-
-<addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.6c" provider-name="-=Vd=-">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-		    <import addon="script.module.requests" optional="false"/>
-        <import addon="script.module.vsdbg" optional="true"/>
-    </requires>
-
-    <extension point="xbmc.python.module" library="lib"/>
-
-    <extension point="xbmc.python.pluginsource" library="lib/torrserve_stream/settings.py">
-      <provides>executable</provides>
-    </extension>
-
-  <extension point="xbmc.addon.metadata">
-        <news>ver 0.2.6c: add real file index for magnet link (need torrserver 1.1.77_6 with RealIdFileStats). ver 0.2.6: fixed nonstop preload on torrserver 1.1.77</news>
-        <platform>all</platform>
-        <language>en</language>
-        <summary lang="en">Downloads torrents and share it over HTTP</summary>
-        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
-        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP.</description>
-        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
-    </extension>
 </addon>
 
 <addon id="plugin.audio.knigavuhe"
@@ -377,476 +55,6 @@
     </extension>
 </addon>
 
-<addon id='torrenter.searcher.RuTrackerMusic' version='1.0.5a'
-     name='Torrenter Searcher: RuTrackerMusic' provider-name='DiMartino'>
-  <requires>
-    <import addon='xbmc.python' version='2.1.0'/>
-  </requires>
-  <extension point="xbmc.python.script" library="__init__.py">
-    <provides>executable</provides>
-  </extension>
-      <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
-        </summary>
-        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
-        </description>
-        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
-        <summary lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
-        </summary>
-        <description lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
-        </description>
-        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
-    </extension>
-  <extension point='xbmc.python.module'/>
-</addon>
-
-<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.6" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.rutracker"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="plugin.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.python.script" library="plugin.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="kodi.context.item" library="default.py">
-    <item>
-      <label>$ADDON[context.rutracker.search 32000]</label>
-      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
-    </item>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <news>Исправление ошибок.</news>
-    <summary lang="en">RuTracker Search Content</summary>
-    <description lang="en">RuTracker Search Content</description>
-    <summary lang="ru">Поиск по сайту RuTracker из дополнений</summary>
-    <description lang="ru">Поиск контента на RuTracker'e из дополнений KinoPoisk и других. Добавляет в контекстное меню "Найти на RuTracker'e". Ищет только по разделам Фильмы, Сериалы и Мультипликация.</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum></forum>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="repository.yt.testing_official" name="YouTube Test Repo (Official)" version="1.0.0" provider-name="Jeffrey Frasure">
-	<extension point="xbmc.addon.repository" name="YouTube Test Repo (Official)">
-		<info compressed="false">https://raw.githubusercontent.com/jdf76/repository/master/testing/official/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/jdf76/repository/master/testing/official/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/jdf76/repository/master/testing/official/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install alpha and beta versions of the YouTube add-on.</summary>
-		<description>Install alpha and beta versions of the YouTube add-on.</description>
-		<disclaimer>This add-on is not supported or endorsed by Google/YouTube.</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.6" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>play fixed</news>
-    <summary lang="en">Kinokrad.co</summary>
-    <description lang="en">Kinokrad.co -</description>
-    <summary lang="ru">Кинокрад.Ко - онлайн видео</summary>
-    <description lang="ru">Кинокрад.Ко - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.4.0" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.youtube.dl"/>
-    <import addon="script.module.requests" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>kodik fixed.</news>
-    <summary lang="en">YummyAnime</summary>
-    <description lang="en">Navigator for site Yummyanime.club</description>
-    <summary lang="ru">Навигатор по YummyAnime.club</summary>
-    <description lang="ru">Навигатор по сайту yummyanime.club</description>
-    <platform>all</platform>
-    <broken>Website down / Сайт не работает</broken>
-    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
-    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
-  </extension>
-</addon>
-
-<addon id="plugin.video.quasar" name="Quasarenter" version="0.0.2" provider-name="-=Vd=-">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-	<provides>video</provides>
-  </extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Fake quasar addon</summary>
-		<summary lang="ru">Фейковый квазар</summary>
-		<description lang="en">This addon redirect any calls to quasar plugin to torrenter or TAM.</description>
-		<description lang="ru">Это дополнение переадресует вызовы из других источников для плагина квазар на торрентер или TAM. Это нужно если вы не хотите пользоваться квазаром, а магнитные ссылки из YATSE проигрывать торрентером (TAM).</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.module.kodi65" name="Kodi65 Library" version="1.3.2" provider-name="Philipp Temminghoff (phil65), virserg">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.youtube.dl" version="14.519.1"/>
-		<import addon="script.module.pil" version="1.1.7"/>
-		<import addon="script.module.autocompletion" version="1.0.0"/>
-		<import addon="script.module.requests" version="2.9.1"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper module</summary>
-		<description lang="en">Helper module for all kind of stuff</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
-		<source>https://github.com/phil65/script.module.kodi65</source>
-		<news>Adjust to latest core changes, bugfixes, API extensions</news>
-	</extension>
-</addon>
-
-<addon id="script.key.layout.osmc"
-       name="Hardware Keyboard Layout"
-       version="0.0.1"
-       provider-name="AlexELEC, virserg">
-  <requires>
-    <import addon="xbmc.python" version="2.26.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Keyboard Layout EN/RU</summary>
-    <description lang="en">Keyboard Layout EN/RU. Only Kodi 18.</description>
-    <summary lang="ru">Переключение раскладки (Анг/Рус) на клавиатуре</summary>
-    <description lang="ru">Переключение раскладки клавиатуры Анг/Рус по двум клавишам (Ctrl+пробел). Только для Kodi 18.[CR]После установки запустите это дополнение, а затем перезагрузите Kodi.</description>
-    <language></language>
-    <platform>linux</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-  </extension>
-</addon>
-
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.4" provider-name="virserg, Eviloid">
-  <requires>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Еще работает...</news>
-    <summary lang="en">Kinovod</summary>
-    <description lang="en">Kinovod -</description>
-    <summary lang="ru">Киновод - онлайн видео</summary>
-    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]Eviloid[/B] за модуль декодирования. [CR][B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.19" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="resource.images.studios.white" version="0.0.5"/>
-		<import addon="script.module.kodi65" version="1.3.0"/>
-		<import addon="script.module.routing" version="0.1.0"/>
-		<import addon="script.qrdonate" version="0.0.1"/>
-	</requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<language/>
-		<summary lang="en_GB">ExtendedInfo Script</summary>
-		<summary lang="ru_RU">ExtendedInfo Script</summary>
-		<summary lang="uk_UA">ExtendedInfo Script</summary>
-		<summary lang="es">ExtendedInfo Script</summary>
-		<description lang="en_GB">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
-		<description lang="ru_RU">Этот скрипт предлагает различные возможности для отображения онлайн-контента внутри обложки, а также полный браузер MovieDB, включая информационные диалоги для различных типов медиа. Используемыми сервисами являются themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com и многое другое. Требует реализации обложки для многих функций.</description>
-		<description lang="uk_UA">Цей сценарій пропонує різні можливості для відображення онлайн-вмісту всередині обкладинки, а також повний браузер MovieDB, включаючи діалоги інформації для різних типів медіа. Використані сервіси - themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com та багато іншого. Потрібна реалізація обкладинки для безлічі функцій.</description>
-		<description lang="es">Este script ofrece varias posibilidades para poder mostrar información online dentro de una piel, así como un completo navegador de TheMovieDB, incluidos los cuadros de diálogo de información para diversos tipos de medios. Los servicios usados son themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com y mucho más. Necesita la implementación en el skin para muchas de sus funciones.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
-		<email></email>
-		<source></source>
-		<news>fixed view mode after exit | Добавлена настройка разблокировки API через прокси дополнения TAM | Bug fixed | Update search and add refresh in context menu | Add: search in context menu | Add: play trailer via plugin.video.youtube | Add: trending day/week (movies, tvshows, persons). Some bugfixes. | Many improvements(next page...). Add filters: region, without keyword, network. | Add filters: language, without genre. Fixed: search pages, studio filter, people filter. | В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов. | Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо | Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+) | Find using United Search | Add to RuTracker | Fix remove favorites</news>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-			<screenshot>resources/screenshot-04.jpg</screenshot>
-			<screenshot>resources/screenshot-05.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="plugin.audio.baza-knig" name="База книг" version="0.1.1" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Остались только раздачи. Часть функционала не работает из-за изменений на сайте. Может кто-то поможет починить это?</news>
-    <summary lang="en">Baza Knig</summary>
-    <description lang="en">Baza Knig  -</description>
-    <summary lang="ru">База книг  -  аудиокниги.</summary>
-    <description lang="ru">База книг  -  аудиокниги онлайн.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.3" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Еще работает...</news>
-    <summary lang="en">DomaTVNet</summary>
-    <description lang="en">DomaTVNet -</description>
-    <summary lang="ru">ДомаТВНет - телевидение.</summary>
-    <description lang="ru">ДомаТВНет - телевидение онлайн.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon
-  id="visualization.spectrum"
-  version="2.0.4"
-  name="Spectrum"
-  provider-name="Team Kodi">
-  <requires>
-<import addon="kodi.binary.global.main" version="1.0.14"/>
-<import addon="kodi.binary.global.filesystem" version="1.0.2"/>
-<import addon="kodi.binary.instance.visualization" version="2.0.1"/></requires>
-  <extension
-    point="xbmc.player.musicviz"
-    library_linux="visualization.spectrum.so.2.0.4"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="af_ZA">Visualisering wys a roterende 3D Spektrum Analiseerder</summary>
-    <summary lang="ar_SA">عارض يظهر طيف محلل دوري ثلاثي الأبعاد</summary>
-    <summary lang="be_BY">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
-    <summary lang="bg_BG">Визуализация представяща ротиращ се 3D спектрален анализатор</summary>
-    <summary lang="ca_ES">Visualització mostrant un analitzador d'espectre giratori 3D</summary>
-    <summary lang="cs_CZ">Vizualizace zobrazující rotující 3D spektrální analyzátor</summary>
-    <summary lang="da_DK">Visualisering der viser en roterende 3D-spektrumanalyse</summary>
-    <summary lang="de_DE">Diese Visualisierung zeigt eine rotierende Spektrum Analyse in 3D</summary>
-    <summary lang="el_GR">Οπτικοποίηση που εμφανίζει έναν περιστρεφόμενο τρισδιάστατο Αναλυτή Φάσματος</summary>
-    <summary lang="en_GB">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
-    <summary lang="es_ES">Visualización que muestra un analizador de espectro en 3D girando</summary>
-    <summary lang="es_AR">Visualización que muestra un analizador de espectro en 3D girando</summary>
-    <summary lang="es_MX">Visualización que muestra un Analizador de Espectro giratorio 3D</summary>
-    <summary lang="et_EE">Visuaal, mis näitab pöörlevat 3D spektraalanalüüsi</summary>
-    <summary lang="fi_FI">Pyörivä 3D-spektrianalysaattori</summary>
-    <summary lang="fr_FR">Visualisation affichant un analyseur de spectre 3D en rotation</summary>
-    <summary lang="gl_ES">Visualización que amosa un analizador de espectro virando en 3D</summary>
-    <summary lang="he_IL">DirectX Spectrum זהו חיזוי אשר מציג סיבובי 3D Spectrum Analyzer</summary>
-    <summary lang="hr_HR">Vizualizacija koja prikazuje rotirajući 3D spektralni analizator</summary>
-    <summary lang="hu_HU">Vizualizáció 3D spektrum analizátorral</summary>
-    <summary lang="is_IS">Myndskreyting sem sýnir þrívíddar rófgreini</summary>
-    <summary lang="it_IT">La visualizzazione mostra un analizzatore di spettro 3D rotante</summary>
-    <summary lang="ja_JP">回転する 3D スペクトラムアナライザーを表示する  ビジュアライザー</summary>
-    <summary lang="ko_KR">회전하는 3D 스펙트럼 분석기를 보여지는 음악시각화</summary>
-    <summary lang="lt_LT">Vizualizacija rodo rotacinis 3D spektro analizatorių</summary>
-    <summary lang="mk_MK">Визуализација која покажува ротирачки 3Д анализатор на спектар</summary>
-    <summary lang="nl_NL">DirectX-visualisatie die een roterende 3D-spectrumanalyse weergeeft</summary>
-    <summary lang="nb_NO">Visualisering som viser en roterende 3D ​​Spectrum Analyzer</summary>
-    <summary lang="pl_PL">Wizualizacja pokazująca obracający się analizator widma w 3D</summary>
-    <summary lang="pt_PT">Visualização que mostra um analisador espectral rotativo em 3D</summary>
-    <summary lang="pt_BR">Visualização que mostra um analisador espectral rotativo em 3D</summary>
-    <summary lang="ro_RO">Vizualizare cu afișarea unui analizor de spectru 3D rotativ</summary>
-    <summary lang="ru_RU">Визуализация, показывающая вращающийся трёхмерный анализатор спектра</summary>
-    <summary lang="sk_SK">Vizualizácia zobrazujúca rotujúci 3D spektrálny analyzátor</summary>
-    <summary lang="sl_SI">Vizualizacija, ki prikatuje vrtečo 3D spektralno analizo</summary>
-    <summary lang="sv_SE">Visualisering som visar en roterande 3D-spektrumanalysator</summary>
-    <summary lang="th_TH">การแสดงแสงสี ทำให้เห็นการหมุนแบบ 3 มิติ ของการวิเคราะห์คลื่นความถี่เสียง</summary>
-    <summary lang="uk_UA">Візуалізація що показує обертаючийся 3D спектроаналізатор.</summary>
-    <summary lang="zh_CN">显示旋转三维频谱分析图像的可视化效果</summary>
-    <summary lang="zh_TW">顯示旋轉的3D頻譜分析視覺效果</summary>
-    <description lang="af_ZA">Spectrum is 'n Visualisering wat 'n roterende 3D Spektrum Analiseerder, verbeeld met , vertoon wat op die maat van die musiek beweeg en 'n golf effek oor die spektrum rooster skep.&#10;Dit het ook verstellings vir die aanpas van spektrum staaf hoogte, sy spoed, en hoe die stawe verbeeld word (solied, punte, draad raamwerk) en is 'n lekker ligte, lae cpu verbruik visualisering wat fantasties lyk</description>
-    <description lang="ar_SA">طيف  هو تحليل بصري متحرك ثلاثي الابعاد للموسيقى! يتحرك بواسطة يرنامج  على وزن الموسيقى في شكل موجة.&#10;توجد ايضا اعدادات لتعديل شبكة الطيف من حيث طول الاعمدة, سرعتها, وحتى شكلها (صلبة, نقاط, اسلاك) تعمل هذة بحمل خفيف, ومعالجة cpu ضئيلة لكنها تبدو رائعة</description>
-    <description lang="be_BY">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.&#10;It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
-    <description lang="bg_BG">Spectrum е визуализация изобразяваща ротиращ се 3D спектрален анализатор (рендването се извършва с ). Ротацията е според ритъма на музиката и предизвиква вълнови ефект по спектрална решетка.&#10;Можете да настройвате височината на спектралните стълбове, скоростта и рендването - solid, points, wire frame. Характеризира се с отличен вид, като същевременно почти не натоварва процесора.</description>
-    <description lang="ca_ES">Spectrum és una visualització que mostra un analitzador d'espectre giratori en 3D renderitzat amb  que es mou al ritme de la música creant un efecte d'ona al llarg de la graella de l'espectre.⏎ També té opcions per ajustar l'alçada de la barra de l'espectre, la seva velocitat, i com es renderitzen les barres (sòlid, punts, malla de filferro). Una visualització que utilitza poca CPU i que és veu molt bé. </description>
-    <description lang="cs_CZ">Spectrum je vizualizace zobrazující rotující 3D spektrální analyzátor rendrovaný v , který se pohybuje v rytmu hudby a vytváří vlnový efekt napříč spektrální mřížkou.&#10;Obsahuje také nastavení pro přizpůsobení výšky sloupců spektra, rychlosti a způsobu vykreslení (vyplněný, body, drátový model). Je to velmi lehká vizualizace s nízkou zatíží CPU, která vypadá skvěle.</description>
-    <description lang="da_DK">-spektrum er en visualisering, der viser en roterende 3D-spektrumanalysator renderet i DirectX, som bevæger sig i takt til musikken og skaber en bølgeeffekt på tværs af spektrumfeltet.&#10;Den har også indstillinger til at justere spektrumliniens højde, fart og hvordan den bliver renderet (fast, punkter, trådramme). Det er en letvægtsvisualisering med lavt CPU-forbrug, som ser godt ud.</description>
-    <description lang="de_DE">Spectrum ist eine Visualisierung, die eine rotierende Spektrum Analyse in 3D zeigt. Die Visualisierung wird so gerendert, dass sie sich zum Takt der Musik bewegt und eine Welle über das Spektrum Grid legt.&#10;Es lässt sich neben der Höhe, die Geschwindigkeit als auch die Art der Balken (durchgehend, Punkte, Drahtgeflecht) einstellen. Eine schöne Visualisierung, die nur eine geringe CPU-Last erzeugt</description>
-    <description lang="el_GR">Το Spectrum είναι μία Οπτικοποίηση που εμφανίζει έναν περιστρεφόμενο τρισδιάστατο Αναλυτή Φάσματος που αποδίδεται μέσω  και κινείται στο ρυθμό της μουσικής δημιουργώντας ένα κυματικό εφέ κατά μήκος του φασματικού πλέγματος.&#10;Διαθέτει ρυθμίσεις για τον ορισμό του ύψους των στηλών του φάσματος, του τρόπου απόδοσης των στηλών (συμπαγείς, σημειακές, συρματόπλεγμα), και είναι μία ελαφριά, εμφανίσιμη και χαμηλής υπολογιστικής ισχύος οπτικοποίηση</description>
-    <description lang="en_GB">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.&#10;It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
-    <description lang="es_ES">Spectrum es una visualización que muestra un analizador de espectro en 3D girando renderizado con  que se mueve al ritmo de la música creando un efecto de onda en la rejilla del espectro.&#10;Se puede ajustar la altura de las barras, su velocidad, y como son renderizadas (sólido, puntos, malla). Es una visualización que utiliza poca CPU y muy agradable.</description>
-    <description lang="es_AR">Spectrum es una visualización que muestra un analizador de espectro en 3D girando, renderizado con , que se mueve al ritmo de la música creando un efecto de onda en la rejilla del espectro.&#10;Se puede ajustar la altura de las barras, su velocidad, y como son renderizadas (sólido, puntos, malla). Es una visualización que utiliza poca CPU y muy agradable.</description>
-    <description lang="es_MX">Espectro es una Visualización que muestra un Analizador de Especto en 3D rotando renderizado en  que se mueve al ritmo de la música creando un efecto de onda a través del espectro de la red.&#10;También tiene configuraciones para ajustar la altura de la barra de espectro, su velocidad, y cómo las barras son renderizadas (sólidas, puntos, malla de alambre) y es una buena visualización liviana, de poco uso de cpu que se ve genial.</description>
-    <description lang="et_EE">Spectrum on visuaal, mis näitab 3D spektraalanalüüsi renderdatud 'is, mis liigub liigub muusika rütmis luues laineefekti üle spektraalvõrgustiku.&#10;Lisaks on olemas ka võimalus seadistada spektri kõrgust, selle kiirust ja kuidas ribasid renderdatakse (tahkis, punktid, sõrestik).  Spectrum on hea väljanägemisega kerge ja vähese protsessorikasutusega visuaal.</description>
-    <description lang="fi_FI">Näyttää pyörivän 3D-spektrianalysaattorin, joka liikkuu musiikin tahdissa tuottaen aaltotehosteen spektrikuvaajaan.&#10;Spektripalkin korkeuden, nopeuden, ja piirtotavan (täytetyt, pisteet, ääriviivat) voi asettaa asetuksista. Spectrum on kevyt visualisointi joka näyttää hyvältä.</description>
-    <description lang="fr_FR">Spectrum est une visualisation affichant un analyseur de spectre 3D en rotation, sous . Il réagit au rythme de la musique, créant un effet d'onde sur la grille du spectre.&#10;Il propose divers paramètres pour ajuster la hauteur, la vitesse, et le rendu des barres du spectre (plein, points, fil de fer). Une visualisation légère, peu gourmande en CPU et agréable à regarder.</description>
-    <description lang="gl_ES">Spectrum é unha Visualización que amosa un analizador de espectro virando en 3D renderizado con  que se move ó ritmo da música creando un efecto de onde ó longo da grella do espectro.&#10;Tamén ten opcións para axustar a altura da barra, a velocidade e como se renderizan as barras (sólidas, puntos, malla) do espectro. É bonito, lixeiro, de baixo custo en CPU.</description>
-    <description lang="he_IL">Spectrum זהו חיזוי אשר מציג סיבובי 3D Spectrum Analyzer אשר זז לצלילי המוזיקה שיוצר אפקט גלים לרוחב רשת הספקטרום.&#10;יש אפשרות גם להגדיר את גובה פס הספקטרום, את המהירות, ואת התנהגות הפסים (filled, points, wire frame) וזהו חיזוי נחמד קל משקל לא מעמיס על המעבד ונראה נהדר.</description>
-    <description lang="hr_HR">Spectrum je vizualizacija koja prikazuje rotirajući 3D spektralni analizator renderiran u -u koji se pokreće u ritmu muzike stvarajući efekt valova u spektralnoj mreži.&#10;Također sadrži i postavke za namještanje visine sprektralnih traka, njihove brzine, i načina na koji su prikazane (popunjeno, točke, žičani okvir). Vizualizacija izgleda sjajno te je malih memorijskih i CPU zahtjeva.</description>
-    <description lang="hu_HU">Az Spectrum egy olyan vizualizáció ami egy 3D hang spektrum analizátort mutat  segítségével megjelenítve, ami a zene ritmusára mozog egy hullám-effektust képezve a teljes spektrumhálón.&#10;Beállítható a spektrum oszlopok magassága, mozgási sebessége és hogy az oszlopok hogyan jelenjenek meg (teli, pontok, drótváz). Ez egy kis erőforrásigényű vizualizáció ami nagyon jól mutat.</description>
-    <description lang="is_IS">Spectrum er myndskreyting sem sýnir þrívíddar rófgreini sem snýst sem er teiknaður í  og hreyfist í takt við tónlistina sem myndar bylgjuhreyfingu yfir rófið.&#10;Það er líka hægt að stilla hæð mælingana, hraða og hvernig þær eru teiknaðar (fyllt, punktar, útlínur) myndskrytingin setur lítið álag á örgjörva og lítur vel út</description>
-    <description lang="it_IT">Spectrum è una visualizzazione che mostra un analizzatore di spettro renderizzato in  che si muove a tempo di musica creando un effetto onda attraverso la griglia.&#10;E' possibile regolare varie impostazioni: l'altezza delle barre, la velocità di risposta e come le barre sono renderizzate (piene, con punti o con righe). E' una visualizzazione rilassante e con basso uso del processore.</description>
-    <description lang="ja_JP">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.&#10;It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
-    <description lang="ko_KR">스펙트럼은 회전하는 3D 스펙트럼 분석기를 통해 음악시각화를 보여주며 음악의 비트가 만들어내는 웨이브 효과를 스펙트럼 그리드에 보여줍니다. 설정에서 스펙트럼 바의 높이, 속도, 바의 갯수 (채워짐, 점, 와이어 프레임)를 지정할수 있습니다. 가볍고 CPU를 많이 사용하지 않습니다.</description>
-    <description lang="lt_LT">Spektro vizualizacija, kurioje besisukantį 3D spektro analizatorių, priimtą , katras juda į muzikos ritmą, įsteigiantis bangų poveikį visame spektro tinklelyje.&#10;Taip pat turi nustatymus nureguliuoti spektro juostos aukštį, jos greitį, ir teikiamas kraštines (kieta, taškai, tinklelio rėmas) ir yra gražus bei lengvas, mažai naudoja CPU vizualizacijai, ir atrodo puikiai</description>
-    <description lang="mk_MK">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.⏎ It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
-    <description lang="nl_NL">Spectrum is een visualisatie met een draaiende 3D ​​Spectrum Analyzer gerenderd in . Deze visualisatie beweegt op het ritme van de muziek en creëert een golf effect over het hele spectrum. ⏎&#10;Het heeft instellingen om de barhoogte en de snelheid aan te passen, en hoe de staven worden weergegeven (vast, punten, draad frame) en is een mooie lichtgewicht visualisatie die weinig van de cpu vraagt en er geweldig uit ziet.</description>
-    <description lang="nb_NO">Spectrum er en visualisering som viser et roterende 3D ​​Spectrum Analyzer gjengitt i  som flytter til rytmen i musikken skaper en bølge effekt over hele spekteret rutenettet.⏎&#10;Det har også innstillinger for å justere spekterets bar høyde, hastighet, og hvordan barene gjengis (solid, punkt, wireframe) og er en fin lett vekt, lav cpu brukende visualisering som ser flott ut</description>
-    <description lang="pl_PL">Wizualizacja pokazuje obracający się, trójwymiarowy analizator widma, renderowany przy użyciu . Możesz ustawić wysokość słupków, ich prędkość i wygląd.</description>
-    <description lang="pt_PT">Spectrum é uma visualização que mostra um analisador espectral 3D rotativo, renderizado em , que se sincroniza com o ritmo da música, criando assim um efeito de ondas na grelha espectral.&#10;Pode-se definir a altura das barras, a sua velocidade e como são renderizadas (sólido, pontos ou contorno). É uma visualização que não utiliza muito CPU e tem um aspecto fantástico.</description>
-    <description lang="pt_BR">O Spectrum é uma visualização que mostra um analisador espectral rotativo 3D, renderizado em , que se sincroniza com a batida, criando assim um efeito de ondas na grelha espectral.&#10;Pode-se definir a altura das barras, a sua velocidade e como são renderizadas (sólido, pontos ou contorno). É uma visualização que utiliza pouco o CPU e com um visual fantástico.</description>
-    <description lang="ro_RO">Spectrul  este o vizualizare care afișează un analizor de spectre 3D rotativ randat în  care se mișcă după bătăile muzicii creând un val dea-lungul grilei spectrale.&#10;De asemenea, are setări pentru ajustarea înălțimii bărilor spectrale, a vitezei, și a modului în care bările sunt randate (umplere, puncte, contur). Este o vizualizare cu consum redus al procesorului care arată fantastic de bine.</description>
-    <description lang="ru_RU">Эта визуализация на основе  показывает вращающийся трёхмерный анализатор спектра, который движется в такт музыке, создавая эффект волны по всему спектру сетки.⏎&#10;Визуализация имеет настройки для регулировки высоты полос спектра, скорости движения и способа отображения полос (сплошной, точки, каркас), а также обладает небольшим размером и малой нагрузкой на процессор.</description>
-    <description lang="sk_SK">Spectrum je vizualizácia zobrazujúca rotujúci 3D spektrálny analyzátor vykresľovaný pomocou , ktorý sa hýbe v rytme hudby a tak vytvára vlny naprieč mriežkou spektra.[CR]&#10;Zároveň má nastavenia upravujúce výšku stĺpcov spektra, ich rýchlosť a ako sú vykresľované (vyplnené, body, drôtový model). Je to jednoduchá vizualizácia s nízkou záťažou CPU, ktorá výborne vyzerá.</description>
-    <description lang="sl_SI">Spectrum je vizualizacija, ki prikazuje vrtečo 3D spektralno analizato, generirano v , ki se premika v ritmu glasbe in ustvarja učinek valovanja v celotnem spektru. Vsebuje tudi nastavitve za prilagoditev višine spektra, hitrosti in oblike (polno, točke, okvir) ter je varčna vizualizacija z nizka porabo CPU-ja, ki izgleda super.</description>
-    <description lang="sv_SE">Spektrum är en visualisering som visar en roterande 3D-spektrumanalysator renderad i . Den rör sig till musikens takt och skapar en vågeffekt över spektrat.&#10;-spektrum har inställningar för att justera staplarnas höjd, deras hastighet, hur de ska visas (solida, punkter, ramverk) och är en visualisering med låg cpu-användning samtidigt som den ser bra ut</description>
-    <description lang="th_TH">Spectrum เป็น การแสดงแสงสี ทำให้เห็นการหมุนกราฟวิเคราะห์คลื่นความถี่เสียง แบบ 3 มิติ ที่สร้างขึ้นโดย  ที่ขยับไปตามจังหวะของเพลงที่สร้างผลกระทบเป็นคลื่นไปทั่วตารางความถี่.&#10;นอกจากนี้ยังมีการตั้งค่าเพื่อปรับความสูงของแท่งคลื่นความถี่,ความเร็วและกระบวนการที่แท่งแสดงผล (ของแข็ง, จุด, โครงลวด) ทั้งยังใช้ทรัพยากรน้อยได้ดี, การแสดงแสงสี ที่ใช้ซีพียูต่ำนั่นก็ดูยอดเยี่ยมทีเดียว</description>
-    <description lang="uk_UA">Spectrum  є візалізаціє що показує обертаючийся 3D спектроаналізатор що промальовується з використанням технології  . Спектроаналізатор показує стовпчики змінної висоти що рухаються в такт з музикою і створюють ефект подібний до хвилі.&#10;Ви маєте можливість налаштувати висоту стовпчиків, їх швидкість і те як вони намальовані (Заповнені, контури, крапки). Це досить проста, і невимоглива до процесора візуалізація, але яка має чудовий вигляд.</description>
-    <description lang="zh_CN">Spectrum可视化效果是渲染的一个旋转的三维频谱分析图像，频谱矩阵随着音乐节拍而象波浪起伏。&#10;你还可以设置频谱棒的高度、变换速度、以及呈现效果（固体、点、框架）。这是一个不错的轻量级，低CPU使用率的可视化效果。</description>
-    <description lang="zh_TW"> Spectrum 是使用  描繪顯示旋轉的3D頻譜分析視覺效果，頻譜格線隨著音樂節拍而像波浪起伏。&#10;它還可以調整頻譜長條的高度、速度以及呈現效果（實心、點狀、線框）。它是個很好的輕量級、低 CPU 使用率的視覺化效果。</description>
-    <platform>linux</platform>
-    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <screenshot>resources/screenshot-01.png</screenshot>
-      <screenshot>resources/screenshot-02.png</screenshot>
-      <screenshot>resources/screenshot-03.png</screenshot>
-    </assets>
-  </extension>
-</addon>
-
-<addon
-  id="visualization.shadertoy"
-  version="1.1.10"
-  name="Shadertoy"
-  provider-name="Team Kodi">
-  <requires>
-<import addon="kodi.binary.global.main" version="1.0.14"/>
-<import addon="kodi.binary.instance.visualization" version="2.0.1"/></requires>
-  <extension
-    point="xbmc.player.musicviz"
-    library_linux="visualization.shadertoy.so.1.1.10"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Visualisations from Shadertoy</summary>
-    <description lang="en">Visualisations from Shadertoy</description>
-    <platform>linux</platform>
-    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
-  </extension>
-</addon>
-
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.5" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.addon" version="16.0.0" />
-  </requires>
-  <extension point="kodi.context.item" library="default.py">
-    <item>
-      <label>32000</label>
-      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Container.Content(videos)|Container.Content()|Pvr.HasTVChannels</visible>
-    </item>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Search by current Item</summary>
-    <summary lang="ru">Поиск по текущему элементу</summary>
-    <description lang="en">Search by current Item in select addon</description>
-    <description lang="ru">Поиск по текущему элементу в выбранном дополнении</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum></forum>
-    <source></source>
-    <assets><icon>icon.png</icon></assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0ru" provider-name="Avigdor">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Playlist Loader</summary>
-    <summary lang="he">Playlist Loader</summary>
-    <description lang="en">Playlist Loader</description>
-    <description lang="he">Playlist Loader</description>
-    <platform>all</platform>
-	<news>
-1.2.0
-- (fix) support strings.xml (old Kodi versions).
-1.1.9
-- Added an option to show groups in channels lists.
-	</news>
-  </extension>
-</addon>
-
-<addon id="plugin.video.animevost"
-       name="AnimeVost.org"
-       version="0.2.3j"
-       provider-name="TDW">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news></news>
-    <summary>AnimeVost.org</summary>
-    <description>AnimeVost.org</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.LostFilm3"
-       name="LostFilm-3.0"
-       version="3.9.6b"
-       provider-name="TDW">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.torrent.ts"/>
-    <import addon="script.module.torrent2http"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>LostFilm</summary>
-    <description>LostFilm.tv - лучшие сериалы</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="script.service.torrserver" name="TorrServer" version="1.1.77_31" provider-name="YouROK, Nemiroff">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
@@ -869,27 +77,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.1.0" provider-name="virserg">
-  <requires>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news>Отключена проверка сертификатов.</news>
-    <summary lang="en">Knizhkin.Net</summary>
-    <description lang="en">Knizhkin.Net -</description>
-    <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
-    <description lang="ru">Книжкин.Net - аудиокниги онлайн.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]alexander0155[/B]</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.5" provider-name="virserg">
+<addon id="plugin.video.kinokrad" name="Кинокрад" version="0.0.5" provider-name="virserg">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -898,67 +86,16 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news></news>
-    <summary lang="en">Rutor audiobooks</summary>
-    <description lang="en">Rutor audiobooks -</description>
-    <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
-    <description lang="ru">Rutor Аудиокниги - аудиокниги и музыка онлайн.</description>
+    <news>...</news>
+    <summary lang="en">Kinokrad</summary>
+    <description lang="en">Kinokrad -</description>
+    <summary lang="ru">Кинокрад - онлайн видео</summary>
+    <description lang="ru">Кинокрад - фильмы, сериалы, мультфильмы онлайн.</description>
     <platform>all</platform>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
   </extension>
-</addon>
-
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.6" provider-name="virserg">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news></news>
-    <summary lang="en">MegaPeer</summary>
-    <description lang="en">MegaPeer -</description>
-    <summary lang="ru">MegaPeer -</summary>
-    <description lang="ru">MegaPeer</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.2" provider-name="mcobit">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <language/>
-        <platform>linux</platform>
-        <disclaimer>For Kodi linux (tested on OSMC final)</disclaimer>
-        <summary lang="en">Launch RetroPie from Kodi.</summary>
-        <description lang="en">Launch RetroPie from Kodi.</description>
-        <website>https://github.com/mcobit/retrosmc/</website>
-        <email>me@me.me</email>
-    </extension>
-</addon>
-
-<addon id="plugin.program.bme280" name="BME280" version="0.0.1" provider-name="virserg">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <language/>
-        <platform>linux</platform>
-        <disclaimer>For Kodi linux (tested on OSMC final). Only works on Raspberry Pi and BME280 sensor.</disclaimer>
-        <summary lang="en">Launch from Kodi.</summary>
-        <description lang="en">Launch from Kodi.</description>
-        <website>https://github.com/</website>
-        <email>me@me.me</email>
-    </extension>
 </addon>
 
 <addon id="plugin.video.tam"
@@ -978,104 +115,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">TAM - менеджер торрент движков. Позволяет просматривать локальные торрент файлы. Или может выступать посредником между движками и плагинами контента.</summary>
     <description lang="en">TAM - менеджер торрент движков. Позволяет просматривать локальные торрент файлы. Или может выступать посредником между движками и плагинами контента.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.coldfilm.ru"
-       name="ColdFilm.ru"
-       version="0.1.2_mod10"
-       provider-name="TDW">
-  <requires>
-    <import addon="script.module.torrent.ts" optioal="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>СoldFilm.ru</summary>
-    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM, TorrServer Client</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.1217.1" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0" />
-		<import addon="script.module.addon.signals" version="0.0.1"/>
-	</requires>
-	<extension point="xbmc.python.script" library="control.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en_GB">Module providing access to youtube-dl video stream extraction</summary>
-		<summary lang="ru_RU">Модуль дает доступ к видеопотоку youtube-dl</summary>
-		<summary lang="uk_UA">Модуль дає доступ до відеопотоку youtube-dl</summary>
-		<description lang="en_GB">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
-		<description lang="ru_RU">Модуль дает доступ к извлечению видеопотока youtube-dl для сотен сайтов. Версия основана на версии даты youtube-dl: YY.MDD.V, где V - специфическая дополнительная версия дополнения. Также обеспечивает загрузку с возможностью фоновой загрузки с помощью диспетчера очереди.</description>
-		<description lang="uk_UA">Модуль дає доступ до вилучення відео потоку youtube-dl для сотень сайтів. Версія заснована на версії дати youtube-dl: YY.MDD.V, де V - специфічна додаткова версія доповнення. Також забезпечує завантаження з можливістю фонової завантаження за допомогою диспетчера черги.</description>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
-		<source>https://github.com/nkvoronov/script.module.youtube.dl.git</source>
-		<assets>
-			<icon>resources/icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="screensaver.shadertoy" version="2.0.0" name="ShaderToy" provider-name="popcornmix">
-  <requires>
-<import addon="kodi.binary.global.main" version="1.0.14"/>
-<import addon="kodi.binary.instance.screensaver" version="2.0.0"/></requires>
-  <extension point="xbmc.ui.screensaver" library_linux="screensaver.shadertoy.so.2.0.0"/>
-  <extension point="xbmc.addon.metadata">
-    <summary>ShaderToy screensaver</summary>
-    <description>ShaderToy screensaver</description>
-    <platform>linux</platform>
-    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
-  </extension>
-</addon>
-
-<addon id="script.module.websocket" name="websocket library" version="0.57.0" provider-name="pkscout">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0" />
-    <import addon="script.module.six" version="1.13.0" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>websocket library repacked for Kodi</summary>
-    <source>https://github.com/websocket-client/websocket-client</source>
-    <website>https://github.com/pkscout/script.module.websocket</website>
-    <platform>all</platform>
-    <license>LGPL</license>
-  </extension>
-</addon>
-
-<addon id="script.torrentstreams.install" name="! Install All torrent streams !" version="0.0.1" provider-name="NoNe">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.delugestream" version="0.1.1"/>
-    <import addon="script.module.torrent.ts"/>
-    <import addon="script.module.libtorrent"/>
-    <import addon="script.service.torrserver"/>
-    <import addon="plugin.video.torrenter"/>
-    <import addon="plugin.video.tam"/>
-  </requires>
-  <extension point="xbmc.python.script" provides="executable" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <news></news>
-    <summary lang="en">Install All torrent streams in one click.</summary>
-    <description lang="en">Install All torrent streams in one click.</description>
-    <summary lang="ru">Установка Всех торрент движков (кроме Elementum) в один клик.</summary>
-    <description lang="ru">Установка Всех торрент движков (кроме Elementum) в один клик. После установки можете сразу удалить это дополнение.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1102,26 +141,96 @@
     </extension>
 </addon>
 
-<addon id="context.dandy.mediainfo" name="Media Info" version="1.4.1b" provider-name="dandy">
+<addon id="script.key.layout.osmc"
+       name="Hardware Keyboard Layout"
+       version="0.0.1"
+       provider-name="AlexELEC, virserg">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simplejson" version="2.0.10"/>
-    <import addon="script.extendedinfo" version="2.0.6"/>
+    <import addon="xbmc.python" version="2.26.0"/>
   </requires>
-  <extension point="kodi.context.item" library="default.py">
-    <item>
-      <label>32000</label>
-      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Pvr.HasTVChannels</visible>
-    </item>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
   </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Open Media Info by current Item</summary>
-    <description lang="en">Open Media Info by current Item</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum></forum>
-    <source></source>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard Layout EN/RU</summary>
+    <description lang="en">Keyboard Layout EN/RU. Only Kodi 18.</description>
+    <summary lang="ru">Переключение раскладки (Анг/Рус) на клавиатуре</summary>
+    <description lang="ru">Переключение раскладки клавиатуры Анг/Рус по двум клавишам (Ctrl+пробел). Только для Kodi 18.[CR]После установки запустите это дополнение, а затем перезагрузите Kodi.</description>
+    <language></language>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
+</addon>
+
+<addon id='torrenter.searcher.RuTrackerOrg' version='1.0.9a'
+     name='Torrenter Searcher: RuTrackerOrg' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.RuTrackerMusic' version='1.0.5a'
+     name='Torrenter Searcher: RuTrackerMusic' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11d" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.six" version="1.11.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">KinoTrend</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
+        <disclaimer lang="ru">Данные из НЦР</disclaimer>
+        <platform>all</platform>
+        <website>http://kinotrend.pp.ua/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>4К раздачи заменены на Кинотренд</news>
+    </extension>
 </addon>
 
 <addon id="repository.lyxstv"
@@ -1142,6 +251,31 @@
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="plugin.rutracker" name="RuTracker" version="0.20.4mod137" provider-name="HAL9000">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.delugestream" version="0.1.1" optional="true"/>
+    <import addon="script.module.torrent.ts" optional="true"/>
+    <import addon="script.module.libtorrent" optional="true"/>
+    <import addon="script.service.torrserver" optional="true"/>
+    <import addon="script.module.torrserver" optional="true"/>
+    <import addon="plugin.video.elementum" optional="true"/>
+    <import addon="plugin.video.torrenter" optional="true"/>
+    <import addon="plugin.video.tam" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Исправлено проигрывание через встроенный модуль TorrServer раздач версии 2.</news>
+    <summary lang="en">RuTracker</summary>
+    <description lang="en">You can search RuTracker and download torrents.</description>
+    <summary lang="ru">Навигатор по RuTracker</summary>
+    <description lang="ru">Навигатор по сайту RuTracker с возможностью скачивания торрентов.[CR]Просмотр через Elementum, TorrServer, Torrenter, Torrent2http, TAM, Libtorrent, TorrentStream, DelugeStream.[CR]Скачивание торрентов с помощью Deluge, qBittorrent, rTorrent, Transmission и uTorrent.</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon
@@ -1275,6 +409,872 @@
       <screenshot>resources/screenshot-02.jpg</screenshot>
     </assets>
   </extension>
+</addon>
+
+<addon
+  id="visualization.spectrum"
+  version="2.0.4"
+  name="Spectrum"
+  provider-name="Team Kodi">
+  <requires>
+<import addon="kodi.binary.global.main" version="1.0.14"/>
+<import addon="kodi.binary.global.filesystem" version="1.0.2"/>
+<import addon="kodi.binary.instance.visualization" version="2.0.1"/></requires>
+  <extension
+    point="xbmc.player.musicviz"
+    library_linux="visualization.spectrum.so.2.0.4"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="af_ZA">Visualisering wys a roterende 3D Spektrum Analiseerder</summary>
+    <summary lang="ar_SA">عارض يظهر طيف محلل دوري ثلاثي الأبعاد</summary>
+    <summary lang="be_BY">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
+    <summary lang="bg_BG">Визуализация представяща ротиращ се 3D спектрален анализатор</summary>
+    <summary lang="ca_ES">Visualització mostrant un analitzador d'espectre giratori 3D</summary>
+    <summary lang="cs_CZ">Vizualizace zobrazující rotující 3D spektrální analyzátor</summary>
+    <summary lang="da_DK">Visualisering der viser en roterende 3D-spektrumanalyse</summary>
+    <summary lang="de_DE">Diese Visualisierung zeigt eine rotierende Spektrum Analyse in 3D</summary>
+    <summary lang="el_GR">Οπτικοποίηση που εμφανίζει έναν περιστρεφόμενο τρισδιάστατο Αναλυτή Φάσματος</summary>
+    <summary lang="en_GB">Visualisation showing a rotating 3D Spectrum Analyzer</summary>
+    <summary lang="es_ES">Visualización que muestra un analizador de espectro en 3D girando</summary>
+    <summary lang="es_AR">Visualización que muestra un analizador de espectro en 3D girando</summary>
+    <summary lang="es_MX">Visualización que muestra un Analizador de Espectro giratorio 3D</summary>
+    <summary lang="et_EE">Visuaal, mis näitab pöörlevat 3D spektraalanalüüsi</summary>
+    <summary lang="fi_FI">Pyörivä 3D-spektrianalysaattori</summary>
+    <summary lang="fr_FR">Visualisation affichant un analyseur de spectre 3D en rotation</summary>
+    <summary lang="gl_ES">Visualización que amosa un analizador de espectro virando en 3D</summary>
+    <summary lang="he_IL">DirectX Spectrum זהו חיזוי אשר מציג סיבובי 3D Spectrum Analyzer</summary>
+    <summary lang="hr_HR">Vizualizacija koja prikazuje rotirajući 3D spektralni analizator</summary>
+    <summary lang="hu_HU">Vizualizáció 3D spektrum analizátorral</summary>
+    <summary lang="is_IS">Myndskreyting sem sýnir þrívíddar rófgreini</summary>
+    <summary lang="it_IT">La visualizzazione mostra un analizzatore di spettro 3D rotante</summary>
+    <summary lang="ja_JP">回転する 3D スペクトラムアナライザーを表示する  ビジュアライザー</summary>
+    <summary lang="ko_KR">회전하는 3D 스펙트럼 분석기를 보여지는 음악시각화</summary>
+    <summary lang="lt_LT">Vizualizacija rodo rotacinis 3D spektro analizatorių</summary>
+    <summary lang="mk_MK">Визуализација која покажува ротирачки 3Д анализатор на спектар</summary>
+    <summary lang="nl_NL">DirectX-visualisatie die een roterende 3D-spectrumanalyse weergeeft</summary>
+    <summary lang="nb_NO">Visualisering som viser en roterende 3D ​​Spectrum Analyzer</summary>
+    <summary lang="pl_PL">Wizualizacja pokazująca obracający się analizator widma w 3D</summary>
+    <summary lang="pt_PT">Visualização que mostra um analisador espectral rotativo em 3D</summary>
+    <summary lang="pt_BR">Visualização que mostra um analisador espectral rotativo em 3D</summary>
+    <summary lang="ro_RO">Vizualizare cu afișarea unui analizor de spectru 3D rotativ</summary>
+    <summary lang="ru_RU">Визуализация, показывающая вращающийся трёхмерный анализатор спектра</summary>
+    <summary lang="sk_SK">Vizualizácia zobrazujúca rotujúci 3D spektrálny analyzátor</summary>
+    <summary lang="sl_SI">Vizualizacija, ki prikatuje vrtečo 3D spektralno analizo</summary>
+    <summary lang="sv_SE">Visualisering som visar en roterande 3D-spektrumanalysator</summary>
+    <summary lang="th_TH">การแสดงแสงสี ทำให้เห็นการหมุนแบบ 3 มิติ ของการวิเคราะห์คลื่นความถี่เสียง</summary>
+    <summary lang="uk_UA">Візуалізація що показує обертаючийся 3D спектроаналізатор.</summary>
+    <summary lang="zh_CN">显示旋转三维频谱分析图像的可视化效果</summary>
+    <summary lang="zh_TW">顯示旋轉的3D頻譜分析視覺效果</summary>
+    <description lang="af_ZA">Spectrum is 'n Visualisering wat 'n roterende 3D Spektrum Analiseerder, verbeeld met , vertoon wat op die maat van die musiek beweeg en 'n golf effek oor die spektrum rooster skep.&#10;Dit het ook verstellings vir die aanpas van spektrum staaf hoogte, sy spoed, en hoe die stawe verbeeld word (solied, punte, draad raamwerk) en is 'n lekker ligte, lae cpu verbruik visualisering wat fantasties lyk</description>
+    <description lang="ar_SA">طيف  هو تحليل بصري متحرك ثلاثي الابعاد للموسيقى! يتحرك بواسطة يرنامج  على وزن الموسيقى في شكل موجة.&#10;توجد ايضا اعدادات لتعديل شبكة الطيف من حيث طول الاعمدة, سرعتها, وحتى شكلها (صلبة, نقاط, اسلاك) تعمل هذة بحمل خفيف, ومعالجة cpu ضئيلة لكنها تبدو رائعة</description>
+    <description lang="be_BY">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.&#10;It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
+    <description lang="bg_BG">Spectrum е визуализация изобразяваща ротиращ се 3D спектрален анализатор (рендването се извършва с ). Ротацията е според ритъма на музиката и предизвиква вълнови ефект по спектрална решетка.&#10;Можете да настройвате височината на спектралните стълбове, скоростта и рендването - solid, points, wire frame. Характеризира се с отличен вид, като същевременно почти не натоварва процесора.</description>
+    <description lang="ca_ES">Spectrum és una visualització que mostra un analitzador d'espectre giratori en 3D renderitzat amb  que es mou al ritme de la música creant un efecte d'ona al llarg de la graella de l'espectre.⏎ També té opcions per ajustar l'alçada de la barra de l'espectre, la seva velocitat, i com es renderitzen les barres (sòlid, punts, malla de filferro). Una visualització que utilitza poca CPU i que és veu molt bé. </description>
+    <description lang="cs_CZ">Spectrum je vizualizace zobrazující rotující 3D spektrální analyzátor rendrovaný v , který se pohybuje v rytmu hudby a vytváří vlnový efekt napříč spektrální mřížkou.&#10;Obsahuje také nastavení pro přizpůsobení výšky sloupců spektra, rychlosti a způsobu vykreslení (vyplněný, body, drátový model). Je to velmi lehká vizualizace s nízkou zatíží CPU, která vypadá skvěle.</description>
+    <description lang="da_DK">-spektrum er en visualisering, der viser en roterende 3D-spektrumanalysator renderet i DirectX, som bevæger sig i takt til musikken og skaber en bølgeeffekt på tværs af spektrumfeltet.&#10;Den har også indstillinger til at justere spektrumliniens højde, fart og hvordan den bliver renderet (fast, punkter, trådramme). Det er en letvægtsvisualisering med lavt CPU-forbrug, som ser godt ud.</description>
+    <description lang="de_DE">Spectrum ist eine Visualisierung, die eine rotierende Spektrum Analyse in 3D zeigt. Die Visualisierung wird so gerendert, dass sie sich zum Takt der Musik bewegt und eine Welle über das Spektrum Grid legt.&#10;Es lässt sich neben der Höhe, die Geschwindigkeit als auch die Art der Balken (durchgehend, Punkte, Drahtgeflecht) einstellen. Eine schöne Visualisierung, die nur eine geringe CPU-Last erzeugt</description>
+    <description lang="el_GR">Το Spectrum είναι μία Οπτικοποίηση που εμφανίζει έναν περιστρεφόμενο τρισδιάστατο Αναλυτή Φάσματος που αποδίδεται μέσω  και κινείται στο ρυθμό της μουσικής δημιουργώντας ένα κυματικό εφέ κατά μήκος του φασματικού πλέγματος.&#10;Διαθέτει ρυθμίσεις για τον ορισμό του ύψους των στηλών του φάσματος, του τρόπου απόδοσης των στηλών (συμπαγείς, σημειακές, συρματόπλεγμα), και είναι μία ελαφριά, εμφανίσιμη και χαμηλής υπολογιστικής ισχύος οπτικοποίηση</description>
+    <description lang="en_GB">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.&#10;It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
+    <description lang="es_ES">Spectrum es una visualización que muestra un analizador de espectro en 3D girando renderizado con  que se mueve al ritmo de la música creando un efecto de onda en la rejilla del espectro.&#10;Se puede ajustar la altura de las barras, su velocidad, y como son renderizadas (sólido, puntos, malla). Es una visualización que utiliza poca CPU y muy agradable.</description>
+    <description lang="es_AR">Spectrum es una visualización que muestra un analizador de espectro en 3D girando, renderizado con , que se mueve al ritmo de la música creando un efecto de onda en la rejilla del espectro.&#10;Se puede ajustar la altura de las barras, su velocidad, y como son renderizadas (sólido, puntos, malla). Es una visualización que utiliza poca CPU y muy agradable.</description>
+    <description lang="es_MX">Espectro es una Visualización que muestra un Analizador de Especto en 3D rotando renderizado en  que se mueve al ritmo de la música creando un efecto de onda a través del espectro de la red.&#10;También tiene configuraciones para ajustar la altura de la barra de espectro, su velocidad, y cómo las barras son renderizadas (sólidas, puntos, malla de alambre) y es una buena visualización liviana, de poco uso de cpu que se ve genial.</description>
+    <description lang="et_EE">Spectrum on visuaal, mis näitab 3D spektraalanalüüsi renderdatud 'is, mis liigub liigub muusika rütmis luues laineefekti üle spektraalvõrgustiku.&#10;Lisaks on olemas ka võimalus seadistada spektri kõrgust, selle kiirust ja kuidas ribasid renderdatakse (tahkis, punktid, sõrestik).  Spectrum on hea väljanägemisega kerge ja vähese protsessorikasutusega visuaal.</description>
+    <description lang="fi_FI">Näyttää pyörivän 3D-spektrianalysaattorin, joka liikkuu musiikin tahdissa tuottaen aaltotehosteen spektrikuvaajaan.&#10;Spektripalkin korkeuden, nopeuden, ja piirtotavan (täytetyt, pisteet, ääriviivat) voi asettaa asetuksista. Spectrum on kevyt visualisointi joka näyttää hyvältä.</description>
+    <description lang="fr_FR">Spectrum est une visualisation affichant un analyseur de spectre 3D en rotation, sous . Il réagit au rythme de la musique, créant un effet d'onde sur la grille du spectre.&#10;Il propose divers paramètres pour ajuster la hauteur, la vitesse, et le rendu des barres du spectre (plein, points, fil de fer). Une visualisation légère, peu gourmande en CPU et agréable à regarder.</description>
+    <description lang="gl_ES">Spectrum é unha Visualización que amosa un analizador de espectro virando en 3D renderizado con  que se move ó ritmo da música creando un efecto de onde ó longo da grella do espectro.&#10;Tamén ten opcións para axustar a altura da barra, a velocidade e como se renderizan as barras (sólidas, puntos, malla) do espectro. É bonito, lixeiro, de baixo custo en CPU.</description>
+    <description lang="he_IL">Spectrum זהו חיזוי אשר מציג סיבובי 3D Spectrum Analyzer אשר זז לצלילי המוזיקה שיוצר אפקט גלים לרוחב רשת הספקטרום.&#10;יש אפשרות גם להגדיר את גובה פס הספקטרום, את המהירות, ואת התנהגות הפסים (filled, points, wire frame) וזהו חיזוי נחמד קל משקל לא מעמיס על המעבד ונראה נהדר.</description>
+    <description lang="hr_HR">Spectrum je vizualizacija koja prikazuje rotirajući 3D spektralni analizator renderiran u -u koji se pokreće u ritmu muzike stvarajući efekt valova u spektralnoj mreži.&#10;Također sadrži i postavke za namještanje visine sprektralnih traka, njihove brzine, i načina na koji su prikazane (popunjeno, točke, žičani okvir). Vizualizacija izgleda sjajno te je malih memorijskih i CPU zahtjeva.</description>
+    <description lang="hu_HU">Az Spectrum egy olyan vizualizáció ami egy 3D hang spektrum analizátort mutat  segítségével megjelenítve, ami a zene ritmusára mozog egy hullám-effektust képezve a teljes spektrumhálón.&#10;Beállítható a spektrum oszlopok magassága, mozgási sebessége és hogy az oszlopok hogyan jelenjenek meg (teli, pontok, drótváz). Ez egy kis erőforrásigényű vizualizáció ami nagyon jól mutat.</description>
+    <description lang="is_IS">Spectrum er myndskreyting sem sýnir þrívíddar rófgreini sem snýst sem er teiknaður í  og hreyfist í takt við tónlistina sem myndar bylgjuhreyfingu yfir rófið.&#10;Það er líka hægt að stilla hæð mælingana, hraða og hvernig þær eru teiknaðar (fyllt, punktar, útlínur) myndskrytingin setur lítið álag á örgjörva og lítur vel út</description>
+    <description lang="it_IT">Spectrum è una visualizzazione che mostra un analizzatore di spettro renderizzato in  che si muove a tempo di musica creando un effetto onda attraverso la griglia.&#10;E' possibile regolare varie impostazioni: l'altezza delle barre, la velocità di risposta e come le barre sono renderizzate (piene, con punti o con righe). E' una visualizzazione rilassante e con basso uso del processore.</description>
+    <description lang="ja_JP">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.&#10;It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
+    <description lang="ko_KR">스펙트럼은 회전하는 3D 스펙트럼 분석기를 통해 음악시각화를 보여주며 음악의 비트가 만들어내는 웨이브 효과를 스펙트럼 그리드에 보여줍니다. 설정에서 스펙트럼 바의 높이, 속도, 바의 갯수 (채워짐, 점, 와이어 프레임)를 지정할수 있습니다. 가볍고 CPU를 많이 사용하지 않습니다.</description>
+    <description lang="lt_LT">Spektro vizualizacija, kurioje besisukantį 3D spektro analizatorių, priimtą , katras juda į muzikos ritmą, įsteigiantis bangų poveikį visame spektro tinklelyje.&#10;Taip pat turi nustatymus nureguliuoti spektro juostos aukštį, jos greitį, ir teikiamas kraštines (kieta, taškai, tinklelio rėmas) ir yra gražus bei lengvas, mažai naudoja CPU vizualizacijai, ir atrodo puikiai</description>
+    <description lang="mk_MK">Spectrum is a Visualisation showing a rotating 3D Spectrum Analyzer rendered in  that moves to the beat of the music creating a wave effect across the spectrum grid.⏎ It also has settings to adjust the spectrum bar height, Its speed, and how the bars are rendered (solid, points, wire frame) and is a nice light weight, low cpu useage visualisation that looks great</description>
+    <description lang="nl_NL">Spectrum is een visualisatie met een draaiende 3D ​​Spectrum Analyzer gerenderd in . Deze visualisatie beweegt op het ritme van de muziek en creëert een golf effect over het hele spectrum. ⏎&#10;Het heeft instellingen om de barhoogte en de snelheid aan te passen, en hoe de staven worden weergegeven (vast, punten, draad frame) en is een mooie lichtgewicht visualisatie die weinig van de cpu vraagt en er geweldig uit ziet.</description>
+    <description lang="nb_NO">Spectrum er en visualisering som viser et roterende 3D ​​Spectrum Analyzer gjengitt i  som flytter til rytmen i musikken skaper en bølge effekt over hele spekteret rutenettet.⏎&#10;Det har også innstillinger for å justere spekterets bar høyde, hastighet, og hvordan barene gjengis (solid, punkt, wireframe) og er en fin lett vekt, lav cpu brukende visualisering som ser flott ut</description>
+    <description lang="pl_PL">Wizualizacja pokazuje obracający się, trójwymiarowy analizator widma, renderowany przy użyciu . Możesz ustawić wysokość słupków, ich prędkość i wygląd.</description>
+    <description lang="pt_PT">Spectrum é uma visualização que mostra um analisador espectral 3D rotativo, renderizado em , que se sincroniza com o ritmo da música, criando assim um efeito de ondas na grelha espectral.&#10;Pode-se definir a altura das barras, a sua velocidade e como são renderizadas (sólido, pontos ou contorno). É uma visualização que não utiliza muito CPU e tem um aspecto fantástico.</description>
+    <description lang="pt_BR">O Spectrum é uma visualização que mostra um analisador espectral rotativo 3D, renderizado em , que se sincroniza com a batida, criando assim um efeito de ondas na grelha espectral.&#10;Pode-se definir a altura das barras, a sua velocidade e como são renderizadas (sólido, pontos ou contorno). É uma visualização que utiliza pouco o CPU e com um visual fantástico.</description>
+    <description lang="ro_RO">Spectrul  este o vizualizare care afișează un analizor de spectre 3D rotativ randat în  care se mișcă după bătăile muzicii creând un val dea-lungul grilei spectrale.&#10;De asemenea, are setări pentru ajustarea înălțimii bărilor spectrale, a vitezei, și a modului în care bările sunt randate (umplere, puncte, contur). Este o vizualizare cu consum redus al procesorului care arată fantastic de bine.</description>
+    <description lang="ru_RU">Эта визуализация на основе  показывает вращающийся трёхмерный анализатор спектра, который движется в такт музыке, создавая эффект волны по всему спектру сетки.⏎&#10;Визуализация имеет настройки для регулировки высоты полос спектра, скорости движения и способа отображения полос (сплошной, точки, каркас), а также обладает небольшим размером и малой нагрузкой на процессор.</description>
+    <description lang="sk_SK">Spectrum je vizualizácia zobrazujúca rotujúci 3D spektrálny analyzátor vykresľovaný pomocou , ktorý sa hýbe v rytme hudby a tak vytvára vlny naprieč mriežkou spektra.[CR]&#10;Zároveň má nastavenia upravujúce výšku stĺpcov spektra, ich rýchlosť a ako sú vykresľované (vyplnené, body, drôtový model). Je to jednoduchá vizualizácia s nízkou záťažou CPU, ktorá výborne vyzerá.</description>
+    <description lang="sl_SI">Spectrum je vizualizacija, ki prikazuje vrtečo 3D spektralno analizato, generirano v , ki se premika v ritmu glasbe in ustvarja učinek valovanja v celotnem spektru. Vsebuje tudi nastavitve za prilagoditev višine spektra, hitrosti in oblike (polno, točke, okvir) ter je varčna vizualizacija z nizka porabo CPU-ja, ki izgleda super.</description>
+    <description lang="sv_SE">Spektrum är en visualisering som visar en roterande 3D-spektrumanalysator renderad i . Den rör sig till musikens takt och skapar en vågeffekt över spektrat.&#10;-spektrum har inställningar för att justera staplarnas höjd, deras hastighet, hur de ska visas (solida, punkter, ramverk) och är en visualisering med låg cpu-användning samtidigt som den ser bra ut</description>
+    <description lang="th_TH">Spectrum เป็น การแสดงแสงสี ทำให้เห็นการหมุนกราฟวิเคราะห์คลื่นความถี่เสียง แบบ 3 มิติ ที่สร้างขึ้นโดย  ที่ขยับไปตามจังหวะของเพลงที่สร้างผลกระทบเป็นคลื่นไปทั่วตารางความถี่.&#10;นอกจากนี้ยังมีการตั้งค่าเพื่อปรับความสูงของแท่งคลื่นความถี่,ความเร็วและกระบวนการที่แท่งแสดงผล (ของแข็ง, จุด, โครงลวด) ทั้งยังใช้ทรัพยากรน้อยได้ดี, การแสดงแสงสี ที่ใช้ซีพียูต่ำนั่นก็ดูยอดเยี่ยมทีเดียว</description>
+    <description lang="uk_UA">Spectrum  є візалізаціє що показує обертаючийся 3D спектроаналізатор що промальовується з використанням технології  . Спектроаналізатор показує стовпчики змінної висоти що рухаються в такт з музикою і створюють ефект подібний до хвилі.&#10;Ви маєте можливість налаштувати висоту стовпчиків, їх швидкість і те як вони намальовані (Заповнені, контури, крапки). Це досить проста, і невимоглива до процесора візуалізація, але яка має чудовий вигляд.</description>
+    <description lang="zh_CN">Spectrum可视化效果是渲染的一个旋转的三维频谱分析图像，频谱矩阵随着音乐节拍而象波浪起伏。&#10;你还可以设置频谱棒的高度、变换速度、以及呈现效果（固体、点、框架）。这是一个不错的轻量级，低CPU使用率的可视化效果。</description>
+    <description lang="zh_TW"> Spectrum 是使用  描繪顯示旋轉的3D頻譜分析視覺效果，頻譜格線隨著音樂節拍而像波浪起伏。&#10;它還可以調整頻譜長條的高度、速度以及呈現效果（實心、點狀、線框）。它是個很好的輕量級、低 CPU 使用率的視覺化效果。</description>
+    <platform>linux</platform>
+    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <screenshot>resources/screenshot-01.png</screenshot>
+      <screenshot>resources/screenshot-02.png</screenshot>
+      <screenshot>resources/screenshot-03.png</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="screensaver.shadertoy" version="2.0.0" name="ShaderToy" provider-name="popcornmix">
+  <requires>
+<import addon="kodi.binary.global.main" version="1.0.14"/>
+<import addon="kodi.binary.instance.screensaver" version="2.0.0"/></requires>
+  <extension point="xbmc.ui.screensaver" library_linux="screensaver.shadertoy.so.2.0.0"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>ShaderToy screensaver</summary>
+    <description>ShaderToy screensaver</description>
+    <platform>linux</platform>
+    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.baza-knig" name="База книг" version="0.1.1" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Остались только раздачи. Часть функционала не работает из-за изменений на сайте. Может кто-то поможет починить это?</news>
+    <summary lang="en">Baza Knig</summary>
+    <description lang="en">Baza Knig  -</description>
+    <summary lang="ru">База книг  -  аудиокниги.</summary>
+    <description lang="ru">База книг  -  аудиокниги онлайн.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Поправлены сериалы.</news>
+    <summary lang="en">Kino v HD</summary>
+    <description lang="en">Kino v HD -</description>
+    <summary lang="ru">Кино в HD - онлайн видео.</summary>
+    <description lang="ru">Кино в HD - фильмы, сериалы, мультфильмы онлайн.</description>
+    <platform>all</platform>
+    <assets>
+       <icon>icon.png</icon>
+    </assets>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
+  </extension>
+</addon>
+
+<addon id="script.module.websocket" name="websocket library" version="0.57.0" provider-name="pkscout">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="script.module.six" version="1.13.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>websocket library repacked for Kodi</summary>
+    <source>https://github.com/websocket-client/websocket-client</source>
+    <website>https://github.com/pkscout/script.module.websocket</website>
+    <platform>all</platform>
+    <license>LGPL</license>
+  </extension>
+</addon>
+
+<addon id="plugin.video.quasar" name="Quasarenter" version="0.0.2" provider-name="-=Vd=-">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+  </extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Fake quasar addon</summary>
+		<summary lang="ru">Фейковый квазар</summary>
+		<description lang="en">This addon redirect any calls to quasar plugin to torrenter or TAM.</description>
+		<description lang="ru">Это дополнение переадресует вызовы из других источников для плагина квазар на торрентер или TAM. Это нужно если вы не хотите пользоваться квазаром, а магнитные ссылки из YATSE проигрывать торрентером (TAM).</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.yummyanime" name="YummyAnime" version="0.4.0" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.youtube.dl"/>
+    <import addon="script.module.requests" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>kodik fixed.</news>
+    <summary lang="en">YummyAnime</summary>
+    <description lang="en">Navigator for site Yummyanime.club</description>
+    <summary lang="ru">Навигатор по YummyAnime.club</summary>
+    <description lang="ru">Навигатор по сайту yummyanime.club</description>
+    <platform>all</platform>
+    <broken>Website down / Сайт не работает</broken>
+    <lifecyclestate type="broken" lang="en_GB">Website down</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Сайт не работает</lifecyclestate>
+  </extension>
+</addon>
+
+<addon id="context.dandy.mediainfo" name="Media Info" version="1.4.1b" provider-name="dandy">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="2.0.10"/>
+    <import addon="script.extendedinfo" version="2.0.6"/>
+  </requires>
+  <extension point="kodi.context.item" library="default.py">
+    <item>
+      <label>32000</label>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Pvr.HasTVChannels</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Open Media Info by current Item</summary>
+    <description lang="en">Open Media Info by current Item</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.4" provider-name="virserg, Eviloid">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Еще работает...</news>
+    <summary lang="en">Kinovod</summary>
+    <description lang="en">Kinovod -</description>
+    <summary lang="ru">Киновод - онлайн видео</summary>
+    <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]Eviloid[/B] за модуль декодирования. [CR][B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon
+  id="visualization.shadertoy"
+  version="1.1.10"
+  name="Shadertoy"
+  provider-name="Team Kodi">
+  <requires>
+<import addon="kodi.binary.global.main" version="1.0.14"/>
+<import addon="kodi.binary.instance.visualization" version="2.0.1"/></requires>
+  <extension
+    point="xbmc.player.musicviz"
+    library_linux="visualization.shadertoy.so.1.1.10"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Visualisations from Shadertoy</summary>
+    <description lang="en">Visualisations from Shadertoy</description>
+    <platform>linux</platform>
+    <disclaimer>For Kodi 18 (Leia) linux (tested on rbp3 OSMC final).</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.19" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="resource.images.studios.white" version="0.0.5"/>
+		<import addon="script.module.kodi65" version="1.3.0"/>
+		<import addon="script.module.routing" version="0.1.0"/>
+		<import addon="script.qrdonate" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en_GB">ExtendedInfo Script</summary>
+		<summary lang="ru_RU">ExtendedInfo Script</summary>
+		<summary lang="uk_UA">ExtendedInfo Script</summary>
+		<summary lang="es">ExtendedInfo Script</summary>
+		<description lang="en_GB">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+		<description lang="ru_RU">Этот скрипт предлагает различные возможности для отображения онлайн-контента внутри обложки, а также полный браузер MovieDB, включая информационные диалоги для различных типов медиа. Используемыми сервисами являются themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com и многое другое. Требует реализации обложки для многих функций.</description>
+		<description lang="uk_UA">Цей сценарій пропонує різні можливості для відображення онлайн-вмісту всередині обкладинки, а також повний браузер MovieDB, включаючи діалоги інформації для різних типів медіа. Використані сервіси - themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com та багато іншого. Потрібна реалізація обкладинки для безлічі функцій.</description>
+		<description lang="es">Este script ofrece varias posibilidades para poder mostrar información online dentro de una piel, así como un completo navegador de TheMovieDB, incluidos los cuadros de diálogo de información para diversos tipos de medios. Los servicios usados son themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com y mucho más. Necesita la implementación en el skin para muchas de sus funciones.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
+		<email></email>
+		<source></source>
+		<news>fixed view mode after exit | Добавлена настройка разблокировки API через прокси дополнения TAM | Bug fixed | Update search and add refresh in context menu | Add: search in context menu | Add: play trailer via plugin.video.youtube | Add: trending day/week (movies, tvshows, persons). Some bugfixes. | Many improvements(next page...). Add filters: region, without keyword, network. | Add filters: language, without genre. Fixed: search pages, studio filter, people filter. | В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов. | Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо | Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+) | Find using United Search | Add to RuTracker | Fix remove favorites</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.program.bme280" name="BME280" version="0.0.1" provider-name="virserg">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <platform>linux</platform>
+        <disclaimer>For Kodi linux (tested on OSMC final). Only works on Raspberry Pi and BME280 sensor.</disclaimer>
+        <summary lang="en">Launch from Kodi.</summary>
+        <description lang="en">Launch from Kodi.</description>
+        <website>https://github.com/</website>
+        <email>me@me.me</email>
+    </extension>
+</addon>
+
+<addon id="script.torrentstreams.install" name="! Install All torrent streams !" version="0.0.1" provider-name="NoNe">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.delugestream" version="0.1.1"/>
+    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.libtorrent"/>
+    <import addon="script.service.torrserver"/>
+    <import addon="plugin.video.torrenter"/>
+    <import addon="plugin.video.tam"/>
+  </requires>
+  <extension point="xbmc.python.script" provides="executable" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news></news>
+    <summary lang="en">Install All torrent streams in one click.</summary>
+    <description lang="en">Install All torrent streams in one click.</description>
+    <summary lang="ru">Установка Всех торрент движков (кроме Elementum) в один клик.</summary>
+    <description lang="ru">Установка Всех торрент движков (кроме Elementum) в один клик. После установки можете сразу удалить это дополнение.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.3" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Еще работает...</news>
+    <summary lang="en">DomaTVNet</summary>
+    <description lang="en">DomaTVNet -</description>
+    <summary lang="ru">ДомаТВНет - телевидение.</summary>
+    <description lang="ru">ДомаТВНет - телевидение онлайн.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.tengine" name="TEngine" version="1.5.9mod2" provider-name="1orgar">
+  <requires>
+    <import addon="xbmc.python" version="2.7.13"/>
+    <import addon="script.module.libtorrent"/>
+    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.pyrrent2http"/>
+    <import addon="script.module.torrent2http"/>
+    <import addon="script.module.cdebug"/>
+    <import addon="script.module.torrserver" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>TEngine torrent streaming support</summary>
+    <description>Simple interface to most popular KODI torrent streaming engines</description>
+    <license>GPL</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.coldfilm.ru"
+       name="ColdFilm.ru"
+       version="0.1.2_mod10"
+       provider-name="TDW">
+  <requires>
+    <import addon="script.module.torrent.ts" optioal="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>СoldFilm.ru</summary>
+    <description>СoldFilm.ru for AceStreem, XBMCtorrent, Torrenter, YATP, Elementum, TAM, TorrServer Client</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.2" provider-name="mcobit">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <platform>linux</platform>
+        <disclaimer>For Kodi linux (tested on OSMC final)</disclaimer>
+        <summary lang="en">Launch RetroPie from Kodi.</summary>
+        <description lang="en">Launch RetroPie from Kodi.</description>
+        <website>https://github.com/mcobit/retrosmc/</website>
+        <email>me@me.me</email>
+    </extension>
+</addon>
+
+	<addon id="plugin.video.filmix.net.dev"
+       name="Filmix.Net"
+       version="0.6.1c"
+       provider-name="Evgenii Devisok aka evgen_dev">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.xbmcup" version="0.2.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
+    <extension point="xbmc.addon.metadata">
+		<news>опять работает;)</news>
+		<summary>Filmix.Net</summary>
+		<description>
+			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
+		<email>rvlad1987@mail.ru, xbmc@devisok.org</email>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.1.0" provider-name="virserg">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Отключена проверка сертификатов.</news>
+    <summary lang="en">Knizhkin.Net</summary>
+    <description lang="en">Knizhkin.Net -</description>
+    <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
+    <description lang="ru">Книжкин.Net - аудиокниги онлайн.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]alexander0155[/B]</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.6" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.addon" version="16.0.0" />
+  </requires>
+  <extension point="kodi.context.item" library="default.py">
+    <item>
+      <label>32000</label>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Container.Content(videos)|Container.Content()|Pvr.HasTVChannels</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Search by current Item</summary>
+    <summary lang="ru">Поиск по текущему элементу</summary>
+    <description lang="en">Search by current Item in select addon</description>
+    <description lang="ru">Поиск по текущему элементу в выбранном дополнении</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+    <assets><icon>icon.png</icon></assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.6" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>play fixed</news>
+    <summary lang="en">Kinokrad.co</summary>
+    <description lang="en">Kinokrad.co -</description>
+    <summary lang="ru">Кинокрад.Ко - онлайн видео</summary>
+    <description lang="ru">Кинокрад.Ко - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.animevost"
+       name="AnimeVost.org"
+       version="0.2.3j"
+       provider-name="TDW">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news></news>
+    <summary>AnimeVost.org</summary>
+    <description>AnimeVost.org</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="21.1217.1" provider-name="Rick Phillips (ruuk), YLLOW_DRAGON">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0" />
+		<import addon="script.module.addon.signals" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="control.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Module providing access to youtube-dl video stream extraction</summary>
+		<summary lang="ru_RU">Модуль дает доступ к видеопотоку youtube-dl</summary>
+		<summary lang="uk_UA">Модуль дає доступ до відеопотоку youtube-dl</summary>
+		<description lang="en_GB">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+		<description lang="ru_RU">Модуль дает доступ к извлечению видеопотока youtube-dl для сотен сайтов. Версия основана на версии даты youtube-dl: YY.MDD.V, где V - специфическая дополнительная версия дополнения. Также обеспечивает загрузку с возможностью фоновой загрузки с помощью диспетчера очереди.</description>
+		<description lang="uk_UA">Модуль дає доступ до вилучення відео потоку youtube-dl для сотень сайтів. Версія заснована на версії дати youtube-dl: YY.MDD.V, де V - специфічна додаткова версія доповнення. Також забезпечує завантаження з можливістю фонової завантаження за допомогою диспетчера черги.</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
+		<source>https://github.com/nkvoronov/script.module.youtube.dl.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.yt.testing_official" name="YouTube Test Repo (Official)" version="1.0.0" provider-name="Jeffrey Frasure">
+	<extension point="xbmc.addon.repository" name="YouTube Test Repo (Official)">
+		<info compressed="false">https://raw.githubusercontent.com/jdf76/repository/master/testing/official/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jdf76/repository/master/testing/official/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jdf76/repository/master/testing/official/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install alpha and beta versions of the YouTube add-on.</summary>
+		<description>Install alpha and beta versions of the YouTube add-on.</description>
+		<disclaimer>This add-on is not supported or endorsed by Google/YouTube.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.yatse.kodi" name="Yatse Kodi helper script" version="2.5.3a" provider-name="Yatse">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Yatse helper script for Kodi</summary>
+        <summary lang="ru">Скрипт Yatse для Kodi</summary>
+        <summary lang="fr">Script Yatse helper pour Kodi</summary>
+        <summary lang="de">Yatse-Skript für Kodi</summary>
+        <description lang="en">Yatse helper script for Kodi</description>
+        <description lang="ru">Скрипт для помощи работы Yatse в Kodi</description>
+        <description lang="fr">Script Yatse helper pour Kodi</description>
+        <description lang="de">Yatse-Skript für Kodi</description>
+        <platform>all</platform>
+        <news>2.5.3a: Fix play youtube
+2.5.3: Quick revert as YTDLP require Python 3.6 so Kodi 19 (This is version 2.4.5)
+2.4.X: Update YoutubeDL
+2.4.0: Fix for Kodi 19 magnet sharing
+2.3.X: Update YoutubeDL
+2.3.0: Update YoutubeDL + New option to ignore wrong SSL certificates on Kodi 18+ (Thanks bsdf)
+2.2.0: Update YoutubeDL + Fix for Kodi 19 removed function
+2.1.1: Update YoutubeDL
+2.1.0: New setting to prioritize Kodi youtube addon for Youtube urls + update YoutubeDL
+2.0.3: Update YoutubeDL
+2.0.2: Update YoutubeDL + update repository to provide Kodi 19 compatible addon
+1.9.2: Update YoutubeDL
+1.9.1: Update YoutubeDL
+1.9.0: Remove support for UrlResolver
+1.8.3: Update YoutubeDL
+1.8.2: Update YoutubeDL
+1.8.1: Add support for Python 3 (Kodi 19 Windows Python 3 is broken and does not support ctypes, no workaround!)
+1.7.0: Update YoutubeDL with Youtube fix
+1.6.6: Update YoutubeDL
+1.6.5: Update YoutubeDL
+1.6.4: Update YoutubeDL
+1.6.3: Update YoutubeDL
+1.6.2: Update YoutubeDL
+1.6.1: Fix queuing youtube video when using Dash.
+1.6.0: Embed youtubeDL for faster update than official addon + display notification instead of busy dialog for better Kodi 18 support.
+1.5.1: Use Youtube plugin when sharing if you activate MPEG-DASH to support 1080p+ quality. Add support for some more streams type. Remove no more needed Kodi 18 hack.
+1.4.6: Show script settings when trying to start from GUI.
+1.4.5: Ignore some regexp errors.
+1.4.4: Ignore errors on playlist containing invalid data.
+1.4.3: Fix issues on Kodi 16.
+1.4.2: Picture playlist support seems broken on Kodi 17.
+1.4.1: Improve picture support.
+1.4.0: Add support for pushing meta data when streaming from Yatse. (Except for videos containing ? on Kodi 18 due to a Kodi bug).
+        </news>
+    </extension>
+</addon>
+
+<addon id="context.rutracker.search" name="RuTracker Search" version="1.0.6" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.rutracker"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.python.script" library="plugin.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="kodi.context.item" library="default.py">
+    <item>
+      <label>$ADDON[context.rutracker.search 32000]</label>
+      <visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <news>Исправление ошибок.</news>
+    <summary lang="en">RuTracker Search Content</summary>
+    <description lang="en">RuTracker Search Content</description>
+    <summary lang="ru">Поиск по сайту RuTracker из дополнений</summary>
+    <description lang="ru">Поиск контента на RuTracker'e из дополнений KinoPoisk и других. Добавляет в контекстное меню "Найти на RuTracker'e". Ищет только по разделам Фильмы, Сериалы и Мультипликация.</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.torrserver" name="torrserver torrent streamer" version="0.2.6c" provider-name="-=Vd=-">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+		    <import addon="script.module.requests" optional="false"/>
+        <import addon="script.module.vsdbg" optional="true"/>
+    </requires>
+
+    <extension point="xbmc.python.module" library="lib"/>
+
+    <extension point="xbmc.python.pluginsource" library="lib/torrserve_stream/settings.py">
+      <provides>executable</provides>
+    </extension>
+
+  <extension point="xbmc.addon.metadata">
+        <news>ver 0.2.6c: add real file index for magnet link (need torrserver 1.1.77_6 with RealIdFileStats). ver 0.2.6: fixed nonstop preload on torrserver 1.1.77</news>
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.2.0ru" provider-name="Avigdor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist Loader</summary>
+    <summary lang="he">Playlist Loader</summary>
+    <description lang="en">Playlist Loader</description>
+    <description lang="he">Playlist Loader</description>
+    <platform>all</platform>
+	<news>
+1.2.0
+- (fix) support strings.xml (old Kodi versions).
+1.1.9
+- Added an option to show groups in channels lists.
+	</news>
+  </extension>
+</addon>
+
+<addon id="plugin.video.LostFilm3"
+       name="LostFilm-3.0"
+       version="3.9.6b"
+       provider-name="TDW">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.torrent2http"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>LostFilm</summary>
+    <description>LostFilm.tv - лучшие сериалы</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.3.2" provider-name="Philipp Temminghoff (phil65), virserg">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.youtube.dl" version="14.519.1"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.autocompletion" version="1.0.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module</summary>
+		<description lang="en">Helper module for all kind of stuff</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/phil65/script.module.kodi65</source>
+		<news>Adjust to latest core changes, bugfixes, API extensions</news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.5" provider-name="virserg">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news></news>
+    <summary lang="en">Rutor audiobooks</summary>
+    <description lang="en">Rutor audiobooks -</description>
+    <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
+    <description lang="ru">Rutor Аудиокниги - аудиокниги и музыка онлайн.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.77" provider-name="Nemiroff, virserg">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.addon.metadata">
+        <news>Добавлены: категории и настройки. Исправлены баги.</news>
+        <summary lang="en">TorrServer Client: Torrent video streaming</summary>
+        <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
+        <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
+        <description lang="ru">TorrServer Client - смотрите фильмы, сериалы, видео, картинки, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]kumok[/B], [B]rx81[/B]</description>
+        <language>en, ru</language>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.trovo" name="trovo.live" version="1.0.0a" provider-name="winsomehax">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Viewing streams from trovo.live</summary>
+        <summary lang="ru">Просмотр потоков из trovo.live</summary>
+        <description lang="en">Viewing streams from trovo.live</description>
+        <description lang="ru">Просмотр прямых трансляций из trovo.live</description>
+        <language>English, Russian</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <forum>https://github.com/winsomehax/</forum>
+        <website>https://github.com/winsomehax/</website>
+        <email>winsomehax@gmail.com</email>
+        <source>https://github.com/winsomehax/</source>
+        <news>https://github.com/winsomehax/</news>
+        <disclaimer lang="en">It's yours. If you break it, you can keep the pieces!</disclaimer>
+        <disclaimer lang="ru">Это ваше. Если вы сломаете его, то вы можете сохранить осколки!</disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    <broken>Addon is no longer maintained by the author / Дополнение больше не поддерживается автором</broken>
+    <lifecyclestate type="broken" lang="en_GB">Addon is no longer maintained by the author</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Дополнение больше не поддерживается автором</lifecyclestate>
+    </extension>
+</addon>
+
+<addon id="script.qrdonate" name="QR Donate" version="0.0.1" provider-name="virserg">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Donate</summary>
+		<description lang="en">Donate</description>
+		<summary lang="ru">Подаяние...</summary>
+		<description lang="ru">Милостыня...;)</description>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum></forum>
+		<source></source>
+		<assets>
+			<icon></icon>
+		</assets>
+		<news>...</news>
+	</extension>
+</addon>
+
+<addon id="repository.popcornmix" name="Popcornmix Add-ons" version="1.0.0" provider-name="popcornmix">
+    <extension point="xbmc.addon.repository" name="Popcornmix Add-ons">
+		<info compressed="true">https://github.com/popcornmix/repository.popcornmix.storage/raw/master/addons.xml</info>
+		<checksum>https://github.com/popcornmix/repository.popcornmix.storage/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/popcornmix/repository.popcornmix.storage/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Popcornmix Add-ons</summary>
+		<summary lang="en">Popcornmix Add-ons</summary>
+		<description>Repository of add-ons by Popcornmix. Add-ons in alpha and beta status are here to test exclusively and for testers to provide them with updates.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.virserg" name="Virserg Repository" version="1.0.1" provider-name="Virserg">
