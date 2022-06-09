@@ -45,7 +45,7 @@
 
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
-       version="0.1.2_mod11"
+       version="0.1.2_mod12"
        provider-name="TDW">
   <requires>
     <import addon="script.module.torrent.ts" optional="true"/>
@@ -83,7 +83,7 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.6" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.7" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
@@ -106,16 +106,17 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.78" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.79" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="script.module.requests" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлены: категории и настройки. Исправлены баги и ошибки (Kodi 19).</news>
+        <news>Добавлены настройки. Исправлены баги и ошибки (Kodi 19).</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
