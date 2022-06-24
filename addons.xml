@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.6" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.7" provider-name="virserg">
   <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
@@ -15,6 +14,9 @@
     <summary lang="ru">MegaPeer -</summary>
     <description lang="ru">MegaPeer</description>
     <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
@@ -894,7 +896,7 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.7" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.8" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
@@ -1164,9 +1166,8 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.5" provider-name="virserg">
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.6" provider-name="virserg">
   <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
@@ -1179,10 +1180,13 @@
     <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
     <description lang="ru">Rutor Аудиокниги - аудиокниги и музыка онлайн.</description>
     <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.83" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.84" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -1192,7 +1196,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлена работа с отметками о просмотре для сервера MatriX.</news>
+        <news>Добавлено: отображение ошибок соединения в некоторых случаях, настройки. Исправлены баги и ошибки.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
