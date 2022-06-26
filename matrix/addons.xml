@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.7" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.8" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -18,6 +18,29 @@
         <icon>icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.12a" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.six" version="1.11.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">KinoTrend</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
+        <disclaimer lang="ru">Данные из НЦР</disclaimer>
+        <platform>all</platform>
+        <website>http://kinotrend.pp.ua/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>Добавлена работа с TorrServer Client</news>
+    </extension>
 </addon>
 
 <addon id="plugin.video.kinovhd" name="Кино в HD" version="0.2.3" provider-name="virserg">
@@ -126,7 +149,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.6" provider-name="virserg">
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.7" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -146,7 +169,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.84" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.85" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -156,7 +179,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлено: отображение ошибок соединения в некоторых случаях, настройки. Исправлены баги и ошибки.</news>
+        <news>Мелкие правки.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
