@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.8" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.0.8a" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -1166,7 +1166,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.7" provider-name="virserg">
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.7a" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
