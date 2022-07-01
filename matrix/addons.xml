@@ -88,7 +88,7 @@
 
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
-       version="0.1.2_mod12"
+       version="0.1.2_mod13"
        provider-name="TDW">
   <requires>
     <import addon="script.module.torrent.ts" optional="true"/>
@@ -169,7 +169,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.86" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.87" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -179,7 +179,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Для сервера MatriX исправлены: ошибка открытия некоторых раздач и предзагрузка.</news>
+        <news>Мелочь.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
