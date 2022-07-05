@@ -145,7 +145,7 @@
 
 <addon id="script.key.layout.osmc"
        name="Аппаратная раскладка клавиатуры"
-       version="0.0.2"
+       version="0.0.2a"
        provider-name="AlexElec, virserg">
   <requires>
     <import addon="xbmc.addon" version="18.0.0"/>
@@ -160,6 +160,9 @@
     <description lang="ru">Переключение раскладки клавиатуры Анг/Рус по двум клавишам (Ctrl+пробел). Только для Kodi 18+.[CR]После установки запустите это дополнение, а затем перезагрузите Kodi.</description>
     <language></language>
     <platform>linux</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
