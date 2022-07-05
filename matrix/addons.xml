@@ -20,6 +20,53 @@
   </extension>
 </addon>
 
+<addon id="script.key.layout.osmc"
+       name="Аппаратная раскладка клавиатуры"
+       version="0.0.2"
+       provider-name="AlexElec, virserg">
+  <requires>
+    <import addon="xbmc.addon" version="18.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard Layout EN/RU</summary>
+    <description lang="en">Keyboard Layout EN/RU. Only Kodi 18+.</description>
+    <summary lang="ru">Переключение раскладки (Анг/Рус) на клавиатуре</summary>
+    <description lang="ru">Переключение раскладки клавиатуры Анг/Рус по двум клавишам (Ctrl+пробел). Только для Kodi 18+.[CR]После установки запустите это дополнение, а затем перезагрузите Kodi.</description>
+    <language></language>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="plugin.video.diafilms"
+       name="[COLOR FF00FF00]Диафильмы ([/COLOR][COLOR FFFFF000]diafilmy.su[/COLOR][COLOR FF00FF00])[/COLOR]"
+       version="1.0.8"
+       provider-name="Silen">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             provides="video"
+             library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Диафильмы</summary>
+    <description>Диафильмы – возвращение в детство
+Окунитесь в Мир Детства, вспомните магию темной комнаты, горячего диапроектора и скрипа прокручивания пленки на следующий кадр,
+ваш восторг в ту секунду, когда на стене появляется первый кадр, и начинается сказка…
+
+</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.12a" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
