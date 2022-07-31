@@ -219,7 +219,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.88" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.1.89" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
