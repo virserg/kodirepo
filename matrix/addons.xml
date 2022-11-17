@@ -136,6 +136,24 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.bme280" name="BME280" version="0.0.1" provider-name="virserg">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <platform>linux</platform>
+        <disclaimer>For Kodi linux (tested on OSMC final). Only works on Raspberry Pi and BME280 sensor.</disclaimer>
+        <summary lang="en">Launch from Kodi.</summary>
+        <description lang="en">Launch from Kodi.</description>
+        <website>https://github.com/</website>
+        <email>me@me.me</email>
+    </extension>
+</addon>
+
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
        version="0.1.2_mod13"
