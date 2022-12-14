@@ -772,9 +772,8 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.3" provider-name="virserg">
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.4" provider-name="virserg, Eviloid">
   <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
@@ -784,13 +783,18 @@
     <news>Еще работает...</news>
     <summary lang="en">DomaTVNet</summary>
     <description lang="en">DomaTVNet -</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered.</disclaimer>
     <summary lang="ru">ДомаТВНет - телевидение.</summary>
     <description lang="ru">ДомаТВНет - телевидение онлайн.</description>
+    <disclaimer lang="ru">Автор не размещает и не распространяет какой-либо контент, отображаемый этим дополнением. Автор не имеет никакого отношения к предлагаемым сайтам и каналам.</disclaimer>
     <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.21a4" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.23a" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -804,10 +808,8 @@
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-[fix] Comments on Python 2 (Kodi 18 and less)
-[add] Add setting General - Hide short videos (1 minute or less)
-[add] Add support for /shorts/video_id format links |contrib: jmbreuer|
-[lang] translation updates from Weblate
+[fix] comments (Kodi 18 or less)
+[revert] subscription groups/tags - causing breaking issues
         </news>
         <assets>
             <icon>icon.png</icon>

@@ -154,6 +154,28 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.4" provider-name="virserg, Eviloid">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Еще работает...</news>
+    <summary lang="en">DomaTVNet</summary>
+    <description lang="en">DomaTVNet -</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered.</disclaimer>
+    <summary lang="ru">ДомаТВНет - телевидение.</summary>
+    <description lang="ru">ДомаТВНет - телевидение онлайн.</description>
+    <disclaimer lang="ru">Автор не размещает и не распространяет какой-либо контент, отображаемый этим дополнением. Автор не имеет никакого отношения к предлагаемым сайтам и каналам.</disclaimer>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
        version="0.1.2_mod13"
