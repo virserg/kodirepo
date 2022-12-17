@@ -116,7 +116,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.5" provider-name="virserg, Eviloid">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.6" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -124,7 +124,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправлено контекстное меню (Kodi 19).</news>
+    <news>Добавлена настройка: Использовать inputstream.adaptive для проигрывания видео.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
@@ -239,6 +239,28 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.7" provider-name="virserg">
+  <requires>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>Поддержка Kodi 19</news>
+    <summary lang="en">Kinokrad.co</summary>
+    <description lang="en">Kinokrad.co -</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered.</disclaimer>
+    <summary lang="ru">Кинокрад.Ко - онлайн видео</summary>
+    <description lang="ru">Кинокрад.Ко - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
+    <disclaimer lang="ru">Автор не размещает и не распространяет какой-либо контент, отображаемый этим дополнением. Автор не имеет никакого отношения к предлагаемым сайтам.</disclaimer>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.7" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
@@ -259,7 +281,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.2.2" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.2.3" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -270,7 +292,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлена ошибка на CoreElec 20.</news>
+        <news>Добавлен поиск по bitsearch.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
