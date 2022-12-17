@@ -650,7 +650,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.6" provider-name="virserg, Eviloid">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.7" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -772,7 +772,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.4" provider-name="virserg, Eviloid">
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.5" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
