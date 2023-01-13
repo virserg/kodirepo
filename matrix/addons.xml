@@ -70,7 +70,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.13a" provider-name="Nemiroff">
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.14a" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.kodi-six" />
@@ -89,7 +89,7 @@
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news>Работа с Python 3.10 и исправление получения года</news>
+        <news>Работа с Python 3.10, Kodi 20 и исправление получения года</news>
     </extension>
 </addon>
 
