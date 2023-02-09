@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.1.0" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.1.1" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -8,12 +8,13 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news></news>
+    <news>Оптимизация.</news>
     <summary lang="en">MegaPeer</summary>
     <description lang="en">MegaPeer -</description>
     <summary lang="ru">MegaPeer -</summary>
     <description lang="ru">MegaPeer</description>
     <platform>all</platform>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
         <icon>icon.png</icon>
     </assets>
@@ -650,7 +651,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.7" provider-name="virserg, Eviloid">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.8" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -658,12 +659,13 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Добавлена настройка: Использовать inputstream.adaptive для проигрывания видео.</news>
+    <news>Оптимизация. Поправлены сериалы.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
     <description lang="ru">Киновод - фильмы, сериалы, мультфильмы, телепередачи онлайн.[CR][CR] Спасибо: [B]Eviloid[/B] за модуль декодирования. [CR][B]FreeMan42[/B] за замечания и добавления(19 Kodi).</description>
     <platform>all</platform>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
         <icon>icon.png</icon>
     </assets>
@@ -981,7 +983,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.1.1" provider-name="virserg">
+<addon id="plugin.audio.knizhkin.net" name="Книжкин.Net" version="0.1.2" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -989,12 +991,13 @@
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Исправлено контекстное меню (Kodi 19).</news>
+    <news>Оптимизация.</news>
     <summary lang="en">Knizhkin.Net</summary>
     <description lang="en">Knizhkin.Net -</description>
     <summary lang="ru">Книжкин.Net - аудиокниги.</summary>
     <description lang="ru">Книжкин.Net - аудиокниги онлайн.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]alexander0155[/B]</description>
     <platform>all</platform>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
         <icon>icon.png</icon>
     </assets>
@@ -1024,7 +1027,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.7" provider-name="virserg">
+<addon id="plugin.video.kinokrad.co" name="Кинокрад.Ко" version="0.0.8" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -1032,7 +1035,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Поддержка Kodi 19</news>
+    <news>Оптимизация.</news>
     <summary lang="en">Kinokrad.co</summary>
     <description lang="en">Kinokrad.co -</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered.</disclaimer>
@@ -1040,6 +1043,7 @@
     <description lang="ru">Кинокрад.Ко - фильмы, сериалы, мультфильмы, телепередачи онлайн.</description>
     <disclaimer lang="ru">Автор не размещает и не распространяет какой-либо контент, отображаемый этим дополнением. Автор не имеет никакого отношения к предлагаемым сайтам.</disclaimer>
     <platform>all</platform>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
         <icon>icon.png</icon>
     </assets>
@@ -1275,7 +1279,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.0.9" provider-name="virserg">
+<addon id="plugin.video.rutor.audio" name="Rutor Аудиокниги" version="0.1.0" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -1283,19 +1287,20 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news></news>
+    <news>Оптимизация.</news>
     <summary lang="en">Rutor audiobooks</summary>
     <description lang="en">Rutor audiobooks -</description>
     <summary lang="ru">Rutor Аудиокниги - онлайн аудиокниги</summary>
     <description lang="ru">Rutor Аудиокниги - аудиокниги и музыка онлайн.</description>
     <platform>all</platform>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
         <icon>icon.png</icon>
     </assets>
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.2.9" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.3.0" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -1304,15 +1309,16 @@
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.python.module" library="resources/site-packages/" />
     <extension point="xbmc.addon.metadata">
-        <news>Мелкие правки. Настройки: "Список трекеров на сервере" и ...</news>
+        <news>Оптимизация. Исправление ошибок.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
         <description lang="ru">TorrServer Client - смотрите фильмы, сериалы, видео, картинки, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]kumok[/B], [B]rx81[/B]</description>
-        <language>en, ru</language>
+        <language>en ru</language>
         <platform>all</platform>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
         <assets>
             <icon>icon.png</icon>
         </assets>
