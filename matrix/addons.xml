@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
 <addons>
 <addon id="plugin.video.megapeer" name="MegaPeer" version="0.1.1" provider-name="virserg">
   <requires>
@@ -157,7 +156,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.6" provider-name="virserg, Eviloid">
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.7" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -165,7 +164,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Еще работает...</news>
+    <news>Работает со скрипом...</news>
     <summary lang="en">DomaTVNet</summary>
     <description lang="en">DomaTVNet -</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered.</disclaimer>
@@ -173,6 +172,7 @@
     <description lang="ru">ДомаТВНет - телевидение онлайн.</description>
     <disclaimer lang="ru">Автор не размещает и не распространяет какой-либо контент, отображаемый этим дополнением. Автор не имеет никакого отношения к предлагаемым сайтам и каналам.</disclaimer>
     <platform>all</platform>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
         <icon>icon.png</icon>
     </assets>
