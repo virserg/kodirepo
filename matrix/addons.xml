@@ -117,7 +117,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.8" provider-name="virserg, Eviloid">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.2.9" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -125,7 +125,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Оптимизация. Поправлены сериалы.</news>
+    <news>Расчёт адреса сайта.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
