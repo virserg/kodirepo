@@ -117,7 +117,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.2.9" provider-name="virserg, Eviloid">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.3.0" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -125,7 +125,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Расчёт адреса сайта.</news>
+    <news>Восстановлена работа сериалов.</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
@@ -156,7 +156,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.7" provider-name="virserg, Eviloid">
+<addon id="plugin.video.domatvnet" name="ДомаТВНет" version="0.0.8" provider-name="virserg, Eviloid">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -164,12 +164,12 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Работает со скрипом...</news>
+    <news>Работает... но как долго?</news>
     <summary lang="en">DomaTVNet</summary>
     <description lang="en">DomaTVNet -</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered.</disclaimer>
     <summary lang="ru">ДомаТВНет - телевидение.</summary>
-    <description lang="ru">ДомаТВНет - телевидение онлайн.</description>
+    <description lang="ru">ДомаТВНет - телевидение онлайн.[CR][CR] Спасибо огромное Eviloid'у.</description>
     <disclaimer lang="ru">Автор не размещает и не распространяет какой-либо контент, отображаемый этим дополнением. Автор не имеет никакого отношения к предлагаемым сайтам и каналам.</disclaimer>
     <platform>all</platform>
     <reuselanguageinvoker>true</reuselanguageinvoker>
