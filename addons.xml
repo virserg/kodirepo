@@ -58,14 +58,14 @@
     </extension>
 </addon>
 
-<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_31" provider-name="YouROK, Nemiroff">
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_32" provider-name="YouROK, Nemiroff, virserg">
     <requires>
-        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="xbmc.addon" version="16.0.0"/>
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.python.module" library="resources/site-packages" />
     <extension point="xbmc.addon.metadata">
-	<news>Добавлены: *.tif, параметр запуска -w и замена части трекеров (replace.txt). Мелкое исправление в веб-интерфейсе и одного recovery panic.</news>
+	<news>Улучшена работа с раздачами картинок.</news>
         <summary lang="en">TorrServer</summary>
 		<summary lang="ru">TorrServer</summary>
         <description lang="en">TorrServer is a torrent streaming engine.</description>

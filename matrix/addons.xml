@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="script.service.torrserver.matrix" name="TorrServer Service (MatriX)" version="matrix.122" provider-name="YouROK, Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.kodi-six" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">TorrServer</summary>
+        <summary lang="ru">TorrServer</summary>
+        <description lang="en">TorrServer is a torrent streaming engine.</description>
+        <description lang="ru">TorrServer - сервис для стриминга торрентов.</description>
+        <language>en,ru</language>
+        <platform>linux windows</platform>
+        <news>MatriX Release</news>
+        <forum></forum>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.megapeer" name="MegaPeer" version="0.1.1" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
@@ -19,6 +41,28 @@
         <icon>icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+<addon id="script.service.torrserver" name="TorrServer" version="1.1.77_32" provider-name="YouROK, Nemiroff, virserg">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.addon.metadata">
+	<news>Улучшена работа с раздачами картинок.</news>
+        <summary lang="en">TorrServer</summary>
+		<summary lang="ru">TorrServer</summary>
+        <description lang="en">TorrServer is a torrent streaming engine.</description>
+		<description lang="ru">TorrServer - сервис для стриминга торрентов.</description>
+        <language>en,ru</language>
+        <platform>linux windows</platform>
+        <forum></forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="script.key.layout.osmc"
