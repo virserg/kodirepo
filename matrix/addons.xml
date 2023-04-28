@@ -434,7 +434,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.4.5" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.4.6" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -445,7 +445,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages/" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлены мелкие баги. Доработано контекстное меню "Удалить все отметки файлов". Добавлены еще подборки.</news>
+        <news>Исправлен глюк. Теперь используется API InfoTag на Kodi 20+.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
