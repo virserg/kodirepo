@@ -367,7 +367,7 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.0.9" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.1.0" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
@@ -434,7 +434,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.4.9" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.5.0" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -445,7 +445,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages/" />
     <extension point="xbmc.addon.metadata">
-        <news>Поправлен filmopotok.</news>
+        <news>Добавлены: настройки, поиск раздач с фильтром, отображение страны в списке.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
