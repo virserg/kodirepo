@@ -91,7 +91,7 @@
 
 <addon id="plugin.video.diafilms"
        name="[COLOR FF00FF00]Диафильмы ([/COLOR][COLOR FFFFF000]diafilmy.su[/COLOR][COLOR FF00FF00])[/COLOR]"
-       version="1.0.8"
+       version="1.0.9"
        provider-name="Silen">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
@@ -434,7 +434,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.5.0" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.5.1" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -445,7 +445,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages/" />
     <extension point="xbmc.addon.metadata">
-        <news>Добавлены: настройки, поиск раздач с фильтром, отображение страны в списке.</news>
+        <news>Добавлена настройка. Исправлены баги.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
