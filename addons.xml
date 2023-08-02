@@ -1332,22 +1332,23 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.5.5" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.5.6" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
         <import addon="script.module.beautifulsoup4" optional="true"/>
+        <import addon="script.module.pyxbmct" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="navigation.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages/" />
     <extension point="xbmc.addon.metadata">
-        <news>Исправлена ошибка(python 3.8.11).</news>
+        <news>Добавлена возможность скачать файлы раздачи в фоне(Спасибо alexeichikad).</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
-        <description lang="ru">TorrServer Client - смотрите фильмы, сериалы, видео, картинки, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]kumok[/B], [B]rx81[/B]</description>
+        <description lang="ru">TorrServer Client - смотрите фильмы, сериалы, видео, картинки, слушайте музыку с торрентов без предварительного скачивания.[CR]Просто добавьте торрент файл или Magnet ссылку и наслаждайтесь шоу — загрузка и воспроизведение будут идти одновременно.[CR][CR]Спасибо за помощь в тестировании версии под Kodi 19 Matrix: [B]kumok[/B], [B]rx81[/B][CR][CR]Спасибо за доработку: [B]alexichikad[/B]</description>
         <language>en ru</language>
         <platform>all</platform>
         <reuselanguageinvoker>true</reuselanguageinvoker>
