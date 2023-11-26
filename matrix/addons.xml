@@ -161,7 +161,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinovod" name="Киновод" version="0.3.7" provider-name="virserg, Eviloid, Zeltorix">
+<addon id="plugin.video.kinovod" name="Киновод" version="0.3.8" provider-name="virserg, Eviloid, Zeltorix">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -169,7 +169,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Работает, пока...</news>
+    <news>Работает...</news>
     <summary lang="en">Kinovod</summary>
     <description lang="en">Kinovod -</description>
     <summary lang="ru">Киновод - онлайн видео</summary>
@@ -434,7 +434,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.6.1" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.6.2" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -446,7 +446,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages/" />
     <extension point="xbmc.addon.metadata">
-        <news>Поправлен поиск по torlook.in и tragtorr</news>
+        <news>Поправлен поиск по freebfg</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
