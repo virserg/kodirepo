@@ -367,7 +367,7 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.1.0" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.1.1" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
