@@ -328,7 +328,7 @@
 
 <addon id="plugin.video.coldfilm.ru"
        name="ColdFilm.ru"
-       version="0.1.2_mod13"
+       version="0.1.2_mod14"
        provider-name="TDW">
   <requires>
     <import addon="script.module.torrent.ts" optional="true"/>
