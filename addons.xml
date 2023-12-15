@@ -717,7 +717,7 @@
   </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.23" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.24" provider-name="phil65 (Philipp Temminghoff), YLLOW_DRAGON, virserg">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="resource.images.studios.white" version="0.0.5"/>
@@ -746,7 +746,7 @@
 		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
 		<email></email>
 		<source></source>
-		<news>Доработан поиск по дополнениям | add setting: unblock api in dns | fixed view mode after exit | Добавлена настройка разблокировки API через прокси дополнения TAM | Bug fixed | Update search and add refresh in context menu | Add: search in context menu | Add: play trailer via plugin.video.youtube | Add: trending day/week (movies, tvshows, persons). Some bugfixes. | Many improvements(next page...). Add filters: region, without keyword, network. | Add filters: language, without genre. Fixed: search pages, studio filter, people filter. | В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов. | Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо | Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+) | Find using United Search | Add to RuTracker | Fix remove favorites</news>
+		<news>Листание списков по страцам | Доработан поиск по дополнениям | add setting: unblock api in dns | fixed view mode after exit | Добавлена настройка разблокировки API через прокси дополнения TAM | Bug fixed | Update search and add refresh in context menu | Add: search in context menu | Add: play trailer via plugin.video.youtube | Add: trending day/week (movies, tvshows, persons). Some bugfixes. | Many improvements(next page...). Add filters: region, without keyword, network. | Add filters: language, without genre. Fixed: search pages, studio filter, people filter. | В видеоинфо сериалов исправление выбора ключевого слова и студии. Фильтр в сериалах по ключевому слову и сортировка по кол-ву голосов. | Исправления сортировки по кол-ву голосов и поиска по сертификации из видеоинфо | Fix memory leak(Теперь можно открыть больше 10 видеоинфо подряд на rpi3b+) | Find using United Search | Add to RuTracker | Fix remove favorites</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -1036,7 +1036,7 @@
   </extension>
 </addon>
 
-<addon id="context.addon.search" name="Поиск в дополнении" version="0.1.1" provider-name="virserg">
+<addon id="context.addon.search" name="Поиск в дополнении" version="0.1.2" provider-name="virserg">
   <requires>
     <import addon="xbmc.addon" version="16.0.0" />
   </requires>
