@@ -179,6 +179,9 @@
     <assets>
         <icon>icon.png</icon>
     </assets>
+    <broken>Addon is no longer maintained by the author / Дополнение больше не поддерживается автором</broken>
+    <lifecyclestate type="broken" lang="en_GB">Addon is no longer maintained by the author</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Дополнение больше не поддерживается автором</lifecyclestate>
   </extension>
 </addon>
 
@@ -410,6 +413,9 @@
     <assets>
         <icon>icon.png</icon>
     </assets>
+    <broken>Addon is no longer maintained by the author / Дополнение больше не поддерживается автором</broken>
+    <lifecyclestate type="broken" lang="en_GB">Addon is no longer maintained by the author</lifecyclestate>
+    <lifecyclestate type="broken" lang="ru_RU">Дополнение больше не поддерживается автором</lifecyclestate>
   </extension>
 </addon>
 
@@ -434,7 +440,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.6.3" provider-name="Nemiroff, virserg">
+<addon id="plugin.video.torrserve" name="TorrServer Client" version="0.6.4" provider-name="Nemiroff, virserg">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.requests" optional="true"/>
@@ -446,7 +452,7 @@
     </extension>
     <extension point="xbmc.python.module" library="resources/site-packages/" />
     <extension point="xbmc.addon.metadata">
-        <news>Поправлен поиск. Добавлены настройки.</news>
+        <news>Поправлены баги и ошибки.</news>
         <summary lang="en">TorrServer Client: Torrent video streaming</summary>
         <summary lang="ru">TorrServer Client: потоковое воспроизведение видеоторрентов</summary>
         <description lang="en">TorrServer Client is a torrent streaming engine. It doesn't go on torrent websites for legal reasons.</description>
