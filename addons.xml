@@ -194,7 +194,7 @@
 
 <addon id="plugin.video.diafilms"
        name="[COLOR FF00FF00]Диафильмы ([/COLOR][COLOR FFFFF000]diafilmy.su[/COLOR][COLOR FF00FF00])[/COLOR]"
-       version="1.0.9"
+       version="1.1.0"
        provider-name="Silen">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
