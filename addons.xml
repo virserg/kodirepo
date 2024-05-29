@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.megapeer" name="MegaPeer" version="0.1.1" provider-name="virserg">
+<addon id="plugin.video.megapeer" name="MegaPeer" version="0.1.2" provider-name="virserg">
   <requires>
     <import addon="script.module.beautifulsoup4"/>
   </requires>
@@ -8,7 +8,7 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <news>Оптимизация.</news>
+    <news>Топ</news>
     <summary lang="en">MegaPeer</summary>
     <description lang="en">MegaPeer -</description>
     <summary lang="ru">MegaPeer -</summary>
