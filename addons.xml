@@ -242,7 +242,7 @@
   <extension point='xbmc.python.module'/>
 </addon>
 
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.15a" provider-name="Nemiroff">
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.16" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.kodi-six" />
@@ -257,11 +257,11 @@
         <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
         <disclaimer lang="ru">Данные из НЦР</disclaimer>
         <platform>all</platform>
-        <website>http://kinotrend.pp.ua/</website>
+        <website>http://ndr.kinou.ru/</website>
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news>НЦР и КиноЛегенды исправлены.</news>
+        <news>только НЦР</news>
     </extension>
 </addon>
 
