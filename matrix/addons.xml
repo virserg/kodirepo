@@ -115,7 +115,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.16" provider-name="Nemiroff">
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.17" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.kodi-six" />
@@ -128,13 +128,13 @@
         <summary lang="ru">KinoTrend</summary>
         <license>GNU General Public License, v2</license>
         <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
-        <disclaimer lang="ru">Данные из НЦР</disclaimer>
+        <disclaimer lang="ru">Данные из НЦР и Кинотренд</disclaimer>
         <platform>all</platform>
         <website>http://ndr.kinou.ru/</website>
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news>только НЦР</news>
+        <news>еще Кинотренд</news>
     </extension>
 </addon>
 
