@@ -115,7 +115,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.17" provider-name="Nemiroff">
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.18" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="script.module.kodi-six" />
